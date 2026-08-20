@@ -390,10 +390,10 @@ export const PRODUCTS = [
 export const BRAND_INFO = {
   name: "Mita's Creation",
   tagline: "Exclusive. Elegant. Made for You.",
-  phone: "7908840948",
-  phoneFormatted: "+91 7908840948",
+  phone: "7011318218",
+  phoneFormatted: "+91 7011318218",
   whatsappGroupLink: "https://chat.whatsapp.com/DMzinecRMvHIaM2p6O7xhz",
-  whatsappNumberUrl: "https://wa.me/917908840948",
+  whatsappNumberUrl: "https://wa.me/917011318218",
   description: "You will find everything here—an exclusive and amazing boutique collection crafted with care and elegance. Discover designer sarees, cord sets, bags, pouches, co-ords, and bespoke customized creations.",
   aboutStory: "Mita’s Creation is your one-stop destination for stylish, high-quality fashion and lifestyle essentials, designed with attention to detail and a touch of personalization.",
   pillars: [
