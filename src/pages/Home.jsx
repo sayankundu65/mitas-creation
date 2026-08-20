@@ -3,6 +3,7 @@ import { ArrowRight, Sparkles, MessageCircle, ShoppingBag, Gift, Shirt, Scissors
 import Logo from '../components/Logo';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
+import HeroSlideshow from '../components/HeroSlideshow';
 import { PRODUCTS, BRAND_INFO } from '../data/products';
 
 export default function Home() {
@@ -24,6 +25,9 @@ export default function Home() {
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden' }}>
+      {/* ELEVATED LUXURY CLOTHING SLIDESHOW */}
+      <HeroSlideshow />
+
       {/* 1. HERO SECTION */}
       <section
         className="hero-section"
