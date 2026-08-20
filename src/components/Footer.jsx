@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Phone, Heart, Mail, MapPin, ShieldCheck, Truck, Sparkles } from 'lucide-react';
 import Logo from './Logo';
-import { BRAND_INFO, CATEGORIES } from '../data/products';
+import { BRAND_INFO } from '../data/products';
 
 export default function Footer() {
   return (
@@ -224,12 +224,12 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/#products" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.88rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target.style.color = '#f472b6')} onMouseLeave={(e) => (e.target.style.color = '#cbd5e1')}>
-                  Featured Products
+                  Boutique Catalog
                 </a>
               </li>
               <li>
-                <a href="/#categories" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.88rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target.style.color = '#f472b6')} onMouseLeave={(e) => (e.target.style.color = '#cbd5e1')}>
-                  Explore Categories
+                <a href="/#customization" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.88rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target.style.color = '#f472b6')} onMouseLeave={(e) => (e.target.style.color = '#cbd5e1')}>
+                  Custom Studio
                 </a>
               </li>
               <li>
@@ -245,17 +245,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Categories Showcase */}
+          {/* Boutique Offerings Showcase */}
           <div>
-            <h4 style={{ fontSize: '1.05rem', color: '#f8fafc', marginBottom: '1.25rem' }}>Boutique Categories</h4>
+            <h4 style={{ fontSize: '1.05rem', color: '#f8fafc', marginBottom: '1.25rem' }}>Boutique Creations</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Sarees & Outfits</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Velvet & Floral Cord Sets</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Saree Shapewear & Petticoats</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Pure Cotton Kaftans & Nighties</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Men’s Kurta, Dhoti & Shirts</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Luxury Quilted Bed Covers</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Custom Mugs, Diaries & Gifts</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Designer Sarees & Handlooms</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Indigo & Printed Sarees</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; 3 Pc Designer Cord Sets</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Handcrafted Block Print Bags</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Quilted Tote Bags & Pouches</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Handmade Pouch Collections</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Custom Mugs, T-Shirts & Gifts</li>
             </ul>
           </div>
 

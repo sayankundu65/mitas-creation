@@ -156,10 +156,10 @@ export default function ProductCard({ product }) {
           gap: '0.6rem'
         }}
       >
-        {/* Category & Rating */}
+        {/* Photo Count & Rating */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '0.75rem', color: '#c084fc', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: '600' }}>
-            {product.categoryName}
+            {product.images?.length > 1 ? `${product.images.length} Photos` : "Exclusive Piece"}
           </span>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.78rem', color: '#fde047' }}>
             <Star size={13} fill="#fde047" color="#fde047" />

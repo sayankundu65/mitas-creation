@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import { ArrowRight, Sparkles, MessageCircle, ShoppingBag, Gift, Shirt, Scissors, ChevronRight, Star } from 'lucide-react';
+import { ArrowRight, Sparkles, MessageCircle, ShoppingBag, Gift, Shirt, Scissors, Star, Search } from 'lucide-react';
 import Logo from '../components/Logo';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { PRODUCTS, CATEGORIES, BRAND_INFO } from '../data/products';
+import { PRODUCTS, BRAND_INFO } from '../data/products';
 
 export default function Home() {
-  const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
   const filteredProducts = PRODUCTS.filter((product) => {
-    const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
-    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          product.shortDesc.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+    const query = searchQuery.toLowerCase().trim();
+    if (!query) return true;
+    return product.name.toLowerCase().includes(query) ||
+           product.shortDesc.toLowerCase().includes(query);
   });
 
   const scrollToProducts = () => {
@@ -29,7 +28,7 @@ export default function Home() {
       <section
         className="hero-section"
         style={{
-          minHeight: '88vh',
+          minHeight: '82vh',
           display: 'flex',
           alignItems: 'center',
           position: 'relative',
@@ -154,7 +153,7 @@ export default function Home() {
                 style={{ cursor: 'pointer' }}
               >
                 <ShoppingBag size={20} />
-                <span>Shop Now</span>
+                <span>Explore Boutique Catalog</span>
                 <ArrowRight size={18} />
               </button>
 
@@ -180,7 +179,7 @@ export default function Home() {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
                 <span style={{ color: '#f472b6' }}>✦</span>
-                <span>Exclusive Sarees & Outfits</span>
+                <span>Handcrafted Exclusive Catalog</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
                 <span style={{ color: '#c084fc' }}>✦</span>
@@ -195,122 +194,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. SPECIALTY HIGHLIGHTS / CATEGORY CAROUSEL */}
-      <section
-        id="categories"
-        style={{
-          padding: '5rem 0 4rem',
-          borderTop: '1px solid rgba(192, 132, 252, 0.12)',
-          background: 'rgba(14, 10, 31, 0.4)'
-        }}
-      >
-        <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '650px', margin: '0 auto 3.5rem' }}>
-            <span className="badge-luxury" style={{ marginBottom: '0.75rem' }}>
-              <Sparkles size={12} />
-              Curated Collections
-            </span>
-            <h2 style={{ fontSize: '2.25rem', marginBottom: '0.75rem' }}>
-              Designed For Every Special Moment
-            </h2>
-            <p style={{ color: '#94a3b8', fontSize: '0.95rem' }}>
-              Explore our diverse lifestyle range crafted with love, fine aesthetics, and supreme comfort.
-            </p>
-          </div>
-
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
-              gap: '1.75rem'
-            }}
-          >
-            {BRAND_INFO.categoriesHighlights.map((item, idx) => (
-              <div
-                key={idx}
-                onClick={() => {
-                  setActiveCategory(item.categoryKey);
-                  scrollToProducts();
-                }}
-                style={{
-                  position: 'relative',
-                  height: '320px',
-                  borderRadius: '24px',
-                  overflow: 'hidden',
-                  cursor: 'pointer',
-                  border: '1px solid rgba(192, 132, 252, 0.2)',
-                  transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.4)'
-                }}
-                className="category-showcase-card"
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-6px)';
-                  e.currentTarget.style.borderColor = 'rgba(244, 114, 182, 0.5)';
-                  e.currentTarget.style.boxShadow = '0 16px 40px rgba(192, 132, 252, 0.3)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.borderColor = 'rgba(192, 132, 252, 0.2)';
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.4)';
-                }}
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    transition: 'transform 0.6s ease'
-                  }}
-                  className="cat-img"
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    background: 'linear-gradient(180deg, rgba(14, 10, 31, 0.2) 0%, rgba(14, 10, 31, 0.92) 100%)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'flex-end',
-                    padding: '1.75rem'
-                  }}
-                >
-                  <h3 style={{ fontSize: '1.35rem', color: '#f8fafc', marginBottom: '0.4rem' }}>
-                    {item.title}
-                  </h3>
-                  <p style={{ fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.4, marginBottom: '1rem' }}>
-                    {item.desc}
-                  </p>
-                  <div
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.4rem',
-                      fontSize: '0.85rem',
-                      fontWeight: '600',
-                      color: '#f472b6'
-                    }}
-                  >
-                    <span>View Collection</span>
-                    <ChevronRight size={16} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. PRODUCTS SECTION (GRID LAYOUT WITH 10 DUMMY PRODUCTS) */}
+      {/* 2. PRODUCTS SECTION (DIRECT 9 EXCLUSIVE LISTINGS) */}
       <section
         id="products"
         style={{
-          padding: '6rem 0 5rem',
-          position: 'relative'
+          padding: '5rem 0',
+          position: 'relative',
+          borderTop: '1px solid rgba(192, 132, 252, 0.12)',
+          background: 'rgba(14, 10, 31, 0.4)'
         }}
       >
         <div className="container">
@@ -328,49 +219,58 @@ export default function Home() {
               Featured Boutique Catalog
             </span>
             <h2 style={{ fontSize: '2.4rem', marginBottom: '0.75rem' }}>
-              Exclusive & Amazing Creations
+              Exclusive &amp; Amazing Creations
             </h2>
             <p style={{ color: '#94a3b8', fontSize: '0.98rem', maxWidth: '600px' }}>
               Browse through our handpicked signature pieces. Click "Buy Now" to order directly on WhatsApp or view detailed material specs.
             </p>
 
-            {/* Category Filter Pills */}
+            {/* Search / Filter Input */}
             <div
               style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                gap: '0.65rem',
-                marginTop: '2.25rem',
-                maxWidth: '900px'
+                position: 'relative',
+                marginTop: '1.75rem',
+                maxWidth: '440px',
+                width: '100%'
               }}
             >
-              {CATEGORIES.map((cat) => {
-                const isActive = activeCategory === cat.id;
-                return (
-                  <button
-                    key={cat.id}
-                    onClick={() => setActiveCategory(cat.id)}
-                    style={{
-                      padding: '0.55rem 1.25rem',
-                      borderRadius: '9999px',
-                      fontSize: '0.88rem',
-                      fontWeight: isActive ? '600' : '500',
-                      cursor: 'pointer',
-                      border: isActive ? '1px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
-                      background: isActive 
-                        ? 'linear-gradient(135deg, rgba(244, 114, 182, 0.25) 0%, rgba(192, 132, 252, 0.25) 100%)' 
-                        : 'rgba(23, 17, 49, 0.6)',
-                      color: isActive ? '#fbcfe8' : '#cbd5e1',
-                      backdropFilter: 'blur(8px)',
-                      boxShadow: isActive ? '0 0 18px rgba(244, 114, 182, 0.3)' : 'none',
-                      transition: 'all 0.25s ease'
-                    }}
-                  >
-                    {cat.name}
-                  </button>
-                );
-              })}
+              <Search
+                size={18}
+                color="#94a3b8"
+                style={{
+                  position: 'absolute',
+                  left: '1rem',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  pointerEvents: 'none'
+                }}
+              />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search boutique items..."
+                style={{
+                  width: '100%',
+                  padding: '0.75rem 1rem 0.75rem 2.75rem',
+                  borderRadius: '9999px',
+                  background: 'rgba(23, 17, 49, 0.8)',
+                  border: '1px solid rgba(192, 132, 252, 0.25)',
+                  color: '#f8fafc',
+                  fontSize: '0.9rem',
+                  outline: 'none',
+                  backdropFilter: 'blur(8px)',
+                  transition: 'border-color 0.2s ease, box-shadow 0.2s ease'
+                }}
+                onFocus={(e) => {
+                  e.target.style.borderColor = '#f472b6';
+                  e.target.style.boxShadow = '0 0 15px rgba(244, 114, 182, 0.3)';
+                }}
+                onBlur={(e) => {
+                  e.target.style.borderColor = 'rgba(192, 132, 252, 0.25)';
+                  e.target.style.boxShadow = 'none';
+                }}
+              />
             </div>
           </div>
 
@@ -380,7 +280,7 @@ export default function Home() {
               className="products-grid"
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 260px), 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
                 gap: '2rem'
               }}
             >
@@ -398,23 +298,24 @@ export default function Home() {
                 border: '1px dashed rgba(192, 132, 252, 0.3)'
               }}
             >
-              <p style={{ color: '#cbd5e1', fontSize: '1.1rem' }}>No products found in this category.</p>
+              <p style={{ color: '#cbd5e1', fontSize: '1.1rem' }}>No products match your search.</p>
               <button
-                onClick={() => setActiveCategory('all')}
+                onClick={() => setSearchQuery('')}
                 className="btn btn-secondary btn-sm"
                 style={{ marginTop: '1rem' }}
               >
-                Reset Filter
+                Clear Search
               </button>
             </div>
           )}
         </div>
       </section>
 
-      {/* 4. CUSTOMIZATION & BESPOKE BANNER */}
+      {/* 3. CUSTOMIZATION & BESPOKE STUDIO BANNER */}
       <section
+        id="customization"
         style={{
-          padding: '4.5rem 0',
+          padding: '5rem 0',
           position: 'relative'
         }}
       >
@@ -435,7 +336,7 @@ export default function Home() {
             <div>
               <span className="badge-luxury" style={{ marginBottom: '1rem' }}>
                 <Scissors size={13} />
-                Bespoke & Custom Studio
+                Bespoke &amp; Custom Studio
               </span>
               <h2 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', marginBottom: '1rem' }}>
                 Need Custom Printed T-Shirts, Mugs, Diaries or Tailored Fits?
@@ -452,7 +353,7 @@ export default function Home() {
                   href={`tel:${BRAND_INFO.phone}`}
                   className="btn btn-secondary"
                 >
-                  Call 7908840948
+                  Call {BRAND_INFO.phone}
                 </a>
               </div>
             </div>
@@ -488,8 +389,8 @@ export default function Home() {
                 }}
               >
                 <Gift size={28} color="#c084fc" style={{ margin: '0 auto 0.5rem' }} />
-                <h4 style={{ fontSize: '1rem', color: '#f8fafc' }}>Mugs & Bottles</h4>
-                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem' }}>Laser engraved & photo mugs</p>
+                <h4 style={{ fontSize: '1rem', color: '#f8fafc' }}>Mugs &amp; Bottles</h4>
+                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem' }}>Laser engraved &amp; photo mugs</p>
               </div>
 
               <div
@@ -502,8 +403,8 @@ export default function Home() {
                 }}
               >
                 <Star size={28} color="#fde047" style={{ margin: '0 auto 0.5rem' }} />
-                <h4 style={{ fontSize: '1rem', color: '#f8fafc' }}>Diaries & Kits</h4>
-                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem' }}>Corporate & festive gifts</p>
+                <h4 style={{ fontSize: '1rem', color: '#f8fafc' }}>Diaries &amp; Kits</h4>
+                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem' }}>Corporate &amp; festive gifts</p>
               </div>
 
               <div
@@ -517,14 +418,14 @@ export default function Home() {
               >
                 <Scissors size={28} color="#93c5fd" style={{ margin: '0 auto 0.5rem' }} />
                 <h4 style={{ fontSize: '1rem', color: '#f8fafc' }}>Custom Fitting</h4>
-                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem' }}>Blouse & shapewear sizing</p>
+                <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.25rem' }}>Blouse &amp; shapewear sizing</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. ABOUT BRAND STORY PREVIEW */}
+      {/* 4. ABOUT BRAND STORY PREVIEW */}
       <section
         style={{
           padding: '5rem 0',
@@ -573,12 +474,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <style>{`
-        .category-showcase-card:hover .cat-img {
-          transform: scale(1.08);
-        }
-      `}</style>
     </div>
   );
 }
+

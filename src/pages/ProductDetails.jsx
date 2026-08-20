@@ -21,11 +21,8 @@ export default function ProductDetails() {
   const [quantity, setQuantity] = useState(1);
   const [copied, setCopied] = useState(false);
 
-  // Related products from same category or fallback to other products
-  const relatedProducts = PRODUCTS.filter((p) => p.id !== product.id && p.category === product.category).slice(0, 3);
-  const fallbackProducts = relatedProducts.length < 3 
-    ? [...relatedProducts, ...PRODUCTS.filter(p => p.id !== product.id && p.category !== product.category).slice(0, 3 - relatedProducts.length)]
-    : relatedProducts;
+  // Related products from remaining catalog listings
+  const relatedProducts = PRODUCTS.filter((p) => p.id !== product.id).slice(0, 3);
 
   const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
 
@@ -51,9 +48,9 @@ export default function ProductDetails() {
             marginBottom: '2rem' 
           }}
         >
-          <Link to="/" style={{ color: '#94a3b8', textDecoration: 'none' }}>Home</Link>
+          <Link to="/" style={{ color: '#cbd5e1', textDecoration: 'none' }}>Home</Link>
           <span>/</span>
-          <Link to="/#products" style={{ color: '#94a3b8', textDecoration: 'none' }}>{product.categoryName}</Link>
+          <Link to="/#products" style={{ color: '#cbd5e1', textDecoration: 'none' }}>Boutique Collection</Link>
           <span>/</span>
           <span style={{ color: '#f472b6', fontWeight: '500' }}>{product.name}</span>
         </div>
@@ -140,46 +137,78 @@ export default function ProductDetails() {
 
             {/* Thumbnails Row */}
             {product.images.length > 1 && (
-              <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1rem' }}>
-                {product.images.map((img, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setSelectedImg(idx)}
-                    style={{
-                      width: '76px',
-                      height: '76px',
-                      borderRadius: '14px',
-                      overflow: 'hidden',
-                      border: selectedImg === idx ? '2px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
-                      padding: 0,
-                      cursor: 'pointer',
-                      background: '#130e2c',
-                      boxShadow: selectedImg === idx ? '0 0 15px rgba(244, 114, 182, 0.4)' : 'none',
-                      transition: 'all 0.2s ease'
-                    }}
-                  >
-                    <img
-                      src={img}
-                      alt={`Thumbnail ${idx + 1}`}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                    />
-                  </button>
-                ))}
+              <div style={{ marginTop: '1.25rem' }}>
+                <div 
+                  style={{ 
+                    display: 'flex', 
+                    justifyContent: 'space-between', 
+                    alignItems: 'center', 
+                    marginBottom: '0.6rem', 
+                    fontSize: '0.82rem', 
+                    color: '#94a3b8' 
+                  }}
+                >
+                  <span>
+                    Photos (<strong style={{ color: '#fbcfe8' }}>{selectedImg + 1}</strong> of {product.images.length})
+                  </span>
+                  {product.images.length > 5 && (
+                    <span style={{ color: '#c084fc', fontSize: '0.78rem' }}>
+                      ← Scroll to browse all pictures →
+                    </span>
+                  )}
+                </div>
+                <div 
+                  style={{ 
+                    display: 'flex', 
+                    gap: '0.65rem', 
+                    overflowX: 'auto',
+                    paddingBottom: '0.6rem',
+                    scrollbarWidth: 'thin'
+                  }}
+                >
+                  {product.images.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setSelectedImg(idx)}
+                      style={{
+                        flex: '0 0 74px',
+                        width: '74px',
+                        height: '74px',
+                        borderRadius: '12px',
+                        overflow: 'hidden',
+                        border: selectedImg === idx ? '2px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
+                        padding: 0,
+                        cursor: 'pointer',
+                        background: '#130e2c',
+                        boxShadow: selectedImg === idx ? '0 0 15px rgba(244, 114, 182, 0.4)' : 'none',
+                        transition: 'all 0.2s ease'
+                      }}
+                      title={`View image ${idx + 1}`}
+                    >
+                      <img
+                        src={img}
+                        alt={`Thumbnail ${idx + 1}`}
+                        loading="lazy"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      />
+                    </button>
+                  ))}
+                </div>
               </div>
             )}
           </div>
 
           {/* Right Column: Product Info & Order CTAs */}
           <div>
-            {/* Category & Rating */}
+            {/* Boutique Badge & Rating */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
               <span style={{ fontSize: '0.82rem', color: '#c084fc', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '600' }}>
-                {product.categoryName}
+                Mita's Exclusive Boutique
               </span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: '#fde047', fontSize: '0.88rem' }}>
                 <Star size={16} fill="#fde047" color="#fde047" />
                 <span style={{ color: '#f8fafc', fontWeight: '600' }}>{product.rating}</span>
-                <span style={{ color: '#94a3b8' }}>({product.reviewsCount} customer reviews)</span>
+                <span style={{ color: '#94a3b8' }}>({product.reviewsCount} reviews)</span>
               </div>
             </div>
 
@@ -502,7 +531,7 @@ export default function ProductDetails() {
               gap: '2rem'
             }}
           >
-            {fallbackProducts.map((p) => (
+            {relatedProducts.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
           </div>
