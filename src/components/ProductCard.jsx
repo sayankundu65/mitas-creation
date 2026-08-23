@@ -1,10 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Eye, Star, Sparkles, MessageCircle } from 'lucide-react';
+import { Eye, Star, Sparkles, MessageCircle, Play } from 'lucide-react';
 import { BRAND_INFO } from '../data/products';
+
+const isVideoFile = (url) => typeof url === 'string' && /\.(mp4|webm|mov|ogg)$/i.test(url);
 
 export default function ProductCard({ product }) {
   const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+
+  const videoCount = product.images?.filter(isVideoFile).length || 0;
+  const photoCount = (product.images?.length || 0) - videoCount;
+  
+  let mediaLabel = "Exclusive Piece";
+  if (videoCount > 0 && photoCount > 0) {
+    mediaLabel = `${videoCount} Video, ${photoCount} Photos`;
+  } else if (videoCount > 0) {
+    mediaLabel = `${videoCount} Video${videoCount > 1 ? 's' : ''}`;
+  } else if (photoCount > 1) {
+    mediaLabel = `${photoCount} Photos`;
+  }
+
+  const primaryMedia = product.images && product.images.length > 0 ? product.images[0] : '';
+  const isPrimaryVideo = isVideoFile(primaryMedia);
 
   return (
     <div
@@ -31,7 +48,7 @@ export default function ProductCard({ product }) {
         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.3)';
       }}
     >
-      {/* Product Image Container */}
+      {/* Product Image / Video Container */}
       <div 
         style={{
           position: 'relative',
@@ -41,21 +58,67 @@ export default function ProductCard({ product }) {
           backgroundColor: '#100c24'
         }}
       >
-        <img
-          src={product.images[0]}
-          alt={product.name}
-          loading="lazy"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            transition: 'transform 0.6s cubic-bezier(0.33, 1, 0.68, 1)'
-          }}
-          className="product-image"
-        />
+        {isPrimaryVideo ? (
+          <video
+            src={primaryMedia}
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              transition: 'transform 0.6s cubic-bezier(0.33, 1, 0.68, 1)'
+            }}
+            className="product-image"
+          />
+        ) : (
+          <img
+            src={primaryMedia}
+            alt={product.name}
+            loading="lazy"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              transition: 'transform 0.6s cubic-bezier(0.33, 1, 0.68, 1)'
+            }}
+            className="product-image"
+          />
+        )}
+
+        {/* Video Badge indicator */}
+        {videoCount > 0 && (
+          <div
+            style={{
+              position: 'absolute',
+              bottom: '3.4rem',
+              right: '0.75rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.25rem',
+              padding: '0.25rem 0.55rem',
+              borderRadius: '9999px',
+              background: 'rgba(15, 11, 33, 0.85)',
+              border: '1px solid rgba(192, 132, 252, 0.4)',
+              color: '#fbcfe8',
+              fontSize: '0.7rem',
+              fontWeight: '600',
+              backdropFilter: 'blur(8px)',
+              zIndex: 2
+            }}
+          >
+            <Play size={10} fill="#fbcfe8" />
+            <span>Video Included</span>
+          </div>
+        )}
 
         {/* Top Badges */}
         <div
@@ -159,7 +222,7 @@ export default function ProductCard({ product }) {
         {/* Photo Count & Rating */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <span style={{ fontSize: '0.75rem', color: '#c084fc', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: '600' }}>
-            {product.images?.length > 1 ? `${product.images.length} Photos` : "Exclusive Piece"}
+            {mediaLabel}
           </span>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.78rem', color: '#fde047' }}>
             <Star size={13} fill="#fde047" color="#fde047" />
@@ -205,6 +268,25 @@ export default function ProductCard({ product }) {
           <span style={{ fontSize: '0.85rem', color: '#94a3b8', textDecoration: 'line-through' }}>
             ₹{product.originalPrice.toLocaleString('en-IN')}
           </span>
+        </div>
+
+        {/* Mini Policy Tag */}
+        <div
+          style={{
+            fontSize: '0.72rem',
+            color: '#cbd5e1',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '0.3rem 0.55rem',
+            borderRadius: '8px',
+            background: 'rgba(255, 255, 255, 0.03)',
+            border: '1px solid rgba(192, 132, 252, 0.12)',
+            marginTop: '0.1rem'
+          }}
+        >
+          <span style={{ color: '#86efac', fontWeight: '600' }}>🚚 Free Shipping on 2+</span>
+          <span style={{ color: '#fca5a5', fontWeight: '600' }}>Prepaid (No COD)</span>
         </div>
 
         {/* Action Buttons */}

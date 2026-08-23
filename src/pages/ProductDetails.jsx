@@ -1,25 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Star, Sparkles, Check, MessageCircle, ShieldCheck, Truck, RotateCcw, Share2, Heart, Info } from 'lucide-react';
+import { ArrowLeft, Star, Sparkles, Check, MessageCircle, ShieldCheck, Truck, Ban, Share2, Play, CreditCard, Gift } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { PRODUCTS, BRAND_INFO } from '../data/products';
+
+const isVideoFile = (url) => typeof url === 'string' && /\.(mp4|webm|mov|ogg)$/i.test(url);
 
 export default function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Scroll to top when product ID changes
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [id]);
-
   const product = PRODUCTS.find((p) => p.id === id) || PRODUCTS[0];
+  const isHangingSoap = product.id === 'm-glow-organik-hanging-soap';
+  const minQty = isHangingSoap ? 2 : 1;
+
   const [selectedImg, setSelectedImg] = useState(0);
   const [selectedSize, setSelectedSize] = useState(product?.sizes ? product.sizes[0] : 'Standard');
   const [selectedColor, setSelectedColor] = useState(product?.colors ? product.colors[0]?.name : 'Default');
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(minQty);
   const [copied, setCopied] = useState(false);
+
+  // Scroll to top when product ID changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setSelectedImg(0);
+    setQuantity(minQty);
+    if (product?.sizes && product.sizes.length > 0) setSelectedSize(product.sizes[0]);
+    if (product?.colors && product.colors.length > 0) setSelectedColor(product.colors[0].name);
+  }, [id, minQty, product]);
 
   // Related products from remaining catalog listings
   const relatedProducts = PRODUCTS.filter((p) => p.id !== product.id).slice(0, 3);
@@ -33,6 +42,12 @@ export default function ProductDetails() {
       setTimeout(() => setCopied(false), 2500);
     }
   };
+
+  const currentMedia = product.images && product.images[selectedImg] ? product.images[selectedImg] : product.images[0];
+  const isCurrentVideo = isVideoFile(currentMedia);
+
+  const videoCount = product.images?.filter(isVideoFile).length || 0;
+  const photoCount = (product.images?.length || 0) - videoCount;
 
   return (
     <div style={{ padding: '2.5rem 0 6rem' }}>
@@ -83,9 +98,9 @@ export default function ProductDetails() {
             alignItems: 'flex-start'
           }}
         >
-          {/* Left Column: Image Gallery */}
+          {/* Left Column: Media Gallery */}
           <div>
-            {/* Main Featured Image */}
+            {/* Main Featured Media */}
             <div
               style={{
                 position: 'relative',
@@ -97,17 +112,35 @@ export default function ProductDetails() {
                 boxShadow: '0 15px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(192, 132, 252, 0.15)'
               }}
             >
-              <img
-                src={product.images[selectedImg] || product.images[0]}
-                alt={product.name}
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  maxHeight: '560px',
-                  objectFit: 'cover',
-                  display: 'block'
-                }}
-              />
+              {isCurrentVideo ? (
+                <video
+                  src={currentMedia}
+                  controls
+                  autoPlay
+                  loop
+                  playsInline
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    maxHeight: '560px',
+                    objectFit: 'contain',
+                    display: 'block',
+                    backgroundColor: '#0a0716'
+                  }}
+                />
+              ) : (
+                <img
+                  src={currentMedia}
+                  alt={product.name}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    maxHeight: '560px',
+                    objectFit: 'cover',
+                    display: 'block'
+                  }}
+                />
+              )}
 
               {/* Tag pill */}
               {product.tag && (
@@ -126,7 +159,8 @@ export default function ProductDetails() {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.3rem',
-                    backdropFilter: 'blur(8px)'
+                    backdropFilter: 'blur(8px)',
+                    zIndex: 2
                   }}
                 >
                   <Sparkles size={13} />
@@ -149,11 +183,16 @@ export default function ProductDetails() {
                   }}
                 >
                   <span>
-                    Photos (<strong style={{ color: '#fbcfe8' }}>{selectedImg + 1}</strong> of {product.images.length})
+                    Media (<strong style={{ color: '#fbcfe8' }}>{selectedImg + 1}</strong> of {product.images.length})
+                    {videoCount > 0 && (
+                      <span style={{ marginLeft: '0.5rem', color: '#c084fc' }}>
+                        • {videoCount} Video{videoCount > 1 ? 's' : ''}, {photoCount} Photos
+                      </span>
+                    )}
                   </span>
                   {product.images.length > 5 && (
                     <span style={{ color: '#c084fc', fontSize: '0.78rem' }}>
-                      ← Scroll to browse all pictures →
+                      ← Scroll to browse all media →
                     </span>
                   )}
                 </div>
@@ -166,33 +205,60 @@ export default function ProductDetails() {
                     scrollbarWidth: 'thin'
                   }}
                 >
-                  {product.images.map((img, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setSelectedImg(idx)}
-                      style={{
-                        flex: '0 0 74px',
-                        width: '74px',
-                        height: '74px',
-                        borderRadius: '12px',
-                        overflow: 'hidden',
-                        border: selectedImg === idx ? '2px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
-                        padding: 0,
-                        cursor: 'pointer',
-                        background: '#130e2c',
-                        boxShadow: selectedImg === idx ? '0 0 15px rgba(244, 114, 182, 0.4)' : 'none',
-                        transition: 'all 0.2s ease'
-                      }}
-                      title={`View image ${idx + 1}`}
-                    >
-                      <img
-                        src={img}
-                        alt={`Thumbnail ${idx + 1}`}
-                        loading="lazy"
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                      />
-                    </button>
-                  ))}
+                  {product.images.map((item, idx) => {
+                    const isThumbVideo = isVideoFile(item);
+                    return (
+                      <button
+                        key={idx}
+                        onClick={() => setSelectedImg(idx)}
+                        style={{
+                          flex: '0 0 74px',
+                          width: '74px',
+                          height: '74px',
+                          borderRadius: '12px',
+                          overflow: 'hidden',
+                          border: selectedImg === idx ? '2px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
+                          padding: 0,
+                          cursor: 'pointer',
+                          background: '#130e2c',
+                          position: 'relative',
+                          boxShadow: selectedImg === idx ? '0 0 15px rgba(244, 114, 182, 0.4)' : 'none',
+                          transition: 'all 0.2s ease'
+                        }}
+                        title={`View media item ${idx + 1}`}
+                      >
+                        {isThumbVideo ? (
+                          <div style={{ position: 'relative', width: '100%', height: '100%', background: '#090714' }}>
+                            <video
+                              src={item}
+                              muted
+                              playsInline
+                              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                inset: 0,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                background: 'rgba(0, 0, 0, 0.4)'
+                              }}
+                            >
+                              <Play size={20} color="#ffffff" fill="#ffffff" />
+                            </div>
+                          </div>
+                        ) : (
+                          <img
+                            src={item}
+                            alt={`Thumbnail ${idx + 1}`}
+                            loading="lazy"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                          />
+                        )}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -230,12 +296,13 @@ export default function ProductDetails() {
               style={{
                 display: 'flex',
                 alignItems: 'baseline',
+                flexWrap: 'wrap',
                 gap: '1rem',
                 padding: '1rem 1.25rem',
                 background: 'rgba(26, 20, 58, 0.65)',
                 border: '1px solid rgba(192, 132, 252, 0.2)',
                 borderRadius: '16px',
-                marginBottom: '1.5rem'
+                marginBottom: '1.25rem'
               }}
             >
               <span style={{ fontSize: '2rem', fontWeight: '700', color: '#fbcfe8' }}>
@@ -246,7 +313,6 @@ export default function ProductDetails() {
               </span>
               <span
                 style={{
-                  marginLeft: 'auto',
                   padding: '0.3rem 0.75rem',
                   borderRadius: '9999px',
                   background: 'rgba(34, 197, 94, 0.15)',
@@ -258,6 +324,95 @@ export default function ProductDetails() {
               >
                 Save {discount}% Today
               </span>
+
+              {isHangingSoap && (
+                <span
+                  style={{
+                    padding: '0.3rem 0.75rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(244, 114, 182, 0.15)',
+                    border: '1px solid rgba(244, 114, 182, 0.35)',
+                    color: '#f472b6',
+                    fontSize: '0.8rem',
+                    fontWeight: '600'
+                  }}
+                >
+                  Minimum 2 articles required
+                </span>
+              )}
+            </div>
+
+            {/* HIGH-CONVERTING SPECIAL OFFER & POLICY HIGHLIGHT CARD */}
+            <div
+              style={{
+                marginBottom: '1.75rem',
+                padding: '1rem 1.25rem',
+                borderRadius: '16px',
+                background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(147, 51, 234, 0.15) 50%, rgba(244, 114, 182, 0.12) 100%)',
+                border: '1.5px solid rgba(244, 114, 182, 0.45)',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(244, 114, 182, 0.15)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.75rem'
+              }}
+            >
+              {/* Highlight 1: Free shipping on 2 articles */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                <div
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    boxShadow: '0 0 12px rgba(16, 185, 129, 0.4)'
+                  }}
+                >
+                  <Truck size={17} color="#ffffff" />
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.92rem', fontWeight: '700', color: '#86efac', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <span>FREE SHIPPING ON ANY 2 ARTICLES</span>
+                    <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.45rem', borderRadius: '4px', background: 'rgba(16, 185, 129, 0.25)', border: '1px solid rgba(16, 185, 129, 0.5)', color: '#4ade80' }}>LIMITED OFFER</span>
+                  </div>
+                  <p style={{ fontSize: '0.82rem', color: '#e2e8f0', marginTop: '0.15rem', lineHeight: 1.4 }}>
+                    Buy <strong>any two or more articles</strong> from our boutique collection &amp; enjoy <strong>100% Free Shipping</strong> across India!
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ height: '1px', background: 'rgba(244, 114, 182, 0.2)' }} />
+
+              {/* Highlight 2: No COD / 100% Prepaid */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                <div
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #ef4444 0%, #b91c1c 100%)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    boxShadow: '0 0 12px rgba(239, 68, 68, 0.4)'
+                  }}
+                >
+                  <Ban size={16} color="#ffffff" />
+                </div>
+                <div>
+                  <div style={{ fontSize: '0.92rem', fontWeight: '700', color: '#fca5a5', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <span>NO CASH ON DELIVERY (COD)</span>
+                    <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.45rem', borderRadius: '4px', background: 'rgba(239, 68, 68, 0.2)', border: '1px solid rgba(239, 68, 68, 0.4)', color: '#f87171' }}>PREPAID ONLY</span>
+                  </div>
+                  <p style={{ fontSize: '0.82rem', color: '#cbd5e1', marginTop: '0.15rem', lineHeight: 1.4 }}>
+                    We accept secure <strong>UPI (GPay / PhonePe / Paytm), Net Banking &amp; Bank Transfers</strong> prior to dispatch for swift doorstep delivery.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Short Description */}
@@ -269,7 +424,7 @@ export default function ProductDetails() {
             {product.colors && product.colors.length > 0 && (
               <div style={{ marginBottom: '1.5rem' }}>
                 <label style={{ display: 'block', fontSize: '0.85rem', color: '#cbd5e1', marginBottom: '0.6rem', fontWeight: '600' }}>
-                  Select Color Tone: <span style={{ color: '#f472b6' }}>{selectedColor}</span>
+                  Select Tone / Fragrance: <span style={{ color: '#f472b6' }}>{selectedColor}</span>
                 </label>
                 <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                   {product.colors.map((color) => {
@@ -343,7 +498,7 @@ export default function ProductDetails() {
               </div>
             )}
 
-            {/* Quantity Selector (UI Only) */}
+            {/* Quantity Selector */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <label style={{ fontSize: '0.85rem', color: '#cbd5e1', fontWeight: '600' }}>Qty:</label>
@@ -357,7 +512,7 @@ export default function ProductDetails() {
                   }}
                 >
                   <button
-                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                    onClick={() => setQuantity(Math.max(minQty, quantity - 1))}
                     style={{
                       padding: '0.4rem 0.8rem',
                       background: 'transparent',
@@ -366,6 +521,7 @@ export default function ProductDetails() {
                       cursor: 'pointer',
                       fontSize: '1rem'
                     }}
+                    title={quantity <= minQty ? `Minimum ${minQty} items required` : 'Decrease'}
                   >
                     -
                   </button>
@@ -388,6 +544,17 @@ export default function ProductDetails() {
                 </div>
               </div>
 
+              {/* Free Shipping Qualification Helper */}
+              {quantity >= 2 ? (
+                <span style={{ fontSize: '0.8rem', color: '#86efac', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+                  <Truck size={14} /> Free Shipping Applied!
+                </span>
+              ) : (
+                <span style={{ fontSize: '0.78rem', color: '#cbd5e1' }}>
+                  (Add 1 more for <strong style={{ color: '#86efac' }}>FREE Shipping</strong>)
+                </span>
+              )}
+
               {/* Share Button */}
               <button
                 onClick={handleShare}
@@ -401,7 +568,8 @@ export default function ProductDetails() {
                   border: '1px solid rgba(255, 255, 255, 0.1)',
                   color: copied ? '#4ade80' : '#cbd5e1',
                   cursor: 'pointer',
-                  fontSize: '0.82rem'
+                  fontSize: '0.82rem',
+                  marginLeft: 'auto'
                 }}
               >
                 <Share2 size={14} />
@@ -413,12 +581,12 @@ export default function ProductDetails() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2.5rem' }}>
               <WhatsAppButton
                 text={`Buy Now on WhatsApp (₹${(product.price * quantity).toLocaleString('en-IN')})`}
-                productName={product.name}
+                productName={`${product.name} (Qty: ${quantity}, Tone: ${selectedColor})`}
                 size="lg"
                 fullWidth={true}
               />
               <p style={{ textAlign: 'center', fontSize: '0.78rem', color: '#94a3b8' }}>
-                ⚡ Click redirects to our official WhatsApp chat for instant checkout, color choice & delivery address confirmation.
+                ⚡ Click redirects to our official WhatsApp chat for instant checkout, color choice &amp; delivery address confirmation.
               </p>
             </div>
 
@@ -436,14 +604,14 @@ export default function ProductDetails() {
               }}
             >
               <div>
-                <ShieldCheck size={20} color="#f472b6" style={{ margin: '0 auto 0.35rem' }} />
-                <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>100% Genuine</span>
-                <span style={{ fontSize: '0.7rem', color: '#94a3b8' }}>Quality Verified</span>
+                <Truck size={20} color="#4ade80" style={{ margin: '0 auto 0.35rem' }} />
+                <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>Free Shipping</span>
+                <span style={{ fontSize: '0.7rem', color: '#86efac' }}>On Any 2 Articles</span>
               </div>
               <div>
-                <Truck size={20} color="#93c5fd" style={{ margin: '0 auto 0.35rem' }} />
-                <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>Express Dispatch</span>
-                <span style={{ fontSize: '0.7rem', color: '#94a3b8' }}>Safe Doorstep Care</span>
+                <Ban size={20} color="#f87171" style={{ margin: '0 auto 0.35rem' }} />
+                <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>No COD</span>
+                <span style={{ fontSize: '0.7rem', color: '#fca5a5' }}>Prepaid Only</span>
               </div>
               <div>
                 <MessageCircle size={20} color="#25D366" style={{ margin: '0 auto 0.35rem' }} />
@@ -465,14 +633,14 @@ export default function ProductDetails() {
           }}
         >
           <h3 style={{ fontSize: '1.45rem', marginBottom: '1.25rem', color: '#f8fafc' }}>
-            Product Story & Craftsmanship
+            Product Story &amp; Craftsmanship
           </h3>
-          <p style={{ color: '#cbd5e1', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '2rem' }}>
+          <p style={{ color: '#cbd5e1', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '2rem', whiteSpace: 'pre-line' }}>
             {product.fullDesc}
           </p>
 
           <h4 style={{ fontSize: '1.1rem', marginBottom: '1rem', color: '#fbcfe8' }}>
-            Specifications & Details:
+            Specifications &amp; Details:
           </h4>
           <div
             style={{
@@ -499,6 +667,39 @@ export default function ProductDetails() {
                 </span>
               </div>
             ))}
+
+            {/* Highlighted Policy Badges in Specs */}
+            <div
+              style={{
+                padding: '1rem',
+                borderRadius: '12px',
+                background: 'rgba(16, 185, 129, 0.1)',
+                border: '1px solid rgba(16, 185, 129, 0.3)'
+              }}
+            >
+              <span style={{ fontSize: '0.75rem', color: '#86efac', textTransform: 'capitalize', display: 'block', fontWeight: '600' }}>
+                Shipping Policy
+              </span>
+              <span style={{ fontSize: '0.88rem', color: '#ffffff', fontWeight: '500', marginTop: '0.2rem', display: 'block' }}>
+                🚚 Free Shipping on any 2 articles
+              </span>
+            </div>
+
+            <div
+              style={{
+                padding: '1rem',
+                borderRadius: '12px',
+                background: 'rgba(239, 68, 68, 0.1)',
+                border: '1px solid rgba(239, 68, 68, 0.3)'
+              }}
+            >
+              <span style={{ fontSize: '0.75rem', color: '#fca5a5', textTransform: 'capitalize', display: 'block', fontWeight: '600' }}>
+                Payment Policy
+              </span>
+              <span style={{ fontSize: '0.88rem', color: '#ffffff', fontWeight: '500', marginTop: '0.2rem', display: 'block' }}>
+                💳 100% Prepaid Only (No COD)
+              </span>
+            </div>
           </div>
         </div>
 

@@ -198,7 +198,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. PRODUCTS SECTION (DIRECT 9 EXCLUSIVE LISTINGS) */}
+      {/* 2. PRODUCTS SECTION (EXCLUSIVE BOUTIQUE CATALOG) */}
       <section
         id="products"
         style={{

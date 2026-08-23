@@ -68,8 +68,8 @@ export default function Header() {
           }}
         >
           <Sparkles size={13} color="#fde047" />
-          <span className="announce-full">Direct WhatsApp Orders &amp; Custom Personalization Available &bull; Call: <strong>{BRAND_INFO.phone}</strong></span>
-          <span className="announce-short" style={{ display: 'none' }}>WhatsApp Orders &bull; Call: <strong>{BRAND_INFO.phone}</strong></span>
+          <span className="announce-full">🚚 <strong>FREE SHIPPING on buying any 2 articles</strong> &bull; 💳 <strong>Prepaid Orders Only (No COD)</strong> &bull; WhatsApp Shopping: <strong>{BRAND_INFO.phone}</strong></span>
+          <span className="announce-short" style={{ display: 'none' }}>🚚 Free Shipping on 2+ Articles &bull; No COD</span>
         </div>
 
         <div className="container header-nav-container" style={{ padding: '0.75rem 1.5rem' }}>
