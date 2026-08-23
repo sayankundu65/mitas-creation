@@ -29,6 +29,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Collection', path: '/#products' },
+    { name: '🎁 Gifting Studio', path: '/#gifting' },
     { name: 'Custom Studio', path: '/#customization' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact', path: '/contact' }

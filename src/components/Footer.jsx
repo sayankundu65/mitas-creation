@@ -228,6 +228,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/#gifting" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.88rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target.style.color = '#f472b6')} onMouseLeave={(e) => (e.target.style.color = '#cbd5e1')}>
+                  🎁 Gifting Studio &amp; Hampers
+                </a>
+              </li>
+              <li>
                 <a href="/#customization" style={{ color: '#cbd5e1', textDecoration: 'none', fontSize: '0.88rem', transition: 'color 0.2s' }} onMouseEnter={(e) => (e.target.style.color = '#f472b6')} onMouseLeave={(e) => (e.target.style.color = '#cbd5e1')}>
                   Custom Studio
                 </a>
@@ -249,13 +254,14 @@ export default function Footer() {
           <div>
             <h4 style={{ fontSize: '1.05rem', color: '#f8fafc', marginBottom: '1.25rem' }}>Boutique Creations</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Bombay Dyeing King Bed Covers</li>
               <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Designer Sarees & Handlooms</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Indigo & Printed Sarees</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; 3 Pc Designer Cord Sets</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Kids Cartoon Chest Bags & Favors</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Insulated Thermal Lunch Boxes</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Aesthetic Canvas Everyday Totes</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Lipstick Mirror Keychains & Pouches</li>
               <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Handcrafted Block Print Bags</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Quilted Tote Bags & Pouches</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Handmade Pouch Collections</li>
-              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Custom Mugs, T-Shirts & Gifts</li>
+              <li style={{ color: '#cbd5e1', fontSize: '0.88rem' }}>&bull; Custom Mugs, T-Shirts & Hampers</li>
             </ul>
           </div>
 

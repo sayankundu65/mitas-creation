@@ -585,6 +585,17 @@ export default function ProductDetails() {
                 size="lg"
                 fullWidth={true}
               />
+
+              {product.bulkOrderAvailable && (
+                <WhatsAppButton
+                  text="🎁 Inquire for Bulk Order / Return Gifts"
+                  productName={`Bulk Order Enquiry for ${product.name}`}
+                  size="md"
+                  variant="outline"
+                  fullWidth={true}
+                />
+              )}
+
               <p style={{ textAlign: 'center', fontSize: '0.78rem', color: '#94a3b8' }}>
                 ⚡ Click redirects to our official WhatsApp chat for instant checkout, color choice &amp; delivery address confirmation.
               </p>

@@ -8,16 +8,63 @@ import { PRODUCTS, BRAND_INFO } from '../data/products';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [giftingTab, setGiftingTab] = useState('all');
+
+  const categories = [
+    { id: 'all', label: '🌟 All Collections' },
+    { id: 'bedsheets', label: '🛏️ Bedsheets & Home' },
+    { id: 'gifting', label: '🎁 Gifting & Accessories' },
+    { id: 'sarees', label: '🥻 Sarees & Handlooms' },
+    { id: 'coords', label: '✨ Co-ord Sets' },
+    { id: 'soaps', label: '🧼 Organic Soaps' }
+  ];
+
+  const giftingSubCategories = [
+    { id: 'all', label: '✨ All Gifting & Essentials' },
+    { id: 'bedsheets', label: '🛏️ Bombay Dyeing Bed Covers' },
+    { id: 'kids', label: '🎒 Kids Chest Bags & Favors' },
+    { id: 'totes', label: '👜 Canvas Totes & Combos' },
+    { id: 'lunchbox', label: '🍱 Insulated Lunch Boxes' },
+    { id: 'keychains', label: '💄 Lipstick Keychains' }
+  ];
 
   const filteredProducts = PRODUCTS.filter((product) => {
     const query = searchQuery.toLowerCase().trim();
-    if (!query) return true;
-    return product.name.toLowerCase().includes(query) ||
-           product.shortDesc.toLowerCase().includes(query);
+    const matchesQuery = !query || 
+      product.name.toLowerCase().includes(query) ||
+      product.shortDesc.toLowerCase().includes(query);
+
+    const matchesCategory = selectedCategory === 'all' || 
+      (selectedCategory === 'bedsheets' && product.category === 'bedsheets') ||
+      (selectedCategory === 'gifting' && product.isGifting) ||
+      (selectedCategory === 'sarees' && (product.category === 'sarees' || product.name.toLowerCase().includes('saree'))) ||
+      (selectedCategory === 'coords' && product.category === 'coords') ||
+      (selectedCategory === 'soaps' && product.category === 'soaps');
+
+    return matchesQuery && matchesCategory;
+  });
+
+  const giftingProducts = PRODUCTS.filter((product) => {
+    if (!product.isGifting) return false;
+    if (giftingTab === 'all') return true;
+    if (giftingTab === 'bedsheets') return product.id === 'bombay-dyeing-king-bed-cover';
+    if (giftingTab === 'kids') return product.id === 'children-cartoon-crossbody-chest-bag';
+    if (giftingTab === 'totes') return product.id === 'aesthetic-handcrafted-canvas-tote-bag' || product.category === 'bags';
+    if (giftingTab === 'lunchbox') return product.id === 'premium-insulated-thermal-lunch-box';
+    if (giftingTab === 'keychains') return product.id === 'chic-leatherette-lipstick-keychain-mirror';
+    return true;
   });
 
   const scrollToProducts = () => {
     const el = document.getElementById('products');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToGifting = () => {
+    const el = document.getElementById('gifting');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
@@ -276,6 +323,56 @@ export default function Home() {
                 }}
               />
             </div>
+
+            {/* Category Filter Tabs */}
+            <div
+              className="category-pills"
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: '0.65rem',
+                marginTop: '1.5rem',
+                maxWidth: '900px'
+              }}
+            >
+              {categories.map((cat) => {
+                const isActive = selectedCategory === cat.id;
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => setSelectedCategory(cat.id)}
+                    style={{
+                      padding: '0.45rem 1.1rem',
+                      borderRadius: '9999px',
+                      fontSize: '0.86rem',
+                      fontWeight: isActive ? '700' : '500',
+                      cursor: 'pointer',
+                      border: isActive ? '1px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
+                      background: isActive ? 'linear-gradient(135deg, rgba(244, 114, 182, 0.35) 0%, rgba(192, 132, 252, 0.35) 100%)' : 'rgba(23, 17, 49, 0.6)',
+                      color: isActive ? '#fbcfe8' : '#cbd5e1',
+                      boxShadow: isActive ? '0 0 16px rgba(244, 114, 182, 0.3)' : 'none',
+                      transition: 'all 0.2s ease',
+                      backdropFilter: 'blur(8px)'
+                    }}
+                    onMouseEnter={(e) => {
+                      if (!isActive) {
+                        e.currentTarget.style.borderColor = 'rgba(244, 114, 182, 0.5)';
+                        e.currentTarget.style.color = '#ffffff';
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isActive) {
+                        e.currentTarget.style.borderColor = 'rgba(192, 132, 252, 0.2)';
+                        e.currentTarget.style.color = '#cbd5e1';
+                      }
+                    }}
+                  >
+                    {cat.label}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Products Grid */}
@@ -302,16 +399,210 @@ export default function Home() {
                 border: '1px dashed rgba(192, 132, 252, 0.3)'
               }}
             >
-              <p style={{ color: '#cbd5e1', fontSize: '1.1rem' }}>No products match your search.</p>
+              <p style={{ color: '#cbd5e1', fontSize: '1.1rem' }}>No products match your search or filter.</p>
               <button
-                onClick={() => setSearchQuery('')}
+                onClick={() => {
+                  setSearchQuery('');
+                  setSelectedCategory('all');
+                }}
                 className="btn btn-secondary btn-sm"
                 style={{ marginTop: '1rem' }}
               >
-                Clear Search
+                Reset Filters
               </button>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* 3. NEW DEDICATED GIFTING & LIFESTYLE STUDIO SECTION */}
+      <section
+        id="gifting"
+        style={{
+          padding: '5.5rem 0',
+          position: 'relative',
+          borderTop: '1px solid rgba(244, 114, 182, 0.25)',
+          background: 'linear-gradient(180deg, rgba(26, 17, 56, 0.6) 0%, rgba(14, 10, 31, 0.85) 100%)'
+        }}
+      >
+        {/* Subtle decorative pink glow */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '20%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '600px',
+            height: '350px',
+            borderRadius: '50%',
+            background: 'radial-gradient(circle, rgba(244, 114, 182, 0.08) 0%, transparent 70%)',
+            filter: 'blur(60px)',
+            pointerEvents: 'none',
+            zIndex: 0
+          }}
+        />
+
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              textAlign: 'center',
+              marginBottom: '3rem'
+            }}
+          >
+            <span
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                padding: '0.35rem 1rem',
+                borderRadius: '9999px',
+                background: 'linear-gradient(90deg, rgba(244, 114, 182, 0.2) 0%, rgba(192, 132, 252, 0.2) 100%)',
+                border: '1px solid rgba(244, 114, 182, 0.45)',
+                color: '#fbcfe8',
+                fontSize: '0.8rem',
+                fontWeight: '700',
+                letterSpacing: '0.06em',
+                textTransform: 'uppercase',
+                marginBottom: '0.85rem',
+                boxShadow: '0 0 20px rgba(244, 114, 182, 0.2)'
+              }}
+            >
+              <Gift size={15} color="#f472b6" />
+              Special Gifting &amp; Lifestyle Studio
+            </span>
+
+            <h2
+              style={{
+                fontSize: 'clamp(2rem, 4.5vw, 3rem)',
+                marginBottom: '0.85rem',
+                letterSpacing: '-0.01em'
+              }}
+            >
+              Curated <span className="text-gradient">Gifting &amp; Home Essentials</span>
+            </h2>
+
+            <p style={{ color: '#cbd5e1', fontSize: '1.02rem', maxWidth: '720px', lineHeight: 1.7 }}>
+              Discover our delightful collection of Beauty Bombay Dyeing king-size bed covers, 3D kids chest bags, handmade canvas everyday totes, thermal insulated lunch boxes, and mirror lipstick keychains.
+            </p>
+
+            {/* Bulk Order & Return Gift Callout Banner */}
+            <div
+              style={{
+                marginTop: '1.75rem',
+                padding: '0.85rem 1.4rem',
+                borderRadius: '16px',
+                background: 'rgba(255, 255, 255, 0.04)',
+                border: '1px dashed rgba(244, 114, 182, 0.4)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: '0.75rem',
+                fontSize: '0.88rem'
+              }}
+            >
+              <span style={{ color: '#fde047', fontWeight: '700' }}>🎁 Bulk Orders &amp; Return Gifts:</span>
+              <span style={{ color: '#e2e8f0' }}>Chest bags, tote bags, pouches &amp; soap hampers available for bulk ordering.</span>
+              <a
+                href={BRAND_INFO.whatsappGroupLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: '#4ade80',
+                  fontWeight: '700',
+                  textDecoration: 'underline',
+                  cursor: 'pointer'
+                }}
+              >
+                DM for Bulk Pricing &rarr;
+              </a>
+            </div>
+
+            {/* Gifting Subcategory Tabs */}
+            <div
+              className="category-pills"
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: '0.6rem',
+                marginTop: '1.75rem',
+                maxWidth: '960px'
+              }}
+            >
+              {giftingSubCategories.map((sub) => {
+                const isActive = giftingTab === sub.id;
+                return (
+                  <button
+                    key={sub.id}
+                    onClick={() => setGiftingTab(sub.id)}
+                    style={{
+                      padding: '0.45rem 1.15rem',
+                      borderRadius: '9999px',
+                      fontSize: '0.84rem',
+                      fontWeight: isActive ? '700' : '500',
+                      cursor: 'pointer',
+                      border: isActive ? '1.5px solid #f472b6' : '1px solid rgba(192, 132, 252, 0.2)',
+                      background: isActive ? 'linear-gradient(135deg, #f472b6 0%, #c084fc 100%)' : 'rgba(20, 14, 46, 0.8)',
+                      color: isActive ? '#110d24' : '#cbd5e1',
+                      boxShadow: isActive ? '0 0 20px rgba(244, 114, 182, 0.4)' : 'none',
+                      transition: 'all 0.2s ease'
+                    }}
+                  >
+                    {sub.label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Gifting Products Grid */}
+          <div
+            className="products-grid"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 280px), 1fr))',
+              gap: '2rem'
+            }}
+          >
+            {giftingProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          {/* Bottom Custom Gifting CTA Box */}
+          <div
+            style={{
+              marginTop: '4rem',
+              padding: '2rem',
+              borderRadius: '20px',
+              background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(147, 51, 234, 0.15) 50%, rgba(244, 114, 182, 0.1) 100%)',
+              border: '1px solid rgba(244, 114, 182, 0.35)',
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '1.5rem'
+            }}
+          >
+            <div>
+              <h3 style={{ fontSize: '1.35rem', color: '#f8fafc', marginBottom: '0.4rem' }}>
+                Planning a Wedding, Birthday Party or Corporate Event?
+              </h3>
+              <p style={{ color: '#cbd5e1', fontSize: '0.9rem' }}>
+                Create customized gift hampers with personalized packaging, custom printed cards, and special bulk wholesale prices.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
+              <WhatsAppButton text="Inquire for Gift Hampers" size="md" />
+              <a href={`tel:${BRAND_INFO.phone}`} className="btn btn-secondary btn-sm">
+                Call {BRAND_INFO.phone}
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

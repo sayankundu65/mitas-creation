@@ -270,7 +270,7 @@ export default function ProductCard({ product }) {
           </span>
         </div>
 
-        {/* Mini Policy Tag */}
+        {/* Mini Policy Tag & Bulk Order Badge */}
         <div
           style={{
             fontSize: '0.72rem',
@@ -285,8 +285,12 @@ export default function ProductCard({ product }) {
             marginTop: '0.1rem'
           }}
         >
-          <span style={{ color: '#86efac', fontWeight: '600' }}>🚚 Free Shipping on 2+</span>
-          <span style={{ color: '#fca5a5', fontWeight: '600' }}>Prepaid (No COD)</span>
+          {product.bulkOrderAvailable ? (
+            <span style={{ color: '#fde047', fontWeight: '700' }}>⚡ DM for Bulk Orders</span>
+          ) : (
+            <span style={{ color: '#86efac', fontWeight: '600' }}>🚚 Free Shipping on 2+</span>
+          )}
+          <span style={{ color: '#fca5a5', fontWeight: '600' }}>Prepaid Only</span>
         </div>
 
         {/* Action Buttons */}

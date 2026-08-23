@@ -1,11 +1,209 @@
-// 19 Exclusive Boutique Product Listings with Verified User Descriptions
 export const PRODUCTS = [
-  // 1. TOP LISTING: M-GLOW HANGING SOAP
+  // 1. Bombay Dyeing Bed Cover (King Size 7x8 ft)
+  {
+    "id": "bombay-dyeing-king-bed-cover",
+    "name": "Beauty by Bombay Dyeing King-Size Bed Cover with 2 Pillow Covers",
+    "category": "bedsheets",
+    "isGifting": true,
+    "price": 1250,
+    "originalPrice": 1999,
+    "tag": "Bestseller Bed Cover",
+    "rating": 5.0,
+    "reviewsCount": 48,
+    "images": [
+      "/Bombay Dying Bedsheets/WhatsApp Image 2026-08-20 at 12.47.43 PM.jpeg",
+      "/Bombay Dying Bedsheets/WhatsApp Image 2026-08-20 at 12.47.43 PM (1).jpeg",
+      "/Bombay Dying Bedsheets/WhatsApp Image 2026-08-20 at 12.47.43 PM (2).jpeg"
+    ],
+    "shortDesc": "Upgrade your bedroom with the elegance of the Beauty Bombay Dyeing Bed Cover (7x8 ft) crafted with durable stitching, soft breathable fabric, and two matching pillow covers.",
+    "fullDesc": "Upgrade your bedroom with the elegance of the Beauty Bombay Dyeing Bed Cover, crafted to bring comfort, style, and durability together. Designed for a perfect fit on king-size beds (7x8 ft), with two pillow covers, this bed cover adds a refined and luxurious touch to your space.\n\nMade from premium-quality fabric, it offers a soft, smooth feel while being breathable and easy to maintain. The beautiful design and vibrant colors enhance your room’s aesthetic, making it ideal for both everyday use and special occasions.\n\nDurable stitching ensures long-lasting use, while the lightweight yet cozy texture provides year-round comfort. Easy to wash and maintain, this bed cover is a perfect blend of practicality and sophistication.\n\nSize: King Size (7x8 ft)\n\nFeatures: Soft fabric, elegant design, durable, easy care\n\nTransform your bedroom into a stylish retreat with Beauty by Bombay Dyeing.",
+    "details": {
+      "brand": "Beauty by Bombay Dyeing",
+      "size": "King Size (7 x 8 ft / 84 x 96 inches)",
+      "inclusions": "1 King Size Bed Cover + 2 Matching Pillow Covers",
+      "fabric": "Premium High-Thread-Count Glace / Soft Cotton Blend",
+      "texture": "Soft, smooth, breathable & year-round cozy texture",
+      "durability": "Durable reinforced stitching for long-lasting use",
+      "care": "Machine / Hand Wash Safe & Easy Care",
+      "shippingNotice": "Price: ₹1,250 (Free Shipping on buying any 2 articles)"
+    },
+    "sizes": [
+      "King Size (7x8 ft) + 2 Pillow Covers"
+    ],
+    "colors": [
+      { "name": "Chocolate Mocha Brown", "hex": "#451a03" },
+      { "name": "Midnight Royal Navy", "hex": "#1e293b" },
+      { "name": "Deep Royal Plum Purple", "hex": "#581c87" }
+    ]
+  },
+
+  // 2. Children Cartoon Crossbody Chest Bag
+  {
+    "id": "children-cartoon-crossbody-chest-bag",
+    "name": "Children Cartoon 3D Embossed Crossbody Chest Bag & Waist Pouch",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Return Gifts",
+    "price": 250,
+    "originalPrice": 450,
+    "tag": "Kids Favorite & Return Gifts",
+    "rating": 4.9,
+    "reviewsCount": 54,
+    "images": [
+      "/children chest bag/WhatsApp Image 2026-08-21 at 1.10.01 PM.jpeg",
+      "/children chest bag/WhatsApp Image 2026-08-21 at 1.10.00 PM.jpeg"
+    ],
+    "shortDesc": "Vibrant 3D embossed cartoon kids chest bag & sling pouch with adjustable strap and waterproof finish. Best for kids outings and birthday return gifts (DM for Bulk Orders).",
+    "fullDesc": "Make outings fun and stylish for your little ones with our high-demand Children Cartoon 3D Crossbody Chest Bag!\n\nFeaturing beloved superhero and cartoon character motifs (including Spiderman, Elsa & Unicorn, Kuromi, Iron Man, Captain America, and Football Sports), this chest bag is crafted with a lightweight, water-resistant shell and durable zip compartments.\n\nDesigned with an ergonomic wide adjustable strap that fits toddlers to growing kids comfortably across the chest or over the shoulder. Perfect for holding snacks, pocket money, small toys, stationery, and travel essentials.\n\nIdeal for:\n• Everyday fun, daycare, school picnics & park visits\n• Birthday return gifts & party favor hampers (Special Bulk Pricing Available!)\n\nPrice: ₹250/- only | DM for Bulk Orders & Special Hamper Discounts.",
+    "details": {
+      "type": "Children 3D Embossed Crossbody Chest / Waist Bag",
+      "material": "Durable Lightweight Water-Resistant Oxford Canvas & EVA Shell",
+      "strap": "Adjustable Comfort Crossbody Strap with Quick Snap Buckle",
+      "characters": "Spiderman, Elsa Unicorn, Kuromi Baby, Iron Man, Captain America, Football",
+      "compartments": "Smooth zipper main pocket + inner storage organizer",
+      "bulkDiscount": "Special Bulk Order Discounts Available (DM for Bulk Orders)",
+      "shippingNotice": "Price: ₹250 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Children Cartoon Chest Bag"
+    },
+    "sizes": [
+      "Standard Kids Size (Approx 8\" x 5.5\")"
+    ],
+    "colors": [
+      { "name": "Spiderman Hero (Red/Blue)", "hex": "#dc2626" },
+      { "name": "Elsa Magical Unicorn (Lilac/Pink)", "hex": "#c084fc" },
+      { "name": "Kuromi Sweet Baby (Lavender)", "hex": "#a855f7" },
+      { "name": "Iron Man Marvel (Black/Gold)", "hex": "#991b1b" },
+      { "name": "Captain America (Royal Blue)", "hex": "#2563eb" },
+      { "name": "Sports Football (Cobalt Blue)", "hex": "#1d4ed8" }
+    ]
+  },
+
+  // 3. Aesthetic Handcrafted Canvas Everyday Tote Bag
+  {
+    "id": "aesthetic-handcrafted-canvas-tote-bag",
+    "name": "Aesthetic Handcrafted Canvas Everyday Tote Bag",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Return Gifts",
+    "price": 250,
+    "originalPrice": 499,
+    "tag": "Eco Trend & Bulk Favorite",
+    "rating": 4.9,
+    "reviewsCount": 62,
+    "images": [
+      "/Tote Bags/WhatsApp Image 2026-08-21 at 1.08.58 PM.jpeg",
+      "/Tote Bags/WhatsApp Image 2026-08-21 at 1.08.59 PM.jpeg",
+      "/Tote Bags/WhatsApp Image 2026-08-21 at 1.08.59 PM (1).jpeg"
+    ],
+    "shortDesc": "Eco-friendly pure cotton canvas tote bag with artisan mirror mandala and quirky modern graphic prints. Spacious, durable, and stylish for college, shopping & gifting (DM for Bulk Orders).",
+    "fullDesc": "Embrace sustainable chic with our Aesthetic Handcrafted Canvas Everyday Tote Bags! Beautifully crafted from heavy-duty pure cotton canvas, these tote bags combine timeless artistic craftsmanship with contemporary quirky flair.\n\nChoose between exquisite handcrafted mirror-work mandala embroideries or trendy graphic prints (such as Red Panda 'Selective Social', 'Life is Better With a Dog', Sunflower 'Be a Sunflower', Mandala Bloom, Butterfly, and Cute Cat designs).\n\nKey Highlights:\n• Roomy single compartment that effortlessly holds books, tablets, water bottles, and daily shopping\n• Sturdy reinforced dual shoulder straps for comfortable all-day carrying\n• Washable, biodegradable, and built to last\n\nPrice: ₹250/- only | Special customized prints and bulk discounts available on inquiry.\nDM for Bulk Orders & Event Gifting!",
+    "details": {
+      "type": "Heavy-Duty Canvas Everyday Tote Bag",
+      "material": "100% Eco-Friendly Pure Cotton Canvas",
+      "printsAndArt": "Handcrafted Mirror Mandala & High-Definition Graphic Prints",
+      "handle": "Reinforced Dual Shoulder Carry Straps (Comfortable 10\" Drop)",
+      "weightCapacity": "Can hold 5 to 7 kg weight easily",
+      "washCare": "Hand / Machine Washable in Cold Water",
+      "bulkDiscount": "Available for Corporate, College Events & Bulk Gifting (DM for Bulk Orders)",
+      "inclusions": "1 Aesthetic Canvas Tote Bag"
+    },
+    "sizes": [
+      "Spacious Standard (15\" x 15\")"
+    ],
+    "colors": [
+      { "name": "White Mirror Mandala", "hex": "#f8fafc" },
+      { "name": "Red Panda Selective Social", "hex": "#ea580c" },
+      { "name": "Life Is Better With a Dog", "hex": "#b45309" },
+      { "name": "Sunflower World", "hex": "#eab308" },
+      { "name": "Blue Mandala Bloom", "hex": "#0284c7" },
+      { "name": "Denim Butterfly", "hex": "#1e40af" }
+    ]
+  },
+
+  // 4. Premium Insulated Thermal Multi-Layer Lunch Box Set
+  {
+    "id": "premium-insulated-thermal-lunch-box",
+    "name": "Premium Insulated Thermal Multi-Layer Lunch Box with Carrier Bag",
+    "category": "gifting",
+    "isGifting": true,
+    "price": 600,
+    "originalPrice": 999,
+    "tag": "Daily Essential & Gifting",
+    "rating": 4.9,
+    "reviewsCount": 37,
+    "images": [
+      "/premium lunch box/WhatsApp Image 2026-08-21 at 1.12.35 PM.jpeg",
+      "/premium lunch box/WhatsApp Image 2026-08-21 at 1.12.36 PM.jpeg"
+    ],
+    "shortDesc": "Modern thermal insulated lunch carrier bag with multi-layer food-safe containers. Keeps meals warm, fresh, and spill-free for school, college & office.",
+    "fullDesc": "Upgrade your daily dining experience with our Premium Insulated Thermal Lunch Box Set. Engineered with advanced multi-layer thermal insulation and paired with high-grade food-safe containers, this lunch set keeps your meals piping hot, crisp, and delicious for hours.\n\nDesigned for modern professionals, students, and travelers, the stylish carrier tote bag is crafted from water-repellent textured fabric with secure zippered compartments, an exterior cutlery pocket, and reinforced soft padded handles.\n\nWhy you'll love it:\n• Multi-tier food-grade containers with 100% airtight & leakproof locking lids\n• High-density thermal insulation lining prevents temperature loss and is wipe-clean easy\n• Compact, sleek, and minimalist design available in executive shades (Navy, Steel Grey, Midnight Black)\n• An exceptionally thoughtful and practical gift for birthdays, corporate welcomes, and loved ones.\n\nPrice: ₹600/- only.",
+    "details": {
+      "type": "Thermal Insulated Lunch Bag + Multi-Container Box Set",
+      "material": "Water-Repellent Textured Canvas + Food-Safe BPA-Free / Stainless Steel Containers",
+      "insulation": "High-Density Thermal Foil Lining (Maintains temperature 4-6 hours)",
+      "features": "Airtight leakproof locks, exterior utensil pocket, padded carry handles",
+      "usage": "Office, Workplaces, College, School & Travel Gifting",
+      "care": "Containers Dishwasher-Safe; Bag Wipe-Clean with Damp Cloth",
+      "shippingNotice": "Price: ₹600 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Premium Insulated Carrier Bag + Multi-Tier Container Set"
+    },
+    "sizes": [
+      "Executive Compact (Standard Lunch Set)"
+    ],
+    "colors": [
+      { "name": "Executive Navy Blue", "hex": "#1e3a8a" },
+      { "name": "Urban Steel Grey", "hex": "#475569" },
+      { "name": "Midnight Jet Black", "hex": "#0f172a" }
+    ]
+  },
+
+  // 5. Chic Leatherette Lipstick Holder Keychain with Mirror & Charm
+  {
+    "id": "chic-leatherette-lipstick-keychain-mirror",
+    "name": "Chic Leatherette Lipstick Holder Keychain with Pocket Mirror & Charm",
+    "category": "gifting",
+    "isGifting": true,
+    "price": 200,
+    "originalPrice": 350,
+    "tag": "Pocket Luxury & Best Gifting",
+    "rating": 5.0,
+    "reviewsCount": 71,
+    "images": [
+      "/lipstick keychain/WhatsApp Image 2026-08-21 at 1.10.35 PM.jpeg",
+      "/lipstick keychain/WhatsApp Image 2026-08-21 at 1.10.35 PM (1).jpeg"
+    ],
+    "shortDesc": "Adorable faux-leather mini lipstick sleeve keychain featuring a built-in pocket mirror, heart charm, and snap-lock button. Perfect handbag accessory and return gift.",
+    "fullDesc": "Never search for your favorite lipstick or pocket mirror in the bottom of your bag again! Our Chic Leatherette Lipstick Holder Keychain is the ultimate blend of cuteness, luxury, and everyday functionality.\n\nCrafted from premium soft PU leather with gold-tone hardware, each holder features a secure snap-button flap and includes a matching heart-shaped pocket mirror charm for on-the-go beauty touch-ups anytime, anywhere.\n\nKey Highlights:\n• Fits standard sized lipsticks, lip balms, roll-on perfumes, wireless earbud cases, or keys\n• Includes a sturdy metal carabiner clip to attach seamlessly to your handbag, backpack, or keys\n• Built-in heart charm mirror with crystal clear reflection\n• An enchanting choice for bridesmaid gifts, birthday return gifts, party hampers, and everyday pocket luxury.\n\nPrice: ₹200/- only | Available in dreamy pastel tones.",
+    "details": {
+      "type": "Lipstick Holder Keychain with Mirror & Charm",
+      "material": "High-Quality Soft PU Faux Leather + Gold-Toned Alloy Metal",
+      "mirror": "Heart-Shaped Pocket Mirror Attached with Golden Chain",
+      "closure": "Sturdy Metal Snap-Lock Button",
+      "fits": "Standard Lipsticks, Balms, USB Keys, Small Essentials",
+      "giftingFavorite": "Top pick for return gifts, bridesmaid hampers & festive giveaways",
+      "shippingNotice": "Price: ₹200 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Leatherette Lipstick Pouch + 1 Heart Mirror Charm + 1 Carabiner Clip"
+    },
+    "sizes": [
+      "Universal Fit (Approx 3.5\" x 1.2\")"
+    ],
+    "colors": [
+      { "name": "Blush Pastel Pink", "hex": "#f472b6" },
+      { "name": "Lilac Lavender Purple", "hex": "#c084fc" },
+      { "name": "Caramel Toffee Brown", "hex": "#b45309" }
+    ]
+  },
+
+  // 6. TOP LISTING: M-GLOW HANGING SOAP
   {
     "id": "m-glow-organik-hanging-soap",
     "name": "M-GLOW Organik Handmade Hanging Soap",
-    "price": 199,
-    "originalPrice": 349,
+    "category": "soaps",
+    "isGifting": true,
+    "price": 250,
+    "originalPrice": 500,
     "tag": "New Launch",
     "rating": 5.0,
     "reviewsCount": 46,
@@ -24,13 +222,13 @@ export const PRODUCTS = [
     "shortDesc": "Artisanal 100% handmade plant-based hanging soaps enriched with pure essential oils, natural herbs, and an innovative rope loop hanging design.",
     "fullDesc": "Elevate your daily bathing ritual with Organik Handmade Hanging Soaps — a perfect blend of nature, design, and functionality. Thoughtfully crafted in small batches, these artisanal soaps are made using plant-based oils like coconut and olive, enriched with pure essential oils, natural herbs, and gentle colorants. Free from harsh chemicals, they cleanse your skin while keeping it soft, nourished, and refreshed.\n\nWhat sets these soaps apart is their innovative hanging design. Each bar comes with a sturdy rope loop, allowing you to hang it in your shower or near your sink. This not only adds a minimal, spa-like aesthetic to your space but also helps the soap dry faster, last longer, and stay mess-free.\n\nIndulge your senses with a range of natural fragrances:\n• Lavender for calm and relaxation\n• Citrus for a fresh, energizing boost\n• Rose for a soft floral touch\n• Mint/Eucalyptus for a cooling, revitalizing feel\n\nEvery soap is a unique piece of art, featuring embedded petals, herbal textures, and creative fruit-inspired shapes like lychee, grapes, and banana — making each bar visually delightful.\n\nPerfect as a premium self-care essential, a thoughtful gift, or a stylish bathroom accent, Organik Hanging Soaps bring together beauty, sustainability, and everyday luxury in one simple product.\n\nWhy you’ll love it:\n• 100% handmade & natural\n• Skin-friendly and eco-conscious\n• Long-lasting with hanging design\n• Aromatherapy-inspired fragrances\n• Beautiful, gift-worthy aesthetics\n\nTurn an everyday routine into a refreshing, sensory experience with Organik.",
     "details": {
-      "type": "100% Handmade & Natural Organik Soap",
+      "type": "100% Handmade & Natural Organik Soap 200 Gm",
       "ingredients": "Plant-based Coconut & Olive Oils, Pure Essential Oils, Natural Herbs",
       "keyFeature": "Innovative Sturdy Rope Loop Hanging Design (Dries faster, lasts longer, mess-free)",
       "fragrances": "Lavender, Citrus, Rose, Mint / Eucalyptus",
       "shapesAndArt": "Embedded Petals, Herbal Textures & Creative Fruit Shapes (Lychee, Grapes, Banana)",
       "skinFriendly": "Free from harsh chemicals, deeply nourishing & refreshing",
-      "shippingNotice": "Price: ₹199 + Shipping (Minimum 2 pieces required / 2 articles to be bought)",
+      "shippingNotice": "Price: ₹250 + Shipping (Minimum 2 pieces required / 2 articles to be bought)",
       "inclusions": "1 Artisan Handmade Hanging Soap Bar with Loop"
     },
     "sizes": [
@@ -530,6 +728,8 @@ export const PRODUCTS = [
   {
     "id": "5-piece-block-print-bag-combo",
     "name": "5-Piece Hand Block Printed Cotton Bag & Purse Combo Set",
+    "category": "bags",
+    "isGifting": true,
     "price": 1999,
     "originalPrice": 2999,
     "tag": "5-Piece Luxury Set",
@@ -575,6 +775,8 @@ export const PRODUCTS = [
   {
     "id": "jaipuri-quilted-tote-bag-combo",
     "name": "Jaipuri Quilted Pure Cotton Tote Bag with Matching Zipper Pouch",
+    "category": "bags",
+    "isGifting": true,
     "price": 999,
     "originalPrice": 1499,
     "tag": "Bestseller Combo",
@@ -638,6 +840,10 @@ export const PRODUCTS = [
   {
     "id": "handcrafted-cotton-multi-utility-pouch",
     "name": "Handcrafted Pure Cotton Multi-Utility Zipper Pouch",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Gifting",
     "price": 299,
     "originalPrice": 499,
     "tag": "Gift Favorite",
@@ -704,6 +910,7 @@ export const PRODUCTS = [
   {
     "id": "3-piece-blazer-embroidered-cord-set",
     "name": "3-Piece Blazer Style Designer Embroidered Co-ord Set",
+    "category": "coords",
     "price": 999,
     "originalPrice": 1599,
     "tag": "Exclusive Launch",
