@@ -16,17 +16,19 @@ export default function Home() {
     { id: 'bedsheets', label: '🛏️ Bedsheets & Home' },
     { id: 'gifting', label: '🎁 Gifting & Accessories' },
     { id: 'sarees', label: '🥻 Sarees & Handlooms' },
+    { id: 'mens', label: "👔 Men's Collection" },
     { id: 'coords', label: '✨ Co-ord Sets' },
     { id: 'soaps', label: '🧼 Organic Soaps' }
   ];
 
   const giftingSubCategories = [
     { id: 'all', label: '✨ All Gifting & Essentials' },
-    { id: 'bedsheets', label: '🛏️ Bombay Dyeing Bed Covers' },
+    { id: 'bedsheets', label: '🛏️ Bed Covers & Home' },
+    { id: 'vanity', label: '💄 Vanity Organisers & Mirror' },
     { id: 'kids', label: '🎒 Kids Chest Bags & Favors' },
     { id: 'totes', label: '👜 Canvas Totes & Combos' },
     { id: 'lunchbox', label: '🍱 Insulated Lunch Boxes' },
-    { id: 'keychains', label: '💄 Lipstick Keychains' }
+    { id: 'keychains', label: '🔑 Lipstick Keychains' }
   ];
 
   const filteredProducts = PRODUCTS.filter((product) => {
@@ -39,6 +41,7 @@ export default function Home() {
       (selectedCategory === 'bedsheets' && product.category === 'bedsheets') ||
       (selectedCategory === 'gifting' && product.isGifting) ||
       (selectedCategory === 'sarees' && (product.category === 'sarees' || product.name.toLowerCase().includes('saree'))) ||
+      (selectedCategory === 'mens' && (product.category === 'mens' || product.category === 'men')) ||
       (selectedCategory === 'coords' && product.category === 'coords') ||
       (selectedCategory === 'soaps' && product.category === 'soaps');
 
@@ -48,7 +51,8 @@ export default function Home() {
   const giftingProducts = PRODUCTS.filter((product) => {
     if (!product.isGifting) return false;
     if (giftingTab === 'all') return true;
-    if (giftingTab === 'bedsheets') return product.id === 'bombay-dyeing-king-bed-cover';
+    if (giftingTab === 'bedsheets') return product.category === 'bedsheets' || product.id.includes('bed-cover');
+    if (giftingTab === 'vanity') return product.id === 'digital-mini-makeup-organiser-mirror';
     if (giftingTab === 'kids') return product.id === 'children-cartoon-crossbody-chest-bag';
     if (giftingTab === 'totes') return product.id === 'aesthetic-handcrafted-canvas-tote-bag' || product.category === 'bags';
     if (giftingTab === 'lunchbox') return product.id === 'premium-insulated-thermal-lunch-box';

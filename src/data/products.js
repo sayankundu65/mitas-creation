@@ -1,5 +1,219 @@
 export const PRODUCTS = [
-  // 1. Bombay Dyeing Bed Cover (King Size 7x8 ft)
+  // 1. Digital Mini Makeup Organiser with Mirror
+  {
+    "id": "digital-mini-makeup-organiser-mirror",
+    "name": "Digital Mini Makeup Organiser with Mirror & Smart Storage Compartments",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Return Gifts",
+    "price": 550,
+    "originalPrice": 899,
+    "tag": "Smart Vanity & Gifting",
+    "rating": 5.0,
+    "reviewsCount": 42,
+    "images": [
+      "/Digital Make up organiser with mirror/WhatsApp Video 2026-08-23 at 11.39.42 PM.mp4"
+    ],
+    "shortDesc": "Sleek, travel-ready digital vanity makeup organiser featuring a crystal-clear mirror, multi-slot compartments, and portable handle. Perfect for everyday glam and return gifting (DM for Bulk Orders).",
+    "fullDesc": "The allure of our Digital Mini Makeup Organiser with Mirror lies in its compact elegance, smart storage, and everyday convenience—keeping your daily essentials flawlessly arranged while adding a sophisticated touch of modern style.\n\nDesigned with thoughtful interior partitions, this chic organiser accommodates your lipsticks, skincare minis, jewelry, makeup brushes, and cosmetics without taking up precious desk or luggage space. Its lightweight, space-saving build and secure closure make it your ideal everyday beauty companion.\n\nKey Highlights:\n• Built-in crystal-clear vanity mirror for effortless makeup application and quick on-the-go touch-ups\n• Multi-slot partitioned organizer keeps cosmetics and jewelry organized, dust-free, and accessible\n• Compact, lightweight structure with an ergonomic top handle for easy portability and travel convenience\n• Space-saving design that fits neatly on vanity countertops, dressing tables, or inside carry bags\n• A standout favorite for birthday return gifts, bridal party hampers, and corporate gifting.\n\nPrice: ₹550/- only | DM for Bulk Orders & Customized Gifting Hampers!",
+    "details": {
+      "type": "Digital Mini Makeup Vanity Box with Mirror",
+      "mirror": "High-Definition Built-in Vanity Mirror",
+      "compartments": "Multi-Slot Partitioned Storage for Lipsticks, Creams & Accessories",
+      "portability": "Ergonomic Carry Handle & Compact Space-Saving Form Factor",
+      "idealFor": "Daily Beauty Routine, Travel Organizer, Birthday Return Gifts & Hampers",
+      "bulkDiscount": "Available for Bulk Gifting & Event Hampers (DM for Orders)",
+      "shippingNotice": "Price: ₹550 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Digital Mini Makeup Organiser with Built-in Mirror"
+    },
+    "sizes": [
+      "Compact Travel Size (All-in-One Vanity)"
+    ],
+    "colors": [
+      { "name": "Blush Pastel Pink", "hex": "#f472b6" },
+      { "name": "Ivory Pearl White", "hex": "#f8fafc" },
+      { "name": "Mint Sage Pastel", "hex": "#6ee7b7" }
+    ]
+  },
+
+  // 2. Elegant 7D Floral Print King-Size Bed Cover
+  {
+    "id": "7d-floral-print-king-bed-cover",
+    "name": "Elegant 7D Floral Print King-Size Bed Cover with 2 Pillow Covers",
+    "category": "bedsheets",
+    "isGifting": true,
+    "price": 750,
+    "originalPrice": 1299,
+    "tag": "Luxury 7D Reactive Print",
+    "rating": 5.0,
+    "reviewsCount": 51,
+    "images": [
+      "/Elegant 7D Floral Print Bed Cover/WhatsApp Image 2026-08-24 at 8.34.58 PM.jpeg",
+      "/Elegant 7D Floral Print Bed Cover/WhatsApp Image 2026-08-24 at 8.34.58 PM (1).jpeg",
+      "/Elegant 7D Floral Print Bed Cover/WhatsApp Image 2026-08-24 at 8.34.59 PM.jpeg",
+      "/Elegant 7D Floral Print Bed Cover/WhatsApp Image 2026-08-24 at 8.34.59 PM (1).jpeg"
+    ],
+    "shortDesc": "Exquisite 7D floral print king-size bed cover set with 2 matching pillow covers. Lifelike botanical depth, ultra-soft touch, and vibrant lasting colors.",
+    "fullDesc": "Bring your master bedroom to life with our Elegant 7D Floral Print King-Size Bed Cover Set. The true allure of 7D floral print lies in its dimensional depth, meticulous detail, and timeless charm—infusing your sleeping space with the fresh vibrancy of blooming botanical gardens.\n\nCrafted from a premium high-thread-count soft cotton blend, this bed cover delivers a plush, velvety-smooth touch while providing exceptional durability and non-fade color longevity.\n\nKey Highlights:\n• Advanced 7D reactive printing creates rich, multilayered floral visuals with stunning clarity\n• High-thread-count ultra-soft cotton blend fabric ensures cozy, skin-safe, year-round comfort\n• Generous king-size dimensions provide comprehensive edge-to-edge coverage over large beds\n• Includes 2 matching designer pillow covers for a cohesive luxury bedroom ensemble\n• Machine washable, wrinkle-resistant, and built for lasting softness wash after wash.\n\nPackage Includes: 1 King-Size Bed Cover + 2 Matching Pillow Covers\nPrice: ₹750/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "7D High-Definition Floral Print King-Size Bed Cover",
+      "size": "King / Double Bed Size (Generous Full Coverage)",
+      "fabric": "Premium High-Thread-Count Micro-Cotton / Glace Cotton Blend",
+      "printTechnology": "7D Advanced Reactive Botanical Print (Fade-Resistant & Non-Bleed)",
+      "touchAndFeel": "Ultra-Soft, Smooth, Breathable & Skin-Friendly",
+      "washCare": "Machine Wash / Hand Wash in Cold Water; Fast Color Guarantee",
+      "shippingNotice": "Price: ₹750 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 King Bed Cover + 2 Matching Designer Pillow Covers"
+    },
+    "sizes": [
+      "King Size (Full Coverage) + 2 Pillow Covers"
+    ],
+    "colors": [
+      { "name": "Vibrant Sunflower & Autumn Bloom", "hex": "#d97706" },
+      { "name": "Pastel Rose & Flora Multi", "hex": "#f43f5e" }
+    ]
+  },
+
+  // 3. Pure Cotton Blend Indigo Hand-Block Saree
+  {
+    "id": "pure-cotton-blend-indigo-saree",
+    "name": "Pure Cotton Blend Indigo Hand-Block Saree with Zari Border",
+    "category": "sarees",
+    "price": 650,
+    "originalPrice": 1099,
+    "tag": "Timeless Indigo",
+    "rating": 4.9,
+    "reviewsCount": 37,
+    "images": [
+      "/Indigo Saree/WhatsApp Image 2026-08-24 at 8.47.46 PM.jpeg",
+      "/Indigo Saree/WhatsApp Image 2026-08-24 at 8.47.47 PM.jpeg",
+      "/Indigo Saree/WhatsApp Image 2026-08-24 at 8.47.47 PM (1).jpeg",
+      "/Indigo Saree/WhatsApp Image 2026-08-24 at 8.47.48 PM.jpeg",
+      "/Indigo Saree/WhatsApp Image 2026-08-24 at 8.47.48 PM (1).jpeg",
+      "/Indigo Saree/WhatsApp Image 2026-08-24 at 8.47.49 PM.jpeg"
+    ],
+    "shortDesc": "Deep royal indigo pure cotton blend saree adorned with authentic botanical block prints, an ornamental pallu, and an elegant zari border.",
+    "fullDesc": "The beauty of an Indigo saree lies in its deep, rich hue and timeless elegance—effortlessly blending age-old Indian handloom tradition with a graceful, modern charm.\n\nCrafted in a premium pure cotton blend, this saree offers an airy, feather-soft drape that feels wonderfully breathable on the skin. Detailed with authentic artisanal block motifs and framed with a delicate zari accent border, it is designed for women who cherish understated luxury.\n\nKey Highlights:\n• Rich, authentic Indigo blue hues with traditional handcrafted botanical & geometric motifs\n• Premium breathable cotton blend fabric ensuring all-day ease, comfort, and crisp structure\n• Finished with a gleaming zari border and ornate pallu for a touch of festive refinement\n• Includes running unstitched blouse piece for a complete matching silhouette.\n\nPrice: ₹650/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Premium Pure Cotton Blend",
+      "craft": "Traditional Indigo Hand-Block / Dabu Print Artistry",
+      "border": "Fine Woven Golden / Green Zari Accent Border",
+      "length": "5.5 Meters Saree + Running Blouse Fabric",
+      "drape": "Lightweight, Soft, Skin-Friendly & Breathable",
+      "occasion": "Daily Office Wear, Cultural Gatherings, Puja Festivities & Casual Day-outs",
+      "care": "Gentle Hand Wash in Cold Water (Wash separately for first few washes)",
+      "inclusions": "1 Pure Cotton Blend Indigo Saree with Blouse Fabric"
+    },
+    "sizes": [
+      "5.5m Saree + Running Blouse"
+    ],
+    "colors": [
+      { "name": "Classic Royal Indigo Blue", "hex": "#1e3a8a" },
+      { "name": "Deep Midnight Indigo & White", "hex": "#1e1b4b" }
+    ]
+  },
+
+  // 4. Men's Pure Cotton Punjabi Kurta with Authentic Ajrak Patchwork
+  {
+    "id": "mens-pure-cotton-ajrak-punjabi-kurta",
+    "name": "Men's Pure Cotton Punjabi Kurta with Authentic Front Ajrak Patchwork",
+    "category": "mens",
+    "price": 750,
+    "originalPrice": 1299,
+    "tag": "Men's Festive Classic",
+    "rating": 5.0,
+    "reviewsCount": 45,
+    "images": [
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.45 PM.jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.45 PM (1).jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.45 PM (2).jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.45 PM (3).jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.46 PM.jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.46 PM (1).jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.46 PM (2).jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.47 PM.jpeg",
+      "/Mens Kurta Cotton/WhatsApp Image 2026-08-24 at 8.43.47 PM (1).jpeg"
+    ],
+    "shortDesc": "Distinguished men's Punjabi kurta crafted in fine breathable cotton, embellished with authentic handcrafted front Ajrakh patchwork, mandarin collar, and side pockets.",
+    "fullDesc": "An absolute masterpiece in ethnic menswear. Our Men's Punjabi Kurta is meticulously tailored from fine-quality, ultra-breathable pure cotton and elevated with authentic handcrafted Ajrakh patchwork along the front chest and cuffs—offering a rich, heritage-inspired look that commands attention with effortless charm.\n\nWhether celebrating Durga Puja, festive Diwali nights, wedding ceremonies, or family get-togethers, this kurta ensures you stay cool, comfortable, and impeccably styled throughout the day.\n\nKey Highlights:\n• 100% fine-grade breathable cotton fabric with a soft, durable weave\n• Eye-catching authentic Ajrakh block-print patchwork on the central placket and sleeve cuffs\n• Classic mandarin/Nehru collar with buttoned neckline and functional dual side slit pockets\n• Tailored regular Punjabi fit that pairs handsomely with pajamas, dhotis, or denim.\n\nPrice: ₹750/- only | Kindly DM for orders, size selection, and full details.",
+    "details": {
+      "fabric": "100% Fine Quality Breathable Pure Cotton",
+      "craft": "Authentic Handcrafted Front Ajrakh Block-Print Patchwork",
+      "collar": "Classic Mandarin / Nehru Collar with Button Placket",
+      "sleeve": "Full Sleeves with Matching Ajrakh Patch Cuffs",
+      "fit": "Comfortable Tailored Festive Punjabi Regular Fit",
+      "pockets": "Dual Side Slit Pockets",
+      "occasion": "Durga Puja, Festive Gatherings, Family Ceremonies & Cultural Events",
+      "care": "Gentle Hand Wash / Machine Wash on Delicate in Cold Water",
+      "shippingNotice": "Price: ₹750 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Men's Pure Cotton Punjabi Kurta"
+    },
+    "sizes": [
+      "M (38)",
+      "L (40)",
+      "XL (42)",
+      "XXL (44)"
+    ],
+    "colors": [
+      { "name": "Midnight Navy Ajrak", "hex": "#0f172a" },
+      { "name": "Pristine Ivory Ethnic Patch", "hex": "#f8fafc" },
+      { "name": "Sage Green Elephant Block", "hex": "#4d7c0f" },
+      { "name": "Charcoal Black Ajrak", "hex": "#18181b" }
+    ]
+  },
+
+  // 5. Men's Pure Cotton Breathable Half-Sleeve Striped Shirt
+  {
+    "id": "mens-pure-cotton-half-sleeve-shirt",
+    "name": "Men's Pure Cotton Breathable Half-Sleeve Striped Shirt",
+    "category": "mens",
+    "price": 450,
+    "originalPrice": 799,
+    "tag": "Summer Cool & Sharp",
+    "rating": 4.9,
+    "reviewsCount": 39,
+    "images": [
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.32 PM.jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.32 PM (1).jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.32 PM (2).jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.33 PM.jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.33 PM (1).jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.33 PM (2).jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.34 PM.jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.34 PM (1).jpeg",
+      "/pure cotton half-sleeve shirt/WhatsApp Image 2026-08-24 at 8.39.34 PM (2).jpeg"
+    ],
+    "shortDesc": "Superfine 100% pure cotton half-sleeve casual shirt with timeless vertical stripes, spread collar, and chest pocket. Supreme lightweight breathability.",
+    "fullDesc": "Elevate your everyday casual style with our Men's Pure Cotton Breathable Half-Sleeve Shirt. The true essence of this shirt lies in its effortless comfort, tactile fine texture, and timeless aesthetic—keeping you pleasantly cool while looking exceptionally sharp.\n\nSpun from superfine pure cotton yarns, the fabric feels feather-light against the skin, making it an indispensable staple for warm weather, weekend brunches, office casuals, and vacation wear.\n\nKey Highlights:\n• 100% pure breathable cotton offering natural moisture absorption and airiness\n• Classic yarn-dyed vertical stripes that provide a slimming, tailored look\n• Features a smart casual spread collar, natural wooden/coconut buttons, and a front chest pocket\n• Versatile styling: pairs seamlessly with trousers, chinos, denim, or casual linen shorts.\n\nPrice: ₹450/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "100% Superfine Pure Breathable Cotton",
+      "pattern": "Yarn-Dyed Classic Vertical Stripes",
+      "collar": "Crisp Casual Spread Collar",
+      "buttons": "Natural Eco Wooden / Coconut Shell Buttons",
+      "sleeves": "Half Sleeves with Reinforced Stitching",
+      "pocket": "Single Functional Front Patch Pocket",
+      "fit": "Smart Casual Regular Fit",
+      "care": "Machine Wash Cold / Gentle Cycle & Easy Ironing",
+      "shippingNotice": "Price: ₹450 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Men's Pure Cotton Half-Sleeve Striped Shirt"
+    },
+    "sizes": [
+      "M (38)",
+      "L (40)",
+      "XL (42)",
+      "XXL (44)"
+    ],
+    "colors": [
+      { "name": "Cobalt Blue & White Stripe", "hex": "#2563eb" },
+      { "name": "Olive Lime & White Stripe", "hex": "#84cc16" },
+      { "name": "Forest Emerald Stripe", "hex": "#15803d" }
+    ]
+  },
+
+  // --- EXISTING FEATURED PRODUCTS ---
+
+  // 6. Bombay Dyeing Bed Cover (King Size 7x8 ft)
   {
     "id": "bombay-dyeing-king-bed-cover",
     "name": "Beauty by Bombay Dyeing King-Size Bed Cover with 2 Pillow Covers",
