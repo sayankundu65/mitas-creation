@@ -13,36 +13,43 @@ export default function Home() {
 
   const categories = [
     { id: 'all', label: '🌟 All Collections' },
-    { id: 'bedsheets', label: '🛏️ Bedsheets & Home' },
-    { id: 'gifting', label: '🎁 Gifting & Accessories' },
     { id: 'sarees', label: '🥻 Sarees & Handlooms' },
+    { id: 'blouses', label: '👚 Designer Blouses' },
+    { id: 'coords', label: '✨ Co-ords & Night Suits' },
+    { id: 'bags', label: '👜 Bags, Slings & Potlis' },
+    { id: 'bedsheets', label: '🛏️ Bedsheets & Home' },
+    { id: 'gifting', label: '🎁 Gifting & Essentials' },
     { id: 'mens', label: "👔 Men's Collection" },
-    { id: 'coords', label: '✨ Co-ord Sets' },
     { id: 'soaps', label: '🧼 Organic Soaps' }
   ];
 
   const giftingSubCategories = [
     { id: 'all', label: '✨ All Gifting & Essentials' },
-    { id: 'bedsheets', label: '🛏️ Bed Covers & Home' },
+    { id: 'potlis', label: '👝 Pearl Potlis & Slings' },
+    { id: 'totes', label: '👜 Bags, Totes & Combos' },
+    { id: 'lunchbox', label: '🍱 Insulated Lunch Boxes' },
     { id: 'vanity', label: '💄 Vanity Organisers & Mirror' },
     { id: 'kids', label: '🎒 Kids Chest Bags & Favors' },
-    { id: 'totes', label: '👜 Canvas Totes & Combos' },
-    { id: 'lunchbox', label: '🍱 Insulated Lunch Boxes' },
-    { id: 'keychains', label: '🔑 Lipstick Keychains' }
+    { id: 'keychains', label: '🔑 Lipstick Keychains' },
+    { id: 'bedsheets', label: '🛏️ Bed Covers & Home' }
   ];
 
   const filteredProducts = PRODUCTS.filter((product) => {
     const query = searchQuery.toLowerCase().trim();
     const matchesQuery = !query || 
       product.name.toLowerCase().includes(query) ||
-      product.shortDesc.toLowerCase().includes(query);
+      product.shortDesc.toLowerCase().includes(query) ||
+      (product.tag && product.tag.toLowerCase().includes(query)) ||
+      (product.category && product.category.toLowerCase().includes(query));
 
     const matchesCategory = selectedCategory === 'all' || 
       (selectedCategory === 'bedsheets' && product.category === 'bedsheets') ||
-      (selectedCategory === 'gifting' && product.isGifting) ||
+      (selectedCategory === 'gifting' && (product.isGifting || product.category === 'gifting')) ||
       (selectedCategory === 'sarees' && (product.category === 'sarees' || product.name.toLowerCase().includes('saree'))) ||
+      (selectedCategory === 'blouses' && (product.category === 'blouses' || product.name.toLowerCase().includes('blouse'))) ||
+      (selectedCategory === 'coords' && (product.category === 'coords' || product.category === 'nightwear' || product.name.toLowerCase().includes('night suit') || product.name.toLowerCase().includes('cord') || product.name.toLowerCase().includes('co-ord'))) ||
+      (selectedCategory === 'bags' && (product.category === 'bags' || product.name.toLowerCase().includes('bag') || product.name.toLowerCase().includes('pouch') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('sling') || product.name.toLowerCase().includes('tote'))) ||
       (selectedCategory === 'mens' && (product.category === 'mens' || product.category === 'men')) ||
-      (selectedCategory === 'coords' && product.category === 'coords') ||
       (selectedCategory === 'soaps' && product.category === 'soaps');
 
     return matchesQuery && matchesCategory;
@@ -52,10 +59,11 @@ export default function Home() {
     if (!product.isGifting) return false;
     if (giftingTab === 'all') return true;
     if (giftingTab === 'bedsheets') return product.category === 'bedsheets' || product.id.includes('bed-cover');
+    if (giftingTab === 'potlis') return product.id === 'handcrafted-pearl-moti-potli-bag' || product.id === 'waterproof-crossbody-mobile-hanging-bag';
     if (giftingTab === 'vanity') return product.id === 'digital-mini-makeup-organiser-mirror';
     if (giftingTab === 'kids') return product.id === 'children-cartoon-crossbody-chest-bag';
-    if (giftingTab === 'totes') return product.id === 'aesthetic-handcrafted-canvas-tote-bag' || product.category === 'bags';
-    if (giftingTab === 'lunchbox') return product.id === 'premium-insulated-thermal-lunch-box';
+    if (giftingTab === 'totes') return product.id === 'aesthetic-handcrafted-canvas-tote-bag' || product.category === 'bags' || product.name.toLowerCase().includes('tote');
+    if (giftingTab === 'lunchbox') return product.id.includes('lunch-box');
     if (giftingTab === 'keychains') return product.id === 'chic-leatherette-lipstick-keychain-mirror';
     return true;
   });
@@ -489,7 +497,7 @@ export default function Home() {
             </h2>
 
             <p style={{ color: '#cbd5e1', fontSize: '1.02rem', maxWidth: '720px', lineHeight: 1.7 }}>
-              Discover our delightful collection of Beauty Bombay Dyeing king-size bed covers, 3D kids chest bags, handmade canvas everyday totes, thermal insulated lunch boxes, and mirror lipstick keychains.
+              Discover our delightful collection of handcrafted pearl potli bags, waterproof mobile slings, insulated thermal lunch boxes, Beauty Bombay Dyeing bed covers, 3D kids chest bags, and canvas totes.
             </p>
 
             {/* Bulk Order & Return Gift Callout Banner */}

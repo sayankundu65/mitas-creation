@@ -1,5 +1,388 @@
 export const PRODUCTS = [
-  // 1. Digital Mini Makeup Organiser with Mirror
+  // ==========================================
+  // --- NEW EXCLUSIVE ARRIVALS (8 PRODUCTS) ---
+  // ==========================================
+
+  // 1. Beautiful Noodle Strap Premium Quality Padded Blouse
+  {
+    "id": "noodle-strap-premium-padded-blouse",
+    "name": "Beautiful Noodle Strap Premium Quality Padded Blouse",
+    "category": "blouses",
+    "isGifting": false,
+    "price": 850,
+    "originalPrice": 1499,
+    "tag": "Premium Padded Comfort",
+    "rating": 5.0,
+    "reviewsCount": 48,
+    "images": [
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.25 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.25 PM (1).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.25 PM (2).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.26 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.26 PM (1).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.26 PM (2).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.27 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.28 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.28 PM (1).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.28 PM (2).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.29 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.29 PM (1).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.29 PM (2).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.30 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.30 PM (1).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.31 PM.jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.31 PM (1).jpeg",
+      "/Noodle Strap Beautiful Premium Blouse/WhatsApp Image 2026-08-25 at 4.42.31 PM (2).jpeg"
+    ],
+    "shortDesc": "Beautifully crafted premium padded noodle strap blouse combining elegance with comfort. Flattering fit with superior finish, ideal for sarees, lehengas, and fusion wear.",
+    "fullDesc": "Beautiful Noodle Strap premium quality padded Blouse – Beautifully Crafted with Premium Padded Comfort.\n\nElegant & Superior Finish:\nA beautifully crafted blouse designed to combine elegance with comfort. Featuring delicate noodle straps and built-in padding, this blouse offers a flattering fit with a premium finish—perfect for both traditional and contemporary styling.\n\nKey Highlights:\n• Delicate noodle straps designed for comfortable, secure shoulder styling\n• Built-in premium padding for a smooth, sculpted, and flattering shape\n• Superior boutique stitch quality and skin-friendly inner lining\n• Ideal for sarees, lehengas, and fusion festive wear.\n\nPrice: ₹850/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Premium Padded Noodle Strap Designer Blouse",
+      "padding": "Built-in Premium Soft Padded Cups",
+      "straps": "Delicate & Sturdy Noodle Straps",
+      "fabric": "High-Grade Rich Fabric with Soft Inner Lining",
+      "fit": "Sculpted Flattering Boutique Fit",
+      "styling": "Ideal for Sarees, Lehengas, and Fusion Wear",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "shippingNotice": "Price: ₹850 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Ready-to-Wear Padded Noodle Strap Blouse"
+    },
+    "sizes": [
+      "34 (Bust)",
+      "36 (Bust)",
+      "38 (Bust)",
+      "40 (Bust)",
+      "42 (Bust) (With Alteration Margins)"
+    ],
+    "colors": [
+      { "name": "Multi-Color Vibrant Designer Palette", "hex": "#ec4899" },
+      { "name": "Classic Maroon & Red", "hex": "#991b1b" },
+      { "name": "Royal Black & Gold Accent", "hex": "#18181b" }
+    ]
+  },
+
+  // 2. Beautiful Pure Cotton Linen Saree
+  {
+    "id": "pure-cotton-linen-saree",
+    "name": "Beautiful Pure Cotton Linen Saree",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1499,
+    "originalPrice": 2299,
+    "tag": "Effortless Elegance",
+    "rating": 5.0,
+    "reviewsCount": 42,
+    "images": [
+      "/Beautiful Pure Cotton Linen Saree/WhatsApp Image 2026-08-25 at 4.48.00 PM.jpeg",
+      "/Beautiful Pure Cotton Linen Saree/WhatsApp Image 2026-08-25 at 4.48.00 PM (1).jpeg",
+      "/Beautiful Pure Cotton Linen Saree/WhatsApp Image 2026-08-25 at 4.48.01 PM.jpeg",
+      "/Beautiful Pure Cotton Linen Saree/WhatsApp Image 2026-08-25 at 4.48.01 PM (1).jpeg"
+    ],
+    "shortDesc": "Experience effortless elegance with this breathable pure cotton linen saree. Lightweight, soft texture with a graceful drape, ideal for all-day comfort and special occasions.",
+    "fullDesc": "Experience the Grace and Beauty of Pure Cotton Linen Sarees.\n\nEffortless Elegance where comfort meets timeless style. Crafted from a breathable cotton-linen blend, this saree offers a soft texture with a graceful drape, making it perfect for both everyday wear and special occasions.\n\nKey Highlights:\n• Made from high-quality cotton linen for a perfect balance of softness and durability\n• Lightweight & Breathable: Keeps you comfortable throughout the day, ideal for all seasons\n• Natural weave with a subtle, sophisticated finish\n• Graceful Drape: Falls beautifully, enhancing the overall silhouette\n• Skin-Friendly: Gentle on the skin, suitable for long wear\n• Perfect for casual outings, office wear, and festive occasions.\n\nPrice: ₹1,499/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "High-Quality Pure Cotton Linen Blend",
+      "weave": "Natural Weave with Subtle Sophisticated Finish",
+      "drape": "Lightweight, Flowing & Breathable Drape",
+      "length": "Approx. 5.5 Meters Saree + Running Blouse Fabric",
+      "occasion": "Casual Outings, Office Wear, Cultural Gatherings & Festive Occasions",
+      "care": "Gentle Hand Wash Separately in Cold Water or Dry Clean Recommended",
+      "shippingNotice": "Price: ₹1,499 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Pure Cotton Linen Saree with Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + Blouse Fabric"
+    ],
+    "colors": [
+      { "name": "Multi Flora Artisan Weave", "hex": "#0284c7" },
+      { "name": "Warm Sunset Coral", "hex": "#ea580c" }
+    ]
+  },
+
+  // 3. Beautiful Premium Muslin Saree
+  {
+    "id": "premium-muslin-saree-rich-look",
+    "name": "Beautiful Premium Muslin Saree",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 2250,
+    "originalPrice": 3499,
+    "tag": "Rich Look & Feather-Light",
+    "rating": 5.0,
+    "reviewsCount": 56,
+    "images": [
+      "/Beautiful Red Muslin Saree/WhatsApp Image 2026-08-25 at 4.53.00 PM.jpeg",
+      "/Beautiful Red Muslin Saree/WhatsApp Image 2026-08-25 at 4.53.00 PM (1).jpeg",
+      "/Beautiful Red Muslin Saree/WhatsApp Image 2026-08-25 at 4.53.01 PM.jpeg"
+    ],
+    "shortDesc": "Gracefully elegant and effortlessly luxurious Muslin saree with ultra-soft texture, feather-light comfort, and rich festive appeal.",
+    "fullDesc": "Product Name: Premium Muslin Saree\n\nTagline: Beauty of Muslin Saree – A Premium, Rich Look\n\nDescription:\nGracefully elegant and effortlessly luxurious, the Muslin Saree is a timeless expression of refined style. Known for its ultra-soft texture and airy feel, this saree drapes beautifully to create a rich, sophisticated look while ensuring all-day comfort.\n\nKey Features:\n• Luxurious Muslin Fabric: Exceptionally soft, lightweight, and breathable\n• Premium Rich Look: Elegant finish that gives a classy and elevated appeal\n• Feather-Light Comfort: Easy to carry for long hours without discomfort\n• Fluid Drape: Falls gracefully, enhancing your silhouette\n• Skin-Friendly Texture: Smooth and gentle on the skin\n• Versatile Styling: Perfect for festive wear, parties, and elegant day outings\n\nFabric & Care:\n• Fabric: Premium Muslin\n• Care: Dry clean recommended to maintain texture and richness\n\nOccasion:\nIdeal for festive occasions, celebrations, parties, and sophisticated gatherings\n\nSaree Length: Approx. 5.5 meters\nBlouse Piece: Included\n\nWhy Choose This Saree:\nA perfect blend of lightness and luxury, the Muslin Saree offers a premium rich look with unmatched comfort—ideal for those who love elegance without effort.\n\nPrice: ₹2,250/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "100% Premium Pure Muslin",
+      "tagline": "Beauty of Muslin Saree – A Premium, Rich Look",
+      "length": "Approx. 5.5 Meters",
+      "blousePiece": "Included (Matching Blouse Fabric)",
+      "feel": "Feather-Light, Ultra-Soft & Airy Drape",
+      "occasion": "Festive Occasions, Celebrations, Parties & Sophisticated Gatherings",
+      "care": "Dry Clean Recommended to Maintain Texture and Richness",
+      "shippingNotice": "Price: ₹2,250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Premium Muslin Saree with Blouse Fabric"
+    },
+    "sizes": [
+      "5.5m Saree + Blouse Fabric"
+    ],
+    "colors": [
+      { "name": "Royal Crimson Red & Floral Motifs", "hex": "#dc2626" },
+      { "name": "Ivory Floral & Gold Accents", "hex": "#fef08a" }
+    ]
+  },
+
+  // 4. Khadi Cotton Saree with Prajakta Floral Motif
+  {
+    "id": "khadi-cotton-saree-prajakta-motif",
+    "name": "Khadi Cotton Saree with Handwoven Prajakta Floral Motif",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 750,
+    "originalPrice": 1299,
+    "tag": "Handwoven Prajakta Motif",
+    "rating": 4.9,
+    "reviewsCount": 47,
+    "images": [
+      "/Khadi cotton hand weaving Prajakta Motive/WhatsApp Image 2026-08-25 at 4.58.43 PM.jpeg",
+      "/Khadi cotton hand weaving Prajakta Motive/WhatsApp Image 2026-08-25 at 4.58.44 PM.jpeg",
+      "/Khadi cotton hand weaving Prajakta Motive/WhatsApp Image 2026-08-25 at 4.58.44 PM (1).jpeg",
+      "/Khadi cotton hand weaving Prajakta Motive/WhatsApp Image 2026-08-25 at 4.58.45 PM.jpeg",
+      "/Khadi cotton hand weaving Prajakta Motive/WhatsApp Image 2026-08-25 at 4.58.45 PM (1).jpeg"
+    ],
+    "shortDesc": "Celebrate handloom heritage with this pure Khadi cotton saree adorned with delicate handwoven Prajakta flower motifs. Pure, breathable comfort.",
+    "fullDesc": "Product Name: Khadi Cotton Saree with Prajakta Floral Motif\n\nTagline: Beauty of Khadi Cotton Saree with Handwoven Prajakta Floral Motif\n\nDescription:\nCelebrate the charm of tradition with this beautifully handcrafted Khadi Cotton Saree, adorned with delicate Prajakta floral motifs. Handwoven with care, this saree reflects the purity of Khadi and the artistry of skilled craftsmanship, offering a graceful blend of heritage, comfort, and timeless beauty.\n\nKey Features:\n• Authentic Khadi Cotton: Naturally breathable, soft, and eco-friendly fabric\n• Handwoven Craftsmanship: Carefully woven by artisans, ensuring uniqueness in every piece\n• Prajakta Floral Motif: Elegant and subtle flower design inspired by nature\n• Lightweight & Comfortable: Ideal for long wear in all seasons\n• Elegant Traditional Appeal: Perfect balance of simplicity and sophistication\n• Skin-Friendly Fabric: Gentle texture suitable for everyday comfort\n\nFabric & Care:\n• Fabric: Pure Khadi Cotton\n• Care: Gentle hand wash separately in cold water or dry clean recommended\n\nOccasion:\nPerfect for daily wear, office wear, cultural events, and casual festive gatherings\n\nSaree Length: Approx. 5.5 meters\nBlouse Piece: Included\n\nWhy Choose This Saree:\nA tribute to Indian handloom heritage, this Khadi Cotton Saree with Prajakta motifs offers understated elegance, breathable comfort, and a naturally rich aesthetic—perfect for those who value authenticity and craftsmanship.\n\nPrice: ₹750/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "100% Pure Authentic Khadi Cotton",
+      "craftsmanship": "Handwoven Artisan Craftsmanship with Prajakta Motifs",
+      "length": "Approx. 5.5 Meters",
+      "blousePiece": "Included",
+      "occasion": "Daily Wear, Office Wear, Cultural Events & Casual Festive Gatherings",
+      "care": "Gentle Hand Wash Separately in Cold Water or Dry Clean Recommended",
+      "shippingNotice": "Price: ₹750 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Pure Khadi Cotton Saree with Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + Blouse Piece"
+    ],
+    "colors": [
+      { "name": "Prajakta Floral Weave Palette", "hex": "#e11d48" },
+      { "name": "Natural Off-White Khadi", "hex": "#fef3c7" }
+    ]
+  },
+
+  // 5. Plus Size Japan Satin Night Suit
+  {
+    "id": "plus-size-japan-satin-night-suit",
+    "name": "Plus Size Japan Satin Night Suit (2XL - 5XL)",
+    "category": "nightwear",
+    "isGifting": true,
+    "price": 1050,
+    "originalPrice": 1799,
+    "tag": "Plus Size Luxury (2XL-5XL)",
+    "rating": 5.0,
+    "reviewsCount": 54,
+    "images": [
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.22 PM.jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.22 PM (1).jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.23 PM.jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.23 PM (1).jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.24 PM.jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.25 PM.jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.26 PM.jpeg",
+      "/Plus Size Japan Satin Night Suit/WhatsApp Image 2026-08-25 at 5.03.26 PM (1).jpeg"
+    ],
+    "shortDesc": "Ultra-smooth, glossy Japan satin plus-size nightwear set tailored for sizes 2XL to 5XL. Silky touch, relaxed silhouette, and ultimate loungewear comfort.",
+    "fullDesc": "Product Name: Plus Size Japan Satin Night Suit\n\nTagline: Premium Quality. Rich Look. Ultimate Comfort.\n\nDescription:\nIndulge in luxurious comfort with our Plus Size Night Suit crafted from premium Japan satin fabric. Designed to offer a smooth, silky feel with a rich, elegant finish, this nightwear set combines style and relaxation perfectly. Tailored for a flattering plus-size fit, it ensures ease of movement while maintaining a sophisticated look.\n\nKey Features:\n• Premium Japan Satin Fabric: Ultra-smooth, soft, and glossy finish for a rich feel\n• Elegant & Luxurious Look: Subtle sheen that enhances the overall appearance\n• Plus Size Comfort Fit: Specially designed for sizes 2XL to 5XL\n• Breathable & Lightweight: Comfortable for all-night wear\n• Skin-Friendly Material: Gentle on the skin with a smooth touch\n• Relaxed Silhouette: Allows easy movement and maximum comfort\n\nSize Range: 2XL | 3XL | 4XL | 5XL\n\nFabric & Care:\n• Fabric: Japan Satin\n• Care: Gentle hand wash or machine wash on delicate cycle; do not wring; low-heat iron if needed\n\nOccasion:\nPerfect for nightwear, lounging, and relaxed home wear\n\nSet Includes: Top & Bottom Night Suit Set\n\nWhy Choose This Night Suit:\nDesigned for both comfort and style, this premium satin night suit offers a rich, elegant look with a soft, luxurious feel—perfect for those who value comfort without compromising on style.\n\nPrice: ₹1,050/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Premium Imported Japan Satin",
+      "setIncludes": "Top & Bottom Night Suit Set",
+      "sizeRange": "2XL | 3XL | 4XL | 5XL (Flattering Plus Size Fit)",
+      "feel": "Silky Smooth, Glossy Sheen & Breathable Lightweight Touch",
+      "occasion": "Nightwear, Lounging, Relaxed Home Wear & Gifting",
+      "care": "Gentle Hand Wash or Machine Wash on Delicate Cycle; Do Not Wring; Low-Heat Iron If Needed",
+      "shippingNotice": "Price: ₹1,050 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Plus Size Satin Top + 1 Matching Pajama Bottom"
+    },
+    "sizes": [
+      "2XL",
+      "3XL",
+      "4XL",
+      "5XL"
+    ],
+    "colors": [
+      { "name": "Luxury Satin Emerald & Floral", "hex": "#047857" },
+      { "name": "Midnight Satin Navy & Rose", "hex": "#1e3a8a" },
+      { "name": "Blush Satin Mauve", "hex": "#db2777" }
+    ]
+  },
+
+  // 6. Waterproof Crossbody Mobile Hanging Sling Bag
+  {
+    "id": "waterproof-crossbody-mobile-hanging-bag",
+    "name": "Waterproof Crossbody Mobile Hanging Sling Bag",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Gifting",
+    "price": 299,
+    "originalPrice": 599,
+    "tag": "Waterproof & Daily Essential",
+    "rating": 4.9,
+    "reviewsCount": 65,
+    "images": [
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.13 PM.jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.13 PM (1).jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.13 PM (2).jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.14 PM.jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.14 PM (1).jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.14 PM (2).jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.15 PM.jpeg",
+      "/Mobile Hanging Bag/WhatsApp Image 2026-08-25 at 6.03.15 PM (1).jpeg"
+    ],
+    "shortDesc": "Waterproof, sleek crossbody mobile sling pouch with adjustable strap and multiple compartments for mobile, cash, keys & cards. Sleek, durable daily essential.",
+    "fullDesc": "Experience the perfect blend of style, convenience, and durability with this amazingly beautiful, well-crafted waterproof mobile sling. Designed for modern lifestyles, this sling bag is not just an accessory—it’s a daily essential.\n\nCrafted with premium-quality materials, the bag offers a sleek and elegant finish that enhances your overall look. The fine stitching and attention to detail reflect superior craftsmanship, ensuring both durability and long-lasting use. Its compact yet functional design makes it ideal for carrying your mobile phone along with other small essentials like cash, cards, keys, and cosmetics.\n\nThe waterproof exterior is one of its standout features, providing reliable protection against rain, spills, and moisture. Whether you’re traveling, shopping, or commuting, your belongings stay safe and dry in all conditions.\n\nDesigned for comfort and ease, the adjustable sling strap allows you to wear it effortlessly across your body or over your shoulder.\n\nPrice: ₹299/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Waterproof Crossbody Mobile Phone Sling Bag",
+      "material": "Premium Waterproof High-Density Oxford / Nylon Fabric",
+      "strap": "Adjustable Sturdy Crossbody Shoulder Sling Strap",
+      "compartments": "Multi-Zipper Slots for Phone, Cards, Cash, Keys & Cosmetics",
+      "waterproof": "100% Water-Repellent Outer Shield",
+      "usage": "Daily Commute, Travel, Shopping, College & Gifting",
+      "shippingNotice": "Price: ₹299 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Waterproof Mobile Sling Bag with Adjustable Strap"
+    },
+    "sizes": [
+      "Universal Mobile Fit (Fits all smartphone sizes)"
+    ],
+    "colors": [
+      { "name": "Urban Black", "hex": "#0f172a" },
+      { "name": "Pastel Pink", "hex": "#f472b6" },
+      { "name": "Navy Blue", "hex": "#1d4ed8" },
+      { "name": "Olive Green", "hex": "#4d7c0f" }
+    ]
+  },
+
+  // 7. Handcrafted Pearl Moti Embellished Potli Bag
+  {
+    "id": "handcrafted-pearl-moti-potli-bag",
+    "name": "Handcrafted Pearl Moti Embellished Potli Bag with Dori Drawstring",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Wedding Favors",
+    "price": 120,
+    "originalPrice": 299,
+    "tag": "Artisan Pearl Work & Royal Favors",
+    "rating": 5.0,
+    "reviewsCount": 92,
+    "images": [
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.57 PM.jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.57 PM (1).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.57 PM (2).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.58 PM.jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.58 PM (1).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.58 PM (2).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.58 PM (3).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.59 PM.jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.07.59 PM (1).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.08.00 PM.jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.08.00 PM (1).jpeg",
+      "/Beautifully handcrafted potli bag/WhatsApp Image 2026-08-25 at 6.08.00 PM (2).jpeg"
+    ],
+    "shortDesc": "Royal handcrafted ethnic potli bag adorned with intricate moti pearl embellishments, satin finish, and decorative dori drawstring. Perfect for weddings, festivities & gifting.",
+    "fullDesc": "Beautifully handcrafted potli bag, designed to reflect grace, tradition, and luxury. Meticulously made by skilled artisans, this potli showcases intricate detailing using premium-quality moti (pearl) embellishments that give it a rich and royal appeal.\n\nThe highlight of this potli is its exquisite pearl work, carefully arranged to create a stunning textured finish that instantly elevates any outfit. Whether paired with ethnic wear like sarees, lehengas, or suits, or used as a statement accessory, it enhances your overall look with effortless charm.\n\nDesigned with an adjustable dori (drawstring), the potli offers both style and practicality. The dori is not only decorative but also ensures secure closure, allowing you to carry your essentials like mobile phone, cash, makeup, and small accessories safely. The smooth and sturdy drawstring makes it easy to open and close while maintaining its elegant structure.\n\nPrice: ₹120/- only | Top choice for wedding return gifts & festive favors (DM for Bulk Orders)!",
+    "details": {
+      "type": "Handcrafted Pearl Moti Ethnic Potli Bag",
+      "embellishment": "Intricate High-Grade Moti (Pearl) & Beaded Artwork",
+      "closure": "Adjustable Decorative Dori Drawstring with Tassels",
+      "fabric": "Rich Satin / Silk Blend Inner Lining",
+      "pairing": "Ethnic Sarees, Lehengas, Suits, Festive & Wedding Attire",
+      "capacity": "Holds Mobile, Cash, Compact Makeup & Small Essentials",
+      "bulkOrders": "Custom Bulk Orders for Weddings & Events (DM for Special Pricing)",
+      "shippingNotice": "Price: ₹120 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Handcrafted Pearl Moti Potli Bag"
+    },
+    "sizes": [
+      "Standard Ethnic Potli (Approx 8.5\" x 8.5\")"
+    ],
+    "colors": [
+      { "name": "Royal Gold Pearl", "hex": "#eab308" },
+      { "name": "Ivory Pearl White", "hex": "#f8fafc" },
+      { "name": "Blush Rose Pearl", "hex": "#f472b6" },
+      { "name": "Festive Crimson Pearl", "hex": "#be123c" }
+    ]
+  },
+
+  // 8. Spacious Insulated Thermal Lunch Box Bag
+  {
+    "id": "spacious-insulated-thermal-lunch-box-bag",
+    "name": "Spacious Insulated Thermal Lunch Box Bag",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Corporate Gifting",
+    "price": 200,
+    "originalPrice": 399,
+    "tag": "Smart Storage & Insulated",
+    "rating": 4.9,
+    "reviewsCount": 68,
+    "images": [
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.09 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.10 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.11 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.11 PM (1).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.12 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.12 PM (1).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.12 PM (2).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.12 PM (3).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.13 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.13 PM (1).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.13 PM (2).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.13 PM (3).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.14 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.14 PM (1).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.14 PM (2).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.15 PM.jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.15 PM (1).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.15 PM (2).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.15 PM (3).jpeg",
+      "/Lunch Box Spacious/WhatsApp Image 2026-08-25 at 6.16.16 PM.jpeg"
+    ],
+    "shortDesc": "Compact yet surprisingly spacious insulated lunch bag with heat-retaining thermal lining. Keeps meals hot/fresh for hours; lightweight and easy to carry for office, school & travel.",
+    "fullDesc": "Don’t let the size fool you—this lunch box bag may look small, but it is surprisingly spacious and thoughtfully designed to meet your everyday needs. Perfect for office, school, travel, or picnics, this bag combines smart storage with a stylish appearance.\n\nCrafted with high-quality materials, this lunch bag offers durability along with a neat and modern look. The compact structure makes it easy to carry, while the well-planned interior provides ample space to fit your lunch box, water bottle, fruits, snacks, and even small containers without feeling bulky.\n\nOne of its key features is its heat-retaining insulated lining, which helps keep your food warm and fresh for longer hours. Whether you pack hot meals or chilled items, the bag maintains the temperature effectively, ensuring your food stays just the way you want it until mealtime.\n\nLightweight and easy to handle, comfortable to carry throughout the day.\n\nPrice: ₹200/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Spacious Thermal Insulated Lunch Box Bag",
+      "insulation": "Heat-Retaining Aluminum Foil Thermal Insulation Lining",
+      "material": "Durable Water-Resistant Canvas Fabric + Reinforced Webbing Handles",
+      "capacity": "Accommodates Lunch Box, Water Bottle, Fruits & Snack Containers",
+      "closure": "Smooth Top Zipper Closure",
+      "idealFor": "Office, College, School, Travel, Picnics & Return Gifting",
+      "care": "Wipe Clean with Damp Cloth / Hand Wash",
+      "shippingNotice": "Price: ₹200 + Shipping (Free shipping on buying any 2 articles)",
+      "inclusions": "1 Spacious Thermal Insulated Lunch Bag"
+    },
+    "sizes": [
+      "Spacious Compact Daily Fit"
+    ],
+    "colors": [
+      { "name": "Charcoal Black & Grey", "hex": "#334155" },
+      { "name": "Denim Blue", "hex": "#1d4ed8" },
+      { "name": "Pastel Pink", "hex": "#f472b6" },
+      { "name": "Mint Green", "hex": "#10b981" }
+    ]
+  },
+
+  // ==========================================
+  // --- PREVIOUS CATALOG HIGHLIGHTS ---
+  // ==========================================
+
+  // 9. Digital Mini Makeup Organiser with Mirror
   {
     "id": "digital-mini-makeup-organiser-mirror",
     "name": "Digital Mini Makeup Organiser with Mirror & Smart Storage Compartments",

@@ -304,11 +304,13 @@ export default function Contact() {
                     }}
                   >
                     <option value="Women's Ethnic / Saree">Women's Ethnic & Sarees</option>
-                    <option value="Cord Sets & Outfits">Cord Sets & Tops</option>
+                    <option value="Designer Blouses">Designer Blouses & Padded Tops</option>
+                    <option value="Nightwear & Loungewear">Plus Size Satin Nightwear & Kaftans</option>
+                    <option value="Bags & Gifting Potlis">Handcrafted Bags, Slings & Pearl Potlis</option>
+                    <option value="Cord Sets & Outfits">Co-ord Sets & Tops</option>
                     <option value="Saree Shapewear & Petticoats">Saree Shapewear & Petticoats</option>
-                    <option value="Nightwear & Kaftan">Nightwear & Kaftan</option>
                     <option value="Men's Collection">Men’s Kurta, Dhoti & Shirts</option>
-                    <option value="Luxury Bed Covers">Luxury Bed Covers</option>
+                    <option value="Luxury Bed Covers">Luxury Bed Covers & Home</option>
                     <option value="Custom T-shirt / Mug / Gifts">Customized T-shirt, Mug, Diary, Bottle</option>
                     <option value="General Inquiry">General Inquiry / Feedback</option>
                   </select>
