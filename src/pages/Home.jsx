@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Sparkles, MessageCircle, ShoppingBag, Gift, Shirt, Scissors, Star, Search } from 'lucide-react';
+import { ArrowRight, Sparkles, MessageCircle, ShoppingBag, Gift, Shirt, Scissors, Star, Search, CheckCircle2, XCircle, Truck, Ban, ShieldCheck, RefreshCw } from 'lucide-react';
 import Logo from '../components/Logo';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
@@ -25,8 +25,9 @@ export default function Home() {
 
   const giftingSubCategories = [
     { id: 'all', label: '✨ All Gifting & Essentials' },
-    { id: 'potlis', label: '👝 Pearl Potlis & Slings' },
-    { id: 'totes', label: '👜 Bags, Totes & Combos' },
+    { id: 'hampers', label: '🧺 Gift Baskets & Hampers' },
+    { id: 'potlis', label: '👝 Pom Pom Potlis & Pouches' },
+    { id: 'totes', label: '👜 Ajrak & Canvas Totes' },
     { id: 'lunchbox', label: '🍱 Insulated Lunch Boxes' },
     { id: 'vanity', label: '💄 Vanity Organisers & Mirror' },
     { id: 'kids', label: '🎒 Kids Chest Bags & Favors' },
@@ -48,7 +49,7 @@ export default function Home() {
       (selectedCategory === 'sarees' && (product.category === 'sarees' || product.name.toLowerCase().includes('saree'))) ||
       (selectedCategory === 'blouses' && (product.category === 'blouses' || product.name.toLowerCase().includes('blouse'))) ||
       (selectedCategory === 'coords' && (product.category === 'coords' || product.category === 'nightwear' || product.name.toLowerCase().includes('night suit') || product.name.toLowerCase().includes('cord') || product.name.toLowerCase().includes('co-ord'))) ||
-      (selectedCategory === 'bags' && (product.category === 'bags' || product.name.toLowerCase().includes('bag') || product.name.toLowerCase().includes('pouch') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('sling') || product.name.toLowerCase().includes('tote'))) ||
+      (selectedCategory === 'bags' && (product.category === 'bags' || product.name.toLowerCase().includes('bag') || product.name.toLowerCase().includes('pouch') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('sling') || product.name.toLowerCase().includes('tote') || product.name.toLowerCase().includes('purse'))) ||
       (selectedCategory === 'mens' && (product.category === 'mens' || product.category === 'men')) ||
       (selectedCategory === 'soaps' && product.category === 'soaps');
 
@@ -58,11 +59,12 @@ export default function Home() {
   const giftingProducts = PRODUCTS.filter((product) => {
     if (!product.isGifting) return false;
     if (giftingTab === 'all') return true;
+    if (giftingTab === 'hampers') return product.id.includes('hamper') || product.id.includes('basket') || product.name.toLowerCase().includes('hamper');
     if (giftingTab === 'bedsheets') return product.category === 'bedsheets' || product.id.includes('bed-cover');
-    if (giftingTab === 'potlis') return product.id === 'handcrafted-pearl-moti-potli-bag' || product.id === 'waterproof-crossbody-mobile-hanging-bag';
+    if (giftingTab === 'potlis') return product.id.includes('potli') || product.id.includes('pouch') || product.id.includes('sling') || product.id.includes('purse') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('pouch');
     if (giftingTab === 'vanity') return product.id === 'digital-mini-makeup-organiser-mirror';
     if (giftingTab === 'kids') return product.id === 'children-cartoon-crossbody-chest-bag';
-    if (giftingTab === 'totes') return product.id === 'aesthetic-handcrafted-canvas-tote-bag' || product.category === 'bags' || product.name.toLowerCase().includes('tote');
+    if (giftingTab === 'totes') return product.id.includes('tote') || product.category === 'bags' || product.name.toLowerCase().includes('tote') || product.name.toLowerCase().includes('ajrak');
     if (giftingTab === 'lunchbox') return product.id.includes('lunch-box');
     if (giftingTab === 'keychains') return product.id === 'chic-leatherette-lipstick-keychain-mirror';
     return true;
@@ -235,22 +237,30 @@ export default function Home() {
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                gap: '2rem',
+                gap: '1.75rem',
                 fontSize: '0.86rem',
-                color: '#94a3b8'
+                color: '#cbd5e1'
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
-                <span style={{ color: '#f472b6' }}>✦</span>
-                <span>Handcrafted Exclusive Catalog</span>
+                <span style={{ color: '#4ade80', fontWeight: '700' }}>✓</span>
+                <span style={{ color: '#86efac', fontWeight: '600' }}>Exchange Available ✅</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
-                <span style={{ color: '#c084fc' }}>✦</span>
-                <span>Customization On-Demand</span>
+                <span style={{ color: '#f87171', fontWeight: '700' }}>✕</span>
+                <span style={{ color: '#fca5a5', fontWeight: '600' }}>No Refund ❌</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
-                <span style={{ color: '#25D366' }}>✦</span>
-                <span>Instant WhatsApp Checkout</span>
+                <span style={{ color: '#f87171', fontWeight: '700' }}>✕</span>
+                <span style={{ color: '#fca5a5', fontWeight: '600' }}>No Return ❌</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+                <span style={{ color: '#93c5fd' }}>🚚</span>
+                <span>Free Shipping on 2+ Articles</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+                <span style={{ color: '#25D366' }}>💬</span>
+                <span>Direct WhatsApp Checkout</span>
               </div>
             </div>
           </div>
@@ -424,6 +434,153 @@ export default function Home() {
               </button>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* DEDICATED STORE POLICY & TRANSPARENCY SHOWCASE BANNER */}
+      <section
+        style={{
+          padding: '3.5rem 0',
+          position: 'relative',
+          background: 'linear-gradient(135deg, rgba(20, 14, 46, 0.95) 0%, rgba(35, 18, 55, 0.95) 100%)',
+          borderTop: '1px solid rgba(192, 132, 252, 0.25)',
+          borderBottom: '1px solid rgba(244, 114, 182, 0.25)',
+          overflow: 'hidden'
+        }}
+      >
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto 2.5rem' }}>
+            <span
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                padding: '0.3rem 0.9rem',
+                borderRadius: '9999px',
+                background: 'rgba(244, 114, 182, 0.15)',
+                border: '1px solid rgba(244, 114, 182, 0.35)',
+                color: '#fbcfe8',
+                fontSize: '0.76rem',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                marginBottom: '0.6rem'
+              }}
+            >
+              <ShieldCheck size={14} color="#f472b6" />
+              Mita's Shopping Policy &amp; Customer Trust
+            </span>
+            <h2 style={{ fontSize: 'clamp(1.7rem, 3.5vw, 2.3rem)', color: '#f8fafc', marginBottom: '0.5rem' }}>
+              Clear, Transparent &amp; Reliable Ordering
+            </h2>
+            <p style={{ color: '#94a3b8', fontSize: '0.92rem' }}>
+              Please review our official boutique policies before ordering on WhatsApp:
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))',
+              gap: '1.25rem'
+            }}
+          >
+            {/* Policy Card 1: Exchange */}
+            <div
+              style={{
+                padding: '1.5rem',
+                borderRadius: '20px',
+                background: 'rgba(16, 185, 129, 0.08)',
+                border: '1.5px solid rgba(16, 185, 129, 0.35)',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.65rem'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <CheckCircle2 size={24} color="#4ade80" />
+                <h3 style={{ fontSize: '1.15rem', color: '#86efac', fontWeight: '700' }}>
+                  Exchange <span style={{ color: '#4ade80' }}>✅</span>
+                </h3>
+              </div>
+              <p style={{ fontSize: '0.84rem', color: '#cbd5e1', lineHeight: 1.5 }}>
+                Hassle-free exchange available for sizing or transit issues as per boutique guidelines.
+              </p>
+            </div>
+
+            {/* Policy Card 2: No Refund */}
+            <div
+              style={{
+                padding: '1.5rem',
+                borderRadius: '20px',
+                background: 'rgba(239, 68, 68, 0.08)',
+                border: '1.5px solid rgba(239, 68, 68, 0.35)',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.65rem'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <XCircle size={24} color="#f87171" />
+                <h3 style={{ fontSize: '1.15rem', color: '#fca5a5', fontWeight: '700' }}>
+                  No Refund <span style={{ color: '#f87171' }}>❌</span>
+                </h3>
+              </div>
+              <p style={{ fontSize: '0.84rem', color: '#cbd5e1', lineHeight: 1.5 }}>
+                Strict boutique policy: We do not offer cash or bank refunds once dispatched.
+              </p>
+            </div>
+
+            {/* Policy Card 3: No Return */}
+            <div
+              style={{
+                padding: '1.5rem',
+                borderRadius: '20px',
+                background: 'rgba(239, 68, 68, 0.08)',
+                border: '1.5px solid rgba(239, 68, 68, 0.35)',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.65rem'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <XCircle size={24} color="#f87171" />
+                <h3 style={{ fontSize: '1.15rem', color: '#fca5a5', fontWeight: '700' }}>
+                  No Return <span style={{ color: '#f87171' }}>❌</span>
+                </h3>
+              </div>
+              <p style={{ fontSize: '0.84rem', color: '#cbd5e1', lineHeight: 1.5 }}>
+                Direct item exchange only. We do not accept return-to-origin cancellations.
+              </p>
+            </div>
+
+            {/* Policy Card 4: Free Shipping */}
+            <div
+              style={{
+                padding: '1.5rem',
+                borderRadius: '20px',
+                background: 'rgba(59, 130, 246, 0.08)',
+                border: '1.5px solid rgba(59, 130, 246, 0.35)',
+                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.65rem'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Truck size={24} color="#93c5fd" />
+                <h3 style={{ fontSize: '1.15rem', color: '#93c5fd', fontWeight: '700' }}>
+                  Free Shipping 🚚
+                </h3>
+              </div>
+              <p style={{ fontSize: '0.84rem', color: '#cbd5e1', lineHeight: 1.5 }}>
+                Enjoy 100% Free Shipping across India on buying 2+ articles (or 5 for Pom Pom Potlis).
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

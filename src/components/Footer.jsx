@@ -115,8 +115,12 @@ export default function Footer() {
                 <ShieldCheck size={22} color="#c084fc" />
               </div>
               <div>
-                <h4 style={{ fontSize: '0.95rem', fontWeight: '600', color: '#f8fafc' }}>100% Genuine Products</h4>
-                <p style={{ fontSize: '0.82rem', color: '#94a3b8' }}>Crafted with attention to detail</p>
+                <h4 style={{ fontSize: '0.95rem', fontWeight: '600', color: '#f8fafc' }}>
+                  Policy: Exchange <span style={{ color: '#4ade80' }}>✅</span>
+                </h4>
+                <p style={{ fontSize: '0.82rem', color: '#94a3b8' }}>
+                  Exchange Available &bull; <span style={{ color: '#fca5a5' }}>No Refund ❌ &bull; No Return ❌</span>
+                </p>
               </div>
             </div>
           </div>
@@ -315,7 +319,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright */}
+        {/* Bottom Copyright & Store Policy */}
         <div
           className="footer-bottom"
           style={{
@@ -333,6 +337,25 @@ export default function Footer() {
         >
           <div>
             &copy; {new Date().getFullYear()} <strong>Mita’s Creation</strong>. All rights reserved.
+          </div>
+          <div
+            style={{
+              padding: '0.25rem 0.75rem',
+              borderRadius: '9999px',
+              background: 'rgba(255, 255, 255, 0.04)',
+              border: '1px solid rgba(192, 132, 252, 0.2)',
+              fontSize: '0.78rem',
+              color: '#cbd5e1',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem'
+            }}
+          >
+            <span style={{ color: '#86efac', fontWeight: '600' }}>Exchange ✅</span>
+            <span style={{ color: '#64748b' }}>&bull;</span>
+            <span style={{ color: '#fca5a5', fontWeight: '600' }}>No Refund ❌</span>
+            <span style={{ color: '#64748b' }}>&bull;</span>
+            <span style={{ color: '#fca5a5', fontWeight: '600' }}>No Return ❌</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
             <span>Handcrafted with</span>

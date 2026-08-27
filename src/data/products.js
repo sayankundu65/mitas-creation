@@ -1,6 +1,266 @@
 export const PRODUCTS = [
   // ==========================================
-  // --- NEW EXCLUSIVE ARRIVALS (8 PRODUCTS) ---
+  // --- NEWEST EXCLUSIVE ARRIVALS (6 PRODUCTS) ---
+  // ==========================================
+
+  // 1. Gift Hamper Basket
+  {
+    "id": "handcrafted-gift-hamper-basket",
+    "name": "Handcrafted Decorative Gift Hamper Basket",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Corporate & Wedding Hamper Orders",
+    "price": 250,
+    "originalPrice": 499,
+    "tag": "Festive & Trousseau Hamper",
+    "rating": 5.0,
+    "reviewsCount": 58,
+    "images": [
+      "/Gift Hamper Basket/WhatsApp Image 2026-08-27 at 5.17.21 PM.jpeg",
+      "/Gift Hamper Basket/WhatsApp Image 2026-08-27 at 5.17.22 PM (1).jpeg",
+      "/Gift Hamper Basket/WhatsApp Image 2026-08-27 at 5.17.22 PM.jpeg"
+    ],
+    "shortDesc": "Exquisite handcrafted decorative gift hamper basket with sturdy weave and ornate finish. Ideal for festival hampers, dry fruit gifting, trousseau packing, and return gifts.",
+    "fullDesc": "Product Name: Handcrafted Decorative Gift Hamper Basket\n\nTagline: Elegant Festive Presentation & Luxury Gifting Solution\n\nDescription:\nElevate your celebration and gifting moments with our Handcrafted Artisan Gift Hamper Basket. Thoughtfully designed with a sturdy structure and premium artistic finish, this basket is the ultimate presentation piece for festive favors, dry fruits, chocolates, cosmetics, and wedding trousseau packaging.\n\nKey Highlights:\n• Sturdy handcrafted frame with fine artisanal finish and convenient handles\n• Multi-utility design: reusable as decorative home vanity storage or fruit basket\n• Perfect for Diwali hampers, Durga Puja gifts, wedding favors, baby announcements & corporate hampers\n• Eco-friendly, durable, and lightweight\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹250/- only | DM for Bulk Corporate & Wedding Orders!",
+    "details": {
+      "type": "Handcrafted Decorative Gift Hamper Basket",
+      "usage": "Festive Hampers, Trousseau Packing, Dry Fruits, Return Gifts & Vanity Storage",
+      "material": "Durable Eco-Friendly Artisan Woven Frame",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Handcrafted Artisan Gift Hamper Basket"
+    },
+    "sizes": [
+      "Standard Gift Basket Dimension"
+    ],
+    "colors": [
+      { "name": "Artisan Gold & Floral Accent", "hex": "#eab308" },
+      { "name": "Pastel Pink & Silver Charm", "hex": "#f472b6" }
+    ]
+  },
+
+  // 2. Beautiful Tote Bag - Ajrak Print & Fabric
+  {
+    "id": "beautiful-tote-bag-ajrak-print",
+    "name": "Beautiful Tote Bag in Authentic Ajrak Print & Fabric",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Orders & Event Favors",
+    "price": 250,
+    "originalPrice": 499,
+    "tag": "Heritage Ajrak Art",
+    "rating": 5.0,
+    "reviewsCount": 64,
+    "images": [
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.29 PM.jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.33 PM (1).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.33 PM (2).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.33 PM.jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.34 PM (1).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.34 PM (2).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.34 PM.jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.35 PM (1).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.35 PM (2).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.35 PM (3).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.35 PM.jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.36 PM (1).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.36 PM (2).jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.36 PM.jpeg",
+      "/Beautiful Tote Bag Ajrak Print/WhatsApp Image 2026-08-27 at 4.42.37 PM.jpeg"
+    ],
+    "shortDesc": "Heritage Ajrak print pure cotton tote bag featuring authentic geometric & botanical block motifs, reinforced shoulder straps, and spacious capacity for daily errands, college & work.",
+    "fullDesc": "Product Name: Beautiful Tote Bag - Ajrak Print & Fabric\n\nTagline: Pure Cotton Heritage Art Meets Modern Daily Utility\n\nDescription:\nCelebrate traditional Indian block-print heritage with our Beautiful Ajrak Print Pure Cotton Tote Bag. Made from durable, premium pure cotton fabric and adorned with timeless Ajrakh artisan patterns, this tote offers a rich, earthy aesthetic that complements both ethnic and casual Western outfits.\n\nKey Highlights:\n• 100% pure breathable cotton with authentic Ajrakh geometric & floral block prints\n• Roomy main interior easily holds laptops, tablets, books, water bottles, and shopping\n• Reinforced sturdy dual shoulder straps for comfortable all-day carrying\n• Washable, eco-friendly, biodegradable, and built for daily durability\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹250/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Pure Cotton Ajrakh Print Shoulder Tote Bag",
+      "fabric": "100% Pure Heavy-Duty Breathable Cotton",
+      "craft": "Authentic Heritage Ajrakh Block Print Artistry",
+      "capacity": "Spacious Single Compartment (Holds books, tablet, daily essentials)",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Pure Cotton Ajrak Print Tote Bag"
+    },
+    "sizes": [
+      "Standard Roomy Tote (Approx 15\" x 15\")"
+    ],
+    "colors": [
+      { "name": "Traditional Indigo & Crimson Ajrak", "hex": "#1e3a8a" },
+      { "name": "Madder Maroon & Ochre", "hex": "#991b1b" },
+      { "name": "Earthy Olive & Black", "hex": "#3f3f46" }
+    ]
+  },
+
+  // 3. Pure Leather Purse
+  {
+    "id": "pure-leather-handcrafted-purse",
+    "name": "Pure Leather Handcrafted Elegant Pocket Purse",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "price": 250,
+    "originalPrice": 599,
+    "tag": "Pure Genuine Leather",
+    "rating": 5.0,
+    "reviewsCount": 49,
+    "images": [
+      "/Pure Leather Purse/WhatsApp Image 2026-08-27 at 4.35.24 PM.jpeg"
+    ],
+    "shortDesc": "Exquisite handcrafted pure leather purse featuring a sleek pocket silhouette, secure closure, organized cash/card slots, and durable artisan stitching.",
+    "fullDesc": "Product Name: Pure Leather Purse\n\nTagline: Pure Genuine Leather • Compact Luxury • Everlasting Durability\n\nDescription:\nA timeless everyday essential crafted for lovers of genuine leather elegance. Our Pure Leather Purse combines minimalist sophistication with durable functionality, offering dedicated partitions for your currency notes, cards, and coins.\n\nKey Highlights:\n• Handcrafted from 100% pure leather with natural grain texture that ages gracefully\n• Compact and slim form factor that slips effortlessly into hand clutch, handbag, or pocket\n• Precision perimeter stitching and durable metal hardware for longevity\n• Ideal personal luxury and a high-value gift for birthdays, anniversaries, and festive celebrations\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹250/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "material": "100% Pure Genuine Leather",
+      "type": "Compact Handcrafted Leather Wallet / Purse",
+      "compartments": "Multi-Slot Partition for Currency, Cards & Coins",
+      "finish": "Natural Smooth Grain Finish with Precision Stitching",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Pure Leather Handcrafted Purse"
+    },
+    "sizes": [
+      "Compact Pocket Dimension"
+    ],
+    "colors": [
+      { "name": "Classic Tan & Mocha Leather", "hex": "#78350f" },
+      { "name": "Midnight Jet Black", "hex": "#18181b" }
+    ]
+  },
+
+  // 4. Beautiful Pom Pom Potli with Zip
+  {
+    "id": "beautiful-pom-pom-potli-with-zip",
+    "name": "Beautiful Pom Pom Handcrafted Potli Bag with Zip",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "FREE SHIPPING ON BUYING 5 | DM for Wedding Favors",
+    "price": 120,
+    "originalPrice": 299,
+    "tag": "Buy 5 = Free Shipping",
+    "rating": 5.0,
+    "reviewsCount": 88,
+    "images": [
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.50 PM (1).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.50 PM (2).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.50 PM.jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.51 PM (1).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.51 PM (2).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.51 PM (3).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.51 PM.jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.52 PM (1).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.52 PM (2).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.52 PM (3).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.52 PM.jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.53 PM (1).jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Image 2026-08-27 at 4.33.53 PM.jpeg",
+      "/Beautiful Pom Pom Potli with Zip/WhatsApp Video 2026-08-27 at 4.34.05 PM.mp4"
+    ],
+    "shortDesc": "Gorgeous ethnic handcrafted potli bag detailed with playful pom-pom tassels and a secure top zipper closure. SPECIAL DEAL: Free shipping on buying 5 articles!",
+    "fullDesc": "Product Name: Beautiful Pom Pom Potli with Zip\n\nTagline: Playful Pom-Poms • Secure Zip Design • Free Shipping on Buy 5\n\nDescription:\nAdd an irresistible touch of color, charm, and traditional grace to your ethnic ensemble with our Beautiful Pom Pom Potli Bag with Zip. Unlike standard open dori potlis, this design features a secure top zipper closure combined with decorative pom-pom trims—ensuring your valuables stay completely safe while you celebrate.\n\nKey Highlights:\n• Beautiful handcrafted ethnic fabric adorned with fluffy, vibrant pom-pom embellishments\n• Sturdy top zip closure prevents cash, makeup, jewelry, and smartphone from slipping out\n• Comfortable wristlet dori handle for hands-free festive carrying\n• Top trending choice for Mehendi favors, wedding return gifts, and festive hampers\n• SPECIAL DEAL: Free Shipping when you buy 5 or more articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n\nPrice: ₹120/- each | Buy 5 to get FREE SHIPPING across India!",
+    "details": {
+      "type": "Ethnic Handcrafted Pom Pom Potli Bag with Zip",
+      "closure": "Secure Top Zipper + Decorative Pom Pom Dori",
+      "specialDeal": "🔥 Free Shipping on buying 5 articles!",
+      "fabric": "Rich Ethnic Fabric with Soft Inner Lining",
+      "capacity": "Holds Smartphone, Cash, Keys & Compact Makeup",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹120 each (🚚 FREE SHIPPING on buying 5 articles)",
+      "inclusions": "1 Handcrafted Pom Pom Potli Bag with Zip"
+    },
+    "sizes": [
+      "Standard Ethnic Potli (Approx 8\" x 8\")"
+    ],
+    "colors": [
+      { "name": "Festive Multi Pom Pom Palette", "hex": "#ec4899" },
+      { "name": "Maroon & Golden Tassels", "hex": "#991b1b" },
+      { "name": "Royal Peacock Blue", "hex": "#0284c7" },
+      { "name": "Mustard Yellow & Orange", "hex": "#f59e0b" }
+    ]
+  },
+
+  // 5. Pam Pam Pouch 👝
+  {
+    "id": "pam-pam-artisan-mini-pouch",
+    "name": "Pam Pam Artisan Mini Zipper Pouch 👝",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "Top Pick for Return Gifts & Bulk Hampers",
+    "price": 60,
+    "originalPrice": 150,
+    "tag": "₹60 Each • Top Favor",
+    "rating": 4.9,
+    "reviewsCount": 95,
+    "images": [
+      "/Pam Pam Pouch/WhatsApp Image 2026-08-27 at 3.56.49 PM (1).jpeg",
+      "/Pam Pam Pouch/WhatsApp Image 2026-08-27 at 3.56.49 PM (2).jpeg",
+      "/Pam Pam Pouch/WhatsApp Image 2026-08-27 at 3.56.49 PM.jpeg",
+      "/Pam Pam Pouch/WhatsApp Image 2026-08-27 at 3.56.50 PM.jpeg"
+    ],
+    "shortDesc": "Cute and vibrant mini zipper pouch decorated with colorful pam-pam / pom-pom accents. Perfect pocket organizer for coins, jewelry, keys & lipsticks. Unbeatable value at ₹60/- each.",
+    "fullDesc": "Product Name: Pam Pam Pouch 👝\n\nTagline: Adorable Pom-Pom Charms • Pocket Organizer • Only ₹60 Each\n\nDescription:\nSuper cute, highly practical, and delightfully budget-friendly! Our Pam Pam Pouch 👝 is designed with vibrant handcrafted patterns and cheerful pom-pom / pam-pam detailing. A multi-utility pocket essential that keeps your everyday mini items neatly organized in your handbag or drawer.\n\nKey Highlights:\n• High-grade fabric with cheerful pam-pam tassel accents\n• Smooth, durable zipper closure keeping coins, keys, bluetooth earphones, lip balms, and jewelry secure\n• Compact, feather-light, and fits into any handbag, pocket, or school/office bag\n• Number 1 budget-friendly gift favor for birthdays, kitty parties, pooja favors & wedding hampers\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2+ articles.\n\nPrice: ₹60/- each only!",
+    "details": {
+      "type": "Pam Pam Artisan Mini Zipper Pouch 👝",
+      "price": "₹60/- each",
+      "closure": "Smooth Top Zip Closure",
+      "usage": "Coins, Earphones, Lip Balm, Jewelry, Keys & Return Favors",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹60 each (Free shipping on buying 2+ articles)",
+      "inclusions": "1 Pam Pam Artisan Mini Zipper Pouch"
+    },
+    "sizes": [
+      "Mini Utility Size (Approx 5\" x 4\")"
+    ],
+    "colors": [
+      { "name": "Assorted Colorful Pam Pam Patterns", "hex": "#ec4899" },
+      { "name": "Boho Multicolored Accent", "hex": "#8b5cf6" }
+    ]
+  },
+
+  // 6. Pure Kalamkari Fabric & beautiful Print Sling Bag
+  {
+    "id": "pure-kalamkari-fabric-artisan-sling-bag",
+    "name": "Pure Kalamkari Fabric & Beautiful Print Crossbody Sling Bag",
+    "category": "bags",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "price": 250,
+    "originalPrice": 499,
+    "tag": "Pure Kalamkari Art",
+    "rating": 5.0,
+    "reviewsCount": 52,
+    "images": [
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.21 PM (1).jpeg",
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.21 PM.jpeg",
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.22 PM (1).jpeg",
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.22 PM (2).jpeg",
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.22 PM (3).jpeg",
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.22 PM.jpeg",
+      "/Pure Kalamkari Fabric & beautiful Print Sling Bag/WhatsApp Image 2026-08-27 at 3.35.23 PM.jpeg"
+    ],
+    "shortDesc": "Authentic pure Kalamkari cotton sling bag with intricate traditional artisan motifs, multiple zippered compartments, and an adjustable crossbody strap. Pure handcrafted elegance.",
+    "fullDesc": "Product Name: Pure Kalamkari Fabric & Beautiful Print Sling Bag\n\nTagline: Authentic Handcrafted Kalamkari Art • Crossbody Comfort\n\nDescription:\nImmerse yourself in the timeless artistry of Kalamkari with our Pure Kalamkari Handcrafted Sling Bag. Renowned for its intricate storytelling, mythological & floral motifs, and earthy organic hues, this bag brings classical Indian art into your modern daily wardrobe.\n\nKey Highlights:\n• Crafted from 100% authentic pure Kalamkari cotton fabric with high durability\n• Features multiple secure zipper partitions for phone, cash, wallet, sanitizers, and daily essentials\n• Adjustable sturdy shoulder strap allows comfortable crossbody or one-shoulder wear\n• Lightweight, washable, and pairs flawlessly with ethnic kurtis, sarees, and casual jeans\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹250/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "100% Pure Kalamkari Artisan Cotton",
+      "type": "Crossbody / Shoulder Sling Bag",
+      "strap": "Adjustable High-Strength Shoulder Strap",
+      "compartments": "Multiple Functional Zippered Pockets",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Pure Kalamkari Artisan Sling Bag with Adjustable Strap"
+    },
+    "sizes": [
+      "Spacious Crossbody Fit (Approx 9.5\" x 8.5\")"
+    ],
+    "colors": [
+      { "name": "Traditional Earthy Ochre Kalamkari", "hex": "#b45309" },
+      { "name": "Crimson Floral Kalamkari", "hex": "#991b1b" },
+      { "name": "Indigo Peacock Kalamkari", "hex": "#1e3a8a" }
+    ]
+  },
+
+  // ==========================================
+  // --- PREVIOUS EXCLUSIVE ARRIVALS ---
   // ==========================================
 
   // 1. Beautiful Noodle Strap Premium Quality Padded Blouse
@@ -1566,5 +1826,13 @@ export const BRAND_INFO = {
       title: "Direct WhatsApp Personal Shopping",
       desc: "Enjoy boutique-level personal assistance, instant order confirmation, video call inspections, and express doorstep delivery."
     }
-  ]
+  ],
+  policies: {
+    exchange: "Exchange Available ✅",
+    refund: "No Refund ❌",
+    returnPolicy: "No Return ❌",
+    shipping: "Free Shipping on 2+ Articles (Buy 5 for Pom Pom Potlis) 🚚",
+    payment: "100% Prepaid Orders (No COD) 💳",
+    summary: "Exchange ✅ | No Refund ❌ | No Return ❌"
+  }
 };

@@ -187,13 +187,15 @@ export default function About() {
             {[
               'Banarasi & Chanderi Sarees',
               'Velvet & Casual Cord Sets',
+              'Ajrak Print & Kalamkari Bags',
+              'Pom Pom Potlis & Pam Pam Pouches',
+              'Handcrafted Gift Hamper Baskets',
               'Saree Shapewear & Petticoats',
               'Pure Cotton Kaftans & Nighties',
               'Designer Tops & Kurtas',
-              'Men’s Kurta & Dhoti Ensembles',
-              'Men’s Linen & Cotton Shirts',
+              'Men’s Kurta & Cotton Shirts',
               'Quilted Velvet Bed Covers',
-              'Customized Photo Mugs & Bottles',
+              'Organic Handmade Hanging Soaps',
               'Corporate Gift Bundles'
             ].map((item, i) => (
               <span
@@ -214,6 +216,32 @@ export default function About() {
                 {item}
               </span>
             ))}
+          </div>
+
+          {/* Store Policy Note */}
+          <div
+            style={{
+              padding: '1.25rem',
+              borderRadius: '16px',
+              background: 'rgba(26, 20, 58, 0.6)',
+              border: '1px solid rgba(192, 132, 252, 0.25)',
+              maxWidth: '680px',
+              margin: '0 auto 2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              gap: '1rem',
+              fontSize: '0.88rem'
+            }}
+          >
+            <span style={{ color: '#86efac', fontWeight: '700' }}>Exchange Available ✅</span>
+            <span style={{ color: '#64748b' }}>&bull;</span>
+            <span style={{ color: '#fca5a5', fontWeight: '700' }}>No Refund ❌</span>
+            <span style={{ color: '#64748b' }}>&bull;</span>
+            <span style={{ color: '#fca5a5', fontWeight: '700' }}>No Return ❌</span>
+            <span style={{ color: '#64748b' }}>&bull;</span>
+            <span style={{ color: '#93c5fd', fontWeight: '600' }}>Prepaid Only 💳</span>
           </div>
 
           <WhatsAppButton

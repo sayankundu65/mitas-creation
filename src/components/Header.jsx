@@ -56,21 +56,26 @@ export default function Header() {
         <div
           className="header-announcement"
           style={{
-            background: 'linear-gradient(90deg, #1f143a 0%, #31194e 50%, #1f143a 100%)',
-            borderBottom: '1px solid rgba(244, 114, 182, 0.15)',
-            padding: '0.4rem 1rem',
+            background: 'linear-gradient(90deg, #1f143a 0%, #3b1342 50%, #1f143a 100%)',
+            borderBottom: '1px solid rgba(244, 114, 182, 0.2)',
+            padding: '0.45rem 1rem',
             textAlign: 'center',
             fontSize: '0.78rem',
             color: '#fbcfe8',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '0.5rem'
+            gap: '0.5rem',
+            letterSpacing: '0.02em'
           }}
         >
           <Sparkles size={13} color="#fde047" />
-          <span className="announce-full">🚚 <strong>FREE SHIPPING on buying any 2 articles</strong> &bull; 💳 <strong>Prepaid Orders Only (No COD)</strong> &bull; WhatsApp Shopping: <strong>{BRAND_INFO.phone}</strong></span>
-          <span className="announce-short" style={{ display: 'none' }}>🚚 Free Shipping on 2+ Articles &bull; No COD</span>
+          <span className="announce-full">
+            🚚 <strong>FREE SHIPPING on 2+ Articles</strong> &bull; 🔄 <strong>Exchange <span style={{ color: '#4ade80' }}>✅</span></strong> &bull; 🚫 <strong>No Refund <span style={{ color: '#f87171' }}>❌</span></strong> &bull; 🚫 <strong>No Return <span style={{ color: '#f87171' }}>❌</span></strong> &bull; 💳 <strong>Prepaid Only (No COD)</strong> &bull; WhatsApp: <strong>{BRAND_INFO.phone}</strong>
+          </span>
+          <span className="announce-short" style={{ display: 'none' }}>
+            Exchange ✅ • No Refund ❌ • No Return ❌ • Free Shipping 2+
+          </span>
         </div>
 
         <div className="container header-nav-container" style={{ padding: '0.75rem 1.5rem' }}>
@@ -302,7 +307,30 @@ export default function Header() {
               })}
             </div>
 
-            <div style={{ height: '1px', background: 'rgba(255,255,255,0.1)', margin: '0.5rem 0' }} />
+            {/* Mobile Store Policy Card */}
+            <div
+              style={{
+                background: 'rgba(23, 17, 49, 0.7)',
+                border: '1px solid rgba(192, 132, 252, 0.25)',
+                borderRadius: '12px',
+                padding: '0.6rem 0.85rem',
+                margin: '0.25rem 0 0.5rem',
+                fontSize: '0.76rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-around',
+                color: '#e2e8f0',
+                fontWeight: '600'
+              }}
+            >
+              <span style={{ color: '#86efac' }}>Exchange ✅</span>
+              <span style={{ color: '#64748b' }}>•</span>
+              <span style={{ color: '#fca5a5' }}>No Refund ❌</span>
+              <span style={{ color: '#64748b' }}>•</span>
+              <span style={{ color: '#fca5a5' }}>No Return ❌</span>
+            </div>
+
+            <div style={{ height: '1px', background: 'rgba(255,255,255,0.1)', margin: '0.25rem 0' }} />
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <a

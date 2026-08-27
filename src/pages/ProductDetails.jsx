@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Star, Sparkles, Check, MessageCircle, ShieldCheck, Truck, Ban, Share2, Play, CreditCard, Gift } from 'lucide-react';
+import { ArrowLeft, Star, Sparkles, Check, MessageCircle, ShieldCheck, Truck, Ban, Share2, Play, CreditCard, Gift, RefreshCw, XCircle, CheckCircle2 } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { PRODUCTS, BRAND_INFO } from '../data/products';
@@ -13,7 +13,9 @@ export default function ProductDetails() {
 
   const product = PRODUCTS.find((p) => p.id === id) || PRODUCTS[0];
   const isHangingSoap = product.id === 'm-glow-organik-hanging-soap';
+  const isPomPomPotli = product.id === 'beautiful-pom-pom-potli-with-zip';
   const minQty = isHangingSoap ? 2 : 1;
+  const freeShippingThreshold = isPomPomPotli ? 5 : 2;
 
   const [selectedImg, setSelectedImg] = useState(0);
   const [selectedSize, setSelectedSize] = useState(product?.sizes ? product.sizes[0] : 'Standard');
@@ -346,17 +348,45 @@ export default function ProductDetails() {
             <div
               style={{
                 marginBottom: '1.75rem',
-                padding: '1rem 1.25rem',
-                borderRadius: '16px',
-                background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.12) 0%, rgba(147, 51, 234, 0.15) 50%, rgba(244, 114, 182, 0.12) 100%)',
+                padding: '1.15rem 1.25rem',
+                borderRadius: '18px',
+                background: 'linear-gradient(135deg, rgba(30, 21, 62, 0.9) 0%, rgba(45, 20, 55, 0.85) 100%)',
                 border: '1.5px solid rgba(244, 114, 182, 0.45)',
-                boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(244, 114, 182, 0.15)',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(244, 114, 182, 0.18)',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '0.75rem'
+                gap: '0.85rem'
               }}
             >
-              {/* Highlight 1: Free shipping on 2 articles */}
+              {/* Policy Badges Ribbon: Exchange ✅ | No Refund ❌ | No Return ❌ */}
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem',
+                  padding: '0.6rem 0.85rem',
+                  borderRadius: '12px',
+                  background: 'rgba(9, 7, 20, 0.65)',
+                  border: '1px solid rgba(192, 132, 252, 0.3)'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.84rem', fontWeight: '700', color: '#86efac' }}>
+                  <CheckCircle2 size={16} color="#4ade80" />
+                  <span>Exchange ✅</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.84rem', fontWeight: '700', color: '#fca5a5' }}>
+                  <XCircle size={16} color="#f87171" />
+                  <span>No Refund ❌</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.84rem', fontWeight: '700', color: '#fca5a5' }}>
+                  <XCircle size={16} color="#f87171" />
+                  <span>No Return ❌</span>
+                </div>
+              </div>
+
+              {/* Highlight 1: Free shipping */}
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
                 <div
                   style={{
@@ -375,11 +405,13 @@ export default function ProductDetails() {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.92rem', fontWeight: '700', color: '#86efac', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                    <span>FREE SHIPPING ON ANY 2 ARTICLES</span>
+                    <span>{isPomPomPotli ? 'FREE SHIPPING ON BUYING 5 ARTICLES' : 'FREE SHIPPING ON ANY 2+ ARTICLES'}</span>
                     <span style={{ fontSize: '0.7rem', padding: '0.15rem 0.45rem', borderRadius: '4px', background: 'rgba(16, 185, 129, 0.25)', border: '1px solid rgba(16, 185, 129, 0.5)', color: '#4ade80' }}>LIMITED OFFER</span>
                   </div>
                   <p style={{ fontSize: '0.82rem', color: '#e2e8f0', marginTop: '0.15rem', lineHeight: 1.4 }}>
-                    Buy <strong>any two or more articles</strong> from our boutique collection &amp; enjoy <strong>100% Free Shipping</strong> across India!
+                    {isPomPomPotli 
+                      ? 'Order 5 or more Pom Pom Potlis to enjoy 100% Free Shipping across India!'
+                      : 'Buy any two or more articles from our boutique collection & enjoy 100% Free Shipping across India!'}
                   </p>
                 </div>
               </div>
@@ -545,13 +577,13 @@ export default function ProductDetails() {
               </div>
 
               {/* Free Shipping Qualification Helper */}
-              {quantity >= 2 ? (
+              {quantity >= freeShippingThreshold ? (
                 <span style={{ fontSize: '0.8rem', color: '#86efac', fontWeight: '600', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
                   <Truck size={14} /> Free Shipping Applied!
                 </span>
               ) : (
                 <span style={{ fontSize: '0.78rem', color: '#cbd5e1' }}>
-                  (Add 1 more for <strong style={{ color: '#86efac' }}>FREE Shipping</strong>)
+                  (Add {freeShippingThreshold - quantity} more for <strong style={{ color: '#86efac' }}>FREE Shipping</strong>)
                 </span>
               )}
 
@@ -615,19 +647,19 @@ export default function ProductDetails() {
               }}
             >
               <div>
-                <Truck size={20} color="#4ade80" style={{ margin: '0 auto 0.35rem' }} />
+                <CheckCircle2 size={20} color="#4ade80" style={{ margin: '0 auto 0.35rem' }} />
+                <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>Exchange Policy</span>
+                <span style={{ fontSize: '0.7rem', color: '#86efac' }}>Exchange ✅ (No Refund/Return ❌)</span>
+              </div>
+              <div>
+                <Truck size={20} color="#93c5fd" style={{ margin: '0 auto 0.35rem' }} />
                 <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>Free Shipping</span>
-                <span style={{ fontSize: '0.7rem', color: '#86efac' }}>On Any 2 Articles</span>
+                <span style={{ fontSize: '0.7rem', color: '#93c5fd' }}>{isPomPomPotli ? 'On Buy 5 Articles' : 'On Any 2+ Articles'}</span>
               </div>
               <div>
                 <Ban size={20} color="#f87171" style={{ margin: '0 auto 0.35rem' }} />
                 <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>No COD</span>
                 <span style={{ fontSize: '0.7rem', color: '#fca5a5' }}>Prepaid Only</span>
-              </div>
-              <div>
-                <MessageCircle size={20} color="#25D366" style={{ margin: '0 auto 0.35rem' }} />
-                <span style={{ fontSize: '0.75rem', color: '#e2e8f0', display: 'block', fontWeight: '600' }}>Direct Support</span>
-                <span style={{ fontSize: '0.7rem', color: '#94a3b8' }}>Chat with Mita's</span>
               </div>
             </div>
           </div>
@@ -684,6 +716,22 @@ export default function ProductDetails() {
               style={{
                 padding: '1rem',
                 borderRadius: '12px',
+                background: 'rgba(168, 85, 247, 0.12)',
+                border: '1px solid rgba(168, 85, 247, 0.35)'
+              }}
+            >
+              <span style={{ fontSize: '0.75rem', color: '#c084fc', textTransform: 'capitalize', display: 'block', fontWeight: '600' }}>
+                Store Policy
+              </span>
+              <span style={{ fontSize: '0.88rem', color: '#ffffff', fontWeight: '600', marginTop: '0.2rem', display: 'block' }}>
+                🔄 Exchange ✅ &bull; ❌ No Refund &bull; ❌ No Return
+              </span>
+            </div>
+
+            <div
+              style={{
+                padding: '1rem',
+                borderRadius: '12px',
                 background: 'rgba(16, 185, 129, 0.1)',
                 border: '1px solid rgba(16, 185, 129, 0.3)'
               }}
@@ -692,7 +740,7 @@ export default function ProductDetails() {
                 Shipping Policy
               </span>
               <span style={{ fontSize: '0.88rem', color: '#ffffff', fontWeight: '500', marginTop: '0.2rem', display: 'block' }}>
-                🚚 Free Shipping on any 2 articles
+                🚚 {isPomPomPotli ? 'Free Shipping on buying 5 articles' : 'Free Shipping on any 2+ articles'}
               </span>
             </div>
 

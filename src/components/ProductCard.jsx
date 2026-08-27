@@ -270,27 +270,27 @@ export default function ProductCard({ product }) {
           </span>
         </div>
 
-        {/* Mini Policy Tag & Bulk Order Badge */}
+        {/* Mini Policy Strip: Exchange ✅ | No Refund ❌ | No Return ❌ */}
         <div
           style={{
-            fontSize: '0.72rem',
+            fontSize: '0.68rem',
             color: '#cbd5e1',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '0.3rem 0.55rem',
-            borderRadius: '8px',
-            background: 'rgba(255, 255, 255, 0.03)',
-            border: '1px solid rgba(192, 132, 252, 0.12)',
-            marginTop: '0.1rem'
+            padding: '0.28rem 0.5rem',
+            borderRadius: '6px',
+            background: 'rgba(9, 7, 20, 0.65)',
+            border: '1px solid rgba(192, 132, 252, 0.18)',
+            marginTop: '0.2rem',
+            fontWeight: '600'
           }}
         >
-          {product.bulkOrderAvailable ? (
-            <span style={{ color: '#fde047', fontWeight: '700' }}>⚡ DM for Bulk Orders</span>
-          ) : (
-            <span style={{ color: '#86efac', fontWeight: '600' }}>🚚 Free Shipping on 2+</span>
-          )}
-          <span style={{ color: '#fca5a5', fontWeight: '600' }}>Prepaid Only</span>
+          <span style={{ color: '#86efac' }}>Exchange ✅</span>
+          <span style={{ color: '#64748b' }}>•</span>
+          <span style={{ color: '#fca5a5' }}>No Refund ❌</span>
+          <span style={{ color: '#64748b' }}>•</span>
+          <span style={{ color: '#fca5a5' }}>No Return ❌</span>
         </div>
 
         {/* Action Buttons */}

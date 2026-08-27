@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, Phone, Mail, MapPin, Send, Sparkles, CheckCircle2, Clock } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin, Send, Sparkles, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { BRAND_INFO } from '../data/products';
 
@@ -177,6 +177,36 @@ export default function Contact() {
                 <h4 style={{ fontSize: '0.92rem', color: '#f8fafc' }}>Operating Hours</h4>
                 <p style={{ fontSize: '0.82rem', color: '#94a3b8' }}>Mon - Sun: 9:00 AM – 10:00 PM IST</p>
               </div>
+            </div>
+
+            {/* Store Policy Card */}
+            <div
+              style={{
+                background: 'rgba(26, 20, 58, 0.65)',
+                border: '1px solid rgba(244, 114, 182, 0.3)',
+                borderRadius: '18px',
+                padding: '1.5rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.5rem'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <ShieldCheck size={20} color="#f472b6" />
+                <h4 style={{ fontSize: '0.95rem', color: '#f8fafc', fontWeight: '700' }}>
+                  Boutique Store Policy
+                </h4>
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem', fontSize: '0.82rem', marginTop: '0.25rem' }}>
+                <span style={{ color: '#86efac', fontWeight: '600' }}>Exchange Available ✅</span>
+                <span style={{ color: '#64748b' }}>&bull;</span>
+                <span style={{ color: '#fca5a5', fontWeight: '600' }}>No Refund ❌</span>
+                <span style={{ color: '#64748b' }}>&bull;</span>
+                <span style={{ color: '#fca5a5', fontWeight: '600' }}>No Return ❌</span>
+              </div>
+              <p style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '0.2rem' }}>
+                Prepaid orders only (No COD). Free shipping on buying any 2+ articles across India.
+              </p>
             </div>
           </div>
 
