@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Star, Sparkles, Check, MessageCircle, ShieldCheck, Truck, Ban, Share2, Play, CreditCard, Gift, RefreshCw, XCircle, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Star, Sparkles, Check, MessageCircle, ShieldCheck, Truck, Ban, Share2, Play, CreditCard, Gift, RefreshCw, XCircle, CheckCircle2, Maximize2 } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
+import FullscreenMediaModal from '../components/FullscreenMediaModal';
 import { PRODUCTS, BRAND_INFO } from '../data/products';
 
 const isVideoFile = (url) => typeof url === 'string' && /\.(mp4|webm|mov|ogg)$/i.test(url);
@@ -18,6 +19,7 @@ export default function ProductDetails() {
   const freeShippingThreshold = isPomPomPotli ? 5 : 2;
 
   const [selectedImg, setSelectedImg] = useState(0);
+  const [isFullscreenOpen, setIsFullscreenOpen] = useState(false);
   const [selectedSize, setSelectedSize] = useState(product?.sizes ? product.sizes[0] : 'Standard');
   const [selectedColor, setSelectedColor] = useState(product?.colors ? product.colors[0]?.name : 'Default');
   const [quantity, setQuantity] = useState(minQty);
@@ -134,13 +136,16 @@ export default function ProductDetails() {
                 <img
                   src={currentMedia}
                   alt={product.name}
+                  onClick={() => setIsFullscreenOpen(true)}
                   style={{
                     width: '100%',
                     height: 'auto',
                     maxHeight: '560px',
                     objectFit: 'cover',
-                    display: 'block'
+                    display: 'block',
+                    cursor: 'zoom-in'
                   }}
+                  title="Click to view full screen"
                 />
               )}
 
@@ -169,6 +174,46 @@ export default function ProductDetails() {
                   {product.tag}
                 </span>
               )}
+
+              {/* Full Screen Button */}
+              <button
+                onClick={() => setIsFullscreenOpen(true)}
+                id="product-fullscreen-btn"
+                className="fullscreen-open-btn"
+                style={{
+                  position: 'absolute',
+                  top: '1rem',
+                  right: '1rem',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.45rem',
+                  padding: '0.45rem 0.95rem',
+                  borderRadius: '9999px',
+                  backgroundColor: 'rgba(15, 11, 33, 0.85)',
+                  border: '1px solid rgba(192, 132, 252, 0.45)',
+                  color: '#fdf2f8',
+                  fontSize: '0.82rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(10px)',
+                  zIndex: 3,
+                  boxShadow: '0 4px 16px rgba(0, 0, 0, 0.4), 0 0 16px rgba(192, 132, 252, 0.2)'
+                }}
+                title="View picture full screen"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(244, 114, 182, 0.95)';
+                  e.currentTarget.style.color = '#0e0a21';
+                  e.currentTarget.style.borderColor = '#f472b6';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(15, 11, 33, 0.85)';
+                  e.currentTarget.style.color = '#fdf2f8';
+                  e.currentTarget.style.borderColor = 'rgba(192, 132, 252, 0.45)';
+                }}
+              >
+                <Maximize2 size={14} strokeWidth={2.4} />
+                <span>Full Screen</span>
+              </button>
             </div>
 
             {/* Thumbnails Row */}
@@ -797,6 +842,17 @@ export default function ProductDetails() {
           </div>
         </div>
       </div>
+
+      {/* Full Screen Lightbox Modal with Back to Product Button */}
+      <FullscreenMediaModal
+        isOpen={isFullscreenOpen}
+        onClose={() => setIsFullscreenOpen(false)}
+        mediaList={product.images || []}
+        initialIndex={selectedImg}
+        productName={product.name}
+        onIndexChange={(idx) => setSelectedImg(idx)}
+        backButtonLabel="Back to Product"
+      />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import FullscreenMediaModal from './FullscreenMediaModal';
 
 const SLIDES = [
   {
@@ -21,6 +22,7 @@ const SLIDES = [
 
 export default function HeroSlideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isFullscreenOpen, setIsFullscreenOpen] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
@@ -241,8 +243,57 @@ export default function HeroSlideshow() {
               />
             ))}
           </div>
+          {/* Full Screen Button */}
+          <button
+            onClick={() => setIsFullscreenOpen(true)}
+            className="fullscreen-open-btn"
+            style={{
+              position: 'absolute',
+              top: '1rem',
+              right: '1rem',
+              zIndex: 10,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+              padding: '0.45rem 0.9rem',
+              borderRadius: '9999px',
+              backgroundColor: 'rgba(15, 11, 33, 0.8)',
+              border: '1px solid rgba(192, 132, 252, 0.45)',
+              color: '#fdf2f8',
+              fontSize: '0.8rem',
+              fontWeight: '600',
+              cursor: 'pointer',
+              backdropFilter: 'blur(10px)',
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.5)'
+            }}
+            title="View banner in full screen"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(244, 114, 182, 0.95)';
+              e.currentTarget.style.color = '#0e0a21';
+              e.currentTarget.style.borderColor = '#f472b6';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(15, 11, 33, 0.8)';
+              e.currentTarget.style.color = '#fdf2f8';
+              e.currentTarget.style.borderColor = 'rgba(192, 132, 252, 0.45)';
+            }}
+          >
+            <Maximize2 size={13} strokeWidth={2.4} />
+            <span>Full Screen</span>
+          </button>
         </div>
       </div>
+
+      {/* Full Screen Banner Lightbox */}
+      <FullscreenMediaModal
+        isOpen={isFullscreenOpen}
+        onClose={() => setIsFullscreenOpen(false)}
+        mediaList={SLIDES.map((s) => s.image)}
+        initialIndex={currentSlide}
+        productName="Mita's Creation Boutique"
+        onIndexChange={(idx) => setCurrentSlide(idx)}
+        backButtonLabel="Back"
+      />
 
       <style>{`
         @media (max-width: 768px) {

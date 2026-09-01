@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Eye, Star, Sparkles, MessageCircle, Play } from 'lucide-react';
+import { Eye, Star, Sparkles, MessageCircle, Play, Maximize2 } from 'lucide-react';
+import FullscreenMediaModal from './FullscreenMediaModal';
 import { BRAND_INFO } from '../data/products';
 
 const isVideoFile = (url) => typeof url === 'string' && /\.(mp4|webm|mov|ogg)$/i.test(url);
 
 export default function ProductCard({ product }) {
+  const [isFullscreenOpen, setIsFullscreenOpen] = useState(false);
+  const [selectedImgIndex, setSelectedImgIndex] = useState(0);
   const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
 
   const videoCount = product.images?.filter(isVideoFile).length || 0;
@@ -171,42 +174,96 @@ export default function ProductCard({ product }) {
           </span>
         </div>
 
-        {/* Quick View Details Overlay Button */}
-        <Link
-          to={`/product/${product.id}`}
+        {/* Action Overlay: Details & Full Screen */}
+        <div
           style={{
             position: 'absolute',
             bottom: '0.75rem',
             left: '50%',
             transform: 'translateX(-50%)',
-            background: 'rgba(15, 11, 33, 0.85)',
-            border: '1px solid rgba(192, 132, 252, 0.4)',
-            color: '#f8fafc',
-            padding: '0.45rem 1rem',
-            borderRadius: '9999px',
-            fontSize: '0.8rem',
-            fontWeight: '600',
-            textDecoration: 'none',
-            backdropFilter: 'blur(8px)',
             display: 'flex',
             alignItems: 'center',
             gap: '0.4rem',
-            opacity: 0.9,
-            transition: 'all 0.25s ease',
-            zIndex: 2
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(244, 114, 182, 0.95)';
-            e.currentTarget.style.color = '#110d24';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'rgba(15, 11, 33, 0.85)';
-            e.currentTarget.style.color = '#f8fafc';
+            width: 'calc(100% - 1.25rem)',
+            justifyContent: 'center',
+            zIndex: 3
           }}
         >
-          <Eye size={14} />
-          <span>View Details</span>
-        </Link>
+          <Link
+            to={`/product/${product.id}`}
+            style={{
+              flex: '1',
+              maxWidth: '120px',
+              background: 'rgba(15, 11, 33, 0.88)',
+              border: '1px solid rgba(192, 132, 252, 0.4)',
+              color: '#f8fafc',
+              padding: '0.45rem 0.5rem',
+              borderRadius: '9999px',
+              fontSize: '0.76rem',
+              fontWeight: '600',
+              textDecoration: 'none',
+              backdropFilter: 'blur(8px)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.3rem',
+              transition: 'all 0.25s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'rgba(244, 114, 182, 0.95)';
+              e.currentTarget.style.color = '#110d24';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'rgba(15, 11, 33, 0.88)';
+              e.currentTarget.style.color = '#f8fafc';
+            }}
+          >
+            <Eye size={13} />
+            <span>Details</span>
+          </Link>
+
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setIsFullscreenOpen(true);
+            }}
+            className="fullscreen-open-btn"
+            style={{
+              flex: '1',
+              maxWidth: '125px',
+              background: 'rgba(244, 114, 182, 0.22)',
+              border: '1px solid rgba(244, 114, 182, 0.55)',
+              color: '#fdf2f8',
+              padding: '0.45rem 0.5rem',
+              borderRadius: '9999px',
+              fontSize: '0.76rem',
+              fontWeight: '600',
+              backdropFilter: 'blur(8px)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.3rem',
+              cursor: 'pointer',
+              boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'rgba(244, 114, 182, 0.95)';
+              e.currentTarget.style.color = '#110d24';
+              e.currentTarget.style.borderColor = '#f472b6';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'rgba(244, 114, 182, 0.22)';
+              e.currentTarget.style.color = '#fdf2f8';
+              e.currentTarget.style.borderColor = 'rgba(244, 114, 182, 0.55)';
+            }}
+            title="View pictures in full screen"
+          >
+            <Maximize2 size={13} strokeWidth={2.4} />
+            <span>Full Screen</span>
+          </button>
+        </div>
       </div>
 
       {/* Product Content Details */}
@@ -366,6 +423,17 @@ export default function ProductCard({ product }) {
           transform: scale(1.06);
         }
       `}</style>
+
+      {/* Full Screen Lightbox Modal */}
+      <FullscreenMediaModal
+        isOpen={isFullscreenOpen}
+        onClose={() => setIsFullscreenOpen(false)}
+        mediaList={product.images || []}
+        initialIndex={selectedImgIndex}
+        productName={product.name}
+        onIndexChange={(idx) => setSelectedImgIndex(idx)}
+        backButtonLabel="Back to Products"
+      />
     </div>
   );
 }
