@@ -1,6 +1,304 @@
 export const PRODUCTS = [
   // ==========================================
-  // --- NEWEST EXCLUSIVE ARRIVALS (6 PRODUCTS) ---
+  // --- NEWEST EXCLUSIVE ARRIVALS (7 PRODUCTS) ---
+  // ==========================================
+
+  // 1. Pure Embroidery Sleeveless Lace Blouse
+  {
+    "id": "pure-embroidery-sleeveless-lace-blouse",
+    "name": "Pure Embroidery Sleeveless Lace Statement Blouse",
+    "category": "blouses",
+    "isGifting": false,
+    "price": 699,
+    "originalPrice": 1299,
+    "tag": "Pure Embroidery & Lace",
+    "rating": 5.0,
+    "reviewsCount": 42,
+    "images": [
+      "/Pure Embroidery Blouse/WhatsApp Image 2026-09-01 at 4.44.49 PM.jpeg",
+      "/Pure Embroidery Blouse/WhatsApp Image 2026-09-01 at 4.44.49 PM (1).jpeg",
+      "/Pure Embroidery Blouse/WhatsApp Image 2026-09-01 at 4.44.50 PM.jpeg",
+      "/Pure Embroidery Blouse/WhatsApp Image 2026-09-01 at 4.44.50 PM (1).jpeg",
+      "/Pure Embroidery Blouse/WhatsApp Video 2026-09-01 at 4.44.33 PM.mp4"
+    ],
+    "shortDesc": "The beauty of pure embroidery — where every thread tells a story. This sleeveless lace blouse is timeless grace woven into fabric. Intricate embroidery meets sleek sleeveless lace for a look that owns the spotlight.",
+    "fullDesc": "Product Name: Pure Embroidery Sleeveless Lace Statement Blouse\n\nTagline: Where Every Thread Tells a Story • Sleek Sleeveless Lace\n\nDescription:\nThe beauty of pure embroidery — where every thread tells a story. This sleeveless lace blouse is timeless grace woven into fabric.\n\nNot just a blouse — it’s a statement. Intricate embroidery meets sleek sleeveless lace for a look that owns the spotlight. Thoughtfully tailored with premium fabrics and delicate lace trims, this statement blouse pairs effortlessly with sarees, lehengas, and fusion silhouettes for festive occasions, parties, and wedding celebrations.\n\nKey Highlights:\n• Exquisite pure thread embroidery intricately woven across the front and back\n• Sleek sleeveless styling accented with delicate designer scalloped lace\n• Tailored with premium fabric and soft, skin-friendly inner lining for all-day comfort\n• Flattering neckline and sculpted silhouette designed to turn heads\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹699/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Sleeveless Pure Embroidery Designer Lace Blouse",
+      "craft": "Intricate Pure Thread Embroidery & Scalloped Lace Work",
+      "fabric": "Premium Rich Fabric with Soft Breathable Inner Lining",
+      "sleeves": "Sleek Sleeveless with Scalloped Lace Border",
+      "styling": "Ideal for Festive Sarees, Partywear Lehengas & Fusion Skirts",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹699 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Ready-to-Wear Pure Embroidery Sleeveless Lace Blouse"
+    },
+    "sizes": [
+      "34 (Bust)",
+      "36 (Bust)",
+      "38 (Bust)",
+      "40 (Bust)",
+      "42 (Bust) (With Alteration Margins)"
+    ],
+    "colors": [
+      { "name": "Crimson Red with White Lace", "hex": "#991b1b" },
+      { "name": "Ivory White with Crimson Lace", "hex": "#fdf2f8" },
+      { "name": "Golden Mustard Artisan", "hex": "#eab308" }
+    ]
+  },
+
+  // 2. New Indigo Blouse
+  {
+    "id": "authentic-indigo-frill-padded-blouse",
+    "name": "Authentic Indigo Handblock Frill Padded Designer Blouse",
+    "category": "blouses",
+    "isGifting": false,
+    "price": 650,
+    "originalPrice": 1199,
+    "tag": "Adjustable up to Size 48",
+    "rating": 5.0,
+    "reviewsCount": 49,
+    "images": [
+      "/New Indigo Blouse/WhatsApp Image 2026-09-01 at 4.47.44 PM.jpeg",
+      "/New Indigo Blouse/WhatsApp Image 2026-09-01 at 4.47.44 PM (1).jpeg",
+      "/New Indigo Blouse/WhatsApp Image 2026-09-01 at 4.47.45 PM.jpeg",
+      "/New Indigo Blouse/WhatsApp Image 2026-09-01 at 4.47.45 PM (1).jpeg"
+    ],
+    "shortDesc": "The beauty of indigo in its finest form. A sleeveless freel work blouse crafted with premium fabric, padded for comfort and adjustable up to size 48 — where elegance meets ease.",
+    "fullDesc": "Product Name: Authentic Indigo Handblock Frill Padded Designer Blouse\n\nTagline: Where Elegance Meets Ease • Padded Comfort up to Size 48\n\nDescription:\nThe beauty of indigo in its finest form. A sleeveless freel work blouse crafted with premium fabric, padded for comfort and adjustable up to size 48 — where elegance meets ease.\n\nHandcrafted with rich, breathable indigo block print fabric, this ready-to-wear blouse features playful frill work on the shoulder straps and a flattering, supportive padded bust. With generous inner margins, it comfortably accommodates sizes from 34 up to 48, making it an effortless choice for everyday ethnic charm or festive celebrations.\n\nKey Highlights:\n• Authentic Indigo handblock prints in classic botanical, paisley, and geometric motifs\n• Built-in premium soft padding for superior shape and effortless support\n• Playful frill (freel) shoulder detailing for a chic, youthful statement\n• Free size flexibility: comfortably adjustable from size 34 up to size 48\n• High-grade breathable cotton fabric with soft, sweat-absorbent inner lining\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹650/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Sleeveless Frill Padded Indigo Blouse",
+      "craft": "Authentic Indigo Block Print Artistry",
+      "fabric": "100% Pure Breathable Cotton Fabric",
+      "padding": "Built-in Soft Comfort Padded Cups",
+      "sleeves": "Sleeveless with Ruffle Frill (Freel) Detailing",
+      "fit": "Comfortable Fit (Adjustable up to Size 48)",
+      "care": "Gentle Hand Wash in Cold Water / Wash Separately",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹650 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Ready-to-Wear Padded Indigo Frill Blouse"
+    },
+    "sizes": [
+      "Free Size (Adjustable 34 up to 48)",
+      "34 - 38 (Small to Medium)",
+      "40 - 44 (Large to XL)",
+      "46 - 48 (Plus Comfort Margin)"
+    ],
+    "colors": [
+      { "name": "Indigo Paisley Leaf Motif", "hex": "#1e3a8a" },
+      { "name": "Indigo Diamond Geometric Jaal", "hex": "#172554" },
+      { "name": "Indigo Floral Trellis Floret", "hex": "#1e40af" }
+    ]
+  },
+
+  // 3. New Ajrak Print Blouse
+  {
+    "id": "authentic-ajrak-print-frill-padded-blouse",
+    "name": "Authentic Ajrak Print Frill Padded Designer Blouse",
+    "category": "blouses",
+    "isGifting": false,
+    "price": 650,
+    "originalPrice": 1199,
+    "tag": "Adjustable up to Size 48",
+    "rating": 5.0,
+    "reviewsCount": 46,
+    "images": [
+      "/New Ajrak Print Blouse/WhatsApp Image 2026-09-01 at 4.50.28 PM.jpeg",
+      "/New Ajrak Print Blouse/WhatsApp Image 2026-09-01 at 4.50.29 PM.jpeg",
+      "/New Ajrak Print Blouse/WhatsApp Image 2026-09-01 at 4.50.29 PM (1).jpeg",
+      "/New Ajrak Print Blouse/WhatsApp Image 2026-09-01 at 4.50.30 PM.jpeg",
+      "/New Ajrak Print Blouse/WhatsApp Image 2026-09-01 at 4.50.30 PM (1).jpeg"
+    ],
+    "shortDesc": "The beauty of Ajrak print in its purest form. Crafted in fine fabric with a soft inner lining, sleeveless freel work, this padded blouse offers a flawless fit — adjustable up to size 48.",
+    "fullDesc": "Product Name: Authentic Ajrak Print Frill Padded Designer Blouse\n\nTagline: Pure Heritage Ajrakh Art • Padded Comfort up to Size 48\n\nDescription:\nThe beauty of Ajrak print in its purest form. Crafted in fine fabric with a soft inner lining, sleeveless freel work, this padded blouse offers a flawless fit — adjustable up to size 48.\n\nFeaturing authentic Ajrak block print motifs in rich earthy tones on an ivory and fine cotton base, this blouse exudes timeless heritage. Designed with stylish ruffled frill straps, soft padded support, and generous inner alteration margins to easily fit busts from 34 up to 48.\n\nKey Highlights:\n• Traditional Ajrakh block printing featuring fine butas, paisleys, and geometric lattice patterns\n• Built-in soft padded cups for shape, ease, and flawless silhouette without needing a bra\n• Delicate sleeveless frill (freel) ruffle straps that add feminine charm\n• Ultra-comfortable cotton lining keeping you fresh in all weather\n• Adjustable fit up to size 48 with ample side margins\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹650/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Sleeveless Frill Padded Ajrak Blouse",
+      "craft": "Heritage Ajrakh Block Print Artistry",
+      "fabric": "Fine Cotton Fabric with Soft Breathable Inner Lining",
+      "padding": "Built-in Soft Molded Cups",
+      "sleeves": "Sleeveless with Frill Ruffle Work",
+      "fit": "Flexible Custom Fit (Adjustable up to Size 48)",
+      "care": "Gentle Hand Wash / Wash Separately in Cold Water",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹650 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Ready-to-Wear Padded Ajrak Frill Blouse"
+    },
+    "sizes": [
+      "Free Size (Adjustable 34 up to 48)",
+      "34 - 38 (Small to Medium)",
+      "40 - 44 (Large to XL)",
+      "46 - 48 (Plus Comfort Margin)"
+    ],
+    "colors": [
+      { "name": "Ajrak Crimson Leaf Motif", "hex": "#881337" },
+      { "name": "Ajrak Paisley Kalash Jaal", "hex": "#9f1239" },
+      { "name": "Ajrak Lattice Buti Trellis", "hex": "#4c0519" },
+      { "name": "Botanical Floral Motif", "hex": "#be123c" }
+    ]
+  },
+
+  // 4. Beautiful Printed Vacuum Flask
+  {
+    "id": "artistic-printed-mini-vacuum-flask",
+    "name": "Cute Artistic Printed Mini Vacuum Flask Bottle",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Bulk Return Gifting & Festive Favors",
+    "price": 350,
+    "originalPrice": 599,
+    "tag": "Buy 2 for ₹600",
+    "rating": 5.0,
+    "reviewsCount": 68,
+    "images": [
+      "/beautiful Printed vaccum flask/WhatsApp Image 2026-09-01 at 4.52.37 PM.jpeg"
+    ],
+    "shortDesc": "A very cute and beautifully printed vacuum flask that turns everyday moments into something special. Designed with charming details and a sleek finish, it’s as delightful to carry as it is to use. SPECIAL: ₹350 each | Buy 2 for ₹600!",
+    "fullDesc": "Product Name: Cute Artistic Printed Mini Vacuum Flask Bottle\n\nTagline: Charming Details • Sleek Finish • Buy 2 for ₹600\n\nDescription:\nA very cute and beautifully printed vacuum flask that turns everyday moments into something special. Designed with charming details and a sleek finish, it’s as delightful to carry as it is to use.\n\nFeaturing breathtaking oriental art prints—from royal peacocks, vibrant butterflies, and koi fish to blossoming vintage roses and gold-accented florals—this double-wall vacuum insulated flask keeps your hot coffee, tea, or cold water at the perfect temperature for hours. Designed with a convenient carry-ring metal lid and leak-proof seal, it slips easily into handbags, backpack pockets, and car cup holders.\n\nKey Highlights:\n• Double-wall vacuum insulation keeps beverages hot or cold for hours\n• Charming high-definition 360° artistic prints with glossy protective coating\n• Premium food-grade stainless steel interior, BPA-free and rust-proof\n• Sleek stainless steel cap with integrated finger-carry loop ring\n• Ideal for gifting, office desk, travel, return favors, and festive hampers\n• SPECIAL OFFER: ₹350 each | Buy 2 for just ₹600!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹350/- each | Buy 2 for ₹600 only!",
+    "details": {
+      "type": "Double-Wall Insulated Artistic Vacuum Flask Bottle",
+      "capacity": "Approx 280ml - 350ml Compact Pocket Size",
+      "material": "Food-Grade 304 Stainless Steel & Leak-Proof Cap",
+      "insulation": "Thermal Vacuum Keeps Hot / Cold for Hours",
+      "specialDeal": "🔥 ₹350 each | Buy 2 for ₹600 with Free Shipping!",
+      "features": "Leak-Proof Screw Cap with Sturdy Carry Loop Ring",
+      "packaging": "Individual Premium Gift Box Included",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹350 (Buy 2 for ₹600 with Free Shipping)",
+      "inclusions": "1 Artistic Printed Mini Vacuum Flask with Retail Box"
+    },
+    "sizes": [
+      "Compact Handheld Size (Approx 280ml - 350ml)"
+    ],
+    "colors": [
+      { "name": "Royal Peacock & Golden Bloom", "hex": "#d97706" },
+      { "name": "Golden Monarch Butterfly", "hex": "#b45309" },
+      { "name": "Oriental Golden Koi Fish", "hex": "#dc2626" },
+      { "name": "Vintage English Rose Garden", "hex": "#db2777" },
+      { "name": "Botanical Floral Paradise", "hex": "#2563eb" }
+    ]
+  },
+
+  // 5. Premium Insulated Tumblers
+  {
+    "id": "premium-insulated-travel-tumbler",
+    "name": "Premium Insulated Travel Tumbler with Straw & Flip Lid",
+    "category": "gifting",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "Customizable for Corporate Gifting & Bulk Orders",
+    "price": 600,
+    "originalPrice": 999,
+    "tag": "Corporate & Bulk Gifting",
+    "rating": 5.0,
+    "reviewsCount": 54,
+    "images": [
+      "/Tumblers/WhatsApp Image 2026-09-01 at 4.54.44 PM.jpeg"
+    ],
+    "shortDesc": "Beautifully crafted tumblers in stunning colours with a premium finish. Perfect for everyday elegance or thoughtful gifting, they can be customised as per your needs — ideal for corporate gifting and bulk orders.",
+    "fullDesc": "Product Name: Premium Insulated Travel Tumbler with Straw & Flip Lid\n\nTagline: Everyday Elegance • Customizable • Corporate & Bulk Gifting\n\nDescription:\nBeautifully crafted tumblers in stunning colours with a premium finish. Perfect for everyday elegance or thoughtful gifting, they can be customised as per your needs — ideal for corporate gifting and bulk orders.\n\nEngineered with double-wall stainless steel insulation to keep your iced beverages chilled and hot coffee piping hot for hours. Designed with an ergonomic tapered base that fits standard car cup holders, a dual-purpose spill-resistant clear lid, and includes a reusable stainless steel drinking straw.\n\nKey Highlights:\n• Premium food-grade stainless steel construction with sweat-free powder coating\n• Double-wall vacuum insulation maintains hot & cold temperatures for hours\n• Clear spill-resistant lid with flip-top sipping spout and straw opening\n• Reusable metal drinking straw included for eco-friendly hydration\n• Can be personalized / customized with company logos, names, or event themes for corporate and wedding gifting\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹600/- only | Bulk corporate discounts available on inquiry!",
+    "details": {
+      "type": "Double-Wall Stainless Steel Insulated Travel Tumbler",
+      "capacity": "Large Travel Capacity (Approx 600ml - 750ml)",
+      "material": "Food-Grade BPA-Free Stainless Steel & Clear Acrylic Lid",
+      "accessories": "Includes Reusable Metal Straw & Dual-Sip Clear Lid",
+      "customization": "Custom branding / engraving available for bulk orders",
+      "usage": "Car Cup Holder Friendly, Work Desk, Gym, Travel & Corporate Gifting",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹600 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Insulated Tumbler + 1 Splash-Proof Lid + 1 Reusable Straw"
+    },
+    "sizes": [
+      "Standard Travel Size (Fits Car Cup Holders)"
+    ],
+    "colors": [
+      { "name": "Midnight Matte Navy", "hex": "#1e293b" },
+      { "name": "Pastel Lilac Lavender", "hex": "#c084fc" },
+      { "name": "Minimalist Cloud White", "hex": "#f8fafc" },
+      { "name": "Vibrant Lime Green", "hex": "#84cc16" },
+      { "name": "Hot Berry Pink", "hex": "#ec4899" }
+    ]
+  },
+
+  // 6. Handcrafted Bracelet Watch
+  {
+    "id": "handcrafted-royal-ghungroo-bracelet-watch",
+    "name": "Handcrafted Royal Ghungroo Bracelet Watch",
+    "category": "jewellery",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Wedding Favors & Bridesmaid Gifting",
+    "price": 999,
+    "originalPrice": 1999,
+    "tag": "Artisanal Jewellery Watch",
+    "rating": 5.0,
+    "reviewsCount": 44,
+    "images": [
+      "/Bracelet Watch/watch_preview_1.jpg",
+      "/Bracelet Watch/watch_preview_2.jpg",
+      "/Bracelet Watch/WhatsApp Video 2026-09-01 at 4.57.53 PM.mp4"
+    ],
+    "shortDesc": "A beautiful bracelet watch that blends elegance with artistry. Handcrafted with precision, its unique design offers a modern yet timeless look — perfect for those who love to stand out with subtle sophistication.",
+    "fullDesc": "Product Name: Handcrafted Royal Ghungroo Bracelet Watch\n\nTagline: Elegance Blends with Artistry • Modern Yet Timeless Heritage\n\nDescription:\nA beautiful bracelet watch that blends elegance with artistry. Handcrafted with precision, its unique design offers a modern yet timeless look — perfect for those who love to stand out with subtle sophistication.\n\nThis statement timepiece doubles as a piece of royal heirloom jewelry. Featuring a square quartz dial enclosed in an ornate filigree bezel, linked to a handcrafted gold-toned bracelet chain embellished with ruby and emerald stone-studded square motifs, lustrous seed pearls, and musical hanging ghungroo bells. Perfect for pairing with ethnic sarees, bridal wear, festive lehengas, or contemporary Indo-western ensembles.\n\nKey Highlights:\n• Unique fusion of high-precision quartz analog watch and traditional handcrafted jewellery\n• Ornate gold-polished links with ruby red and emerald green stones, pearl clusters & ghungroo bells\n• Elegant square analog dial with crisp Roman/numeric markers and gold hands\n• Adjustable bracelet chain with secure clasp suitable for all wrist sizes\n• A breathtaking statement accessory for weddings, festive galas, and luxury gifting\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹999/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Handcrafted Ethnic Jewellery Bracelet Watch",
+      "dial": "Square Analog Quartz Dial with Gold Accent Hands",
+      "bracelet": "Gold-Toned Chain with Ghungroo Bells, Ruby & Emerald Stones, Pearl Accents",
+      "clasp": "Adjustable Clasp with Extender Chain (Fits All Wrist Sizes)",
+      "styling": "Ideal for Weddings, Festivals, Sarees, Lehengas & Gifting",
+      "care": "Wipe with a clean, dry cloth; keep away from water, perfumes & chemicals",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹999 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Handcrafted Royal Ghungroo Bracelet Watch"
+    },
+    "sizes": [
+      "Free Size (Adjustable Chain Fits All Wrists)"
+    ],
+    "colors": [
+      { "name": "Royal Gold with Ruby & Emerald Stones", "hex": "#d97706" }
+    ]
+  },
+
+  // 7. Beautiful Handcrafted Jewellery
+  {
+    "id": "artisan-peacock-cowrie-handcrafted-jewellery-set",
+    "name": "Artisan Peacock & Cowrie Shell Handcrafted Jewellery Set",
+    "category": "jewellery",
+    "isGifting": true,
+    "bulkOrderAvailable": true,
+    "bulkOrderNotice": "DM for Custom Bulk Jewellery & Haldi/Mehendi Favors",
+    "price": 650,
+    "originalPrice": 1299,
+    "tag": "Soul of Tradition",
+    "rating": 5.0,
+    "reviewsCount": 52,
+    "images": [
+      "/Beautiful handcrafted jewellery/WhatsApp Image 2026-09-01 at 5.09.46 PM.jpeg"
+    ],
+    "shortDesc": "Beautiful handcrafted jewellery that carries the soul of tradition and the warmth of human touch. Intricately detailed with Kalamkari art, oxidized peacock motif, cowrie shells, and matching earrings.",
+    "fullDesc": "Product Name: Artisan Peacock & Cowrie Shell Handcrafted Jewellery Set\n\nTagline: The Soul of Tradition & Warmth of Human Touch\n\nDescription:\nBeautiful handcrafted jewellery that carries the soul of tradition and the warmth of human touch. Each piece is thoughtfully created by skilled artisans, reflecting timeless designs that have been passed down through generations. More than just an accessory, it holds an emotional bond — a story of culture, heritage, and personal connection. Its intricate detailing and authentic charm make it perfect for those who appreciate elegance rooted in tradition, turning every moment into something truly special.\n\nThis artisan set showcases a handcrafted Kalamkari fabric pendant centered with a regal oxidized silver peacock charm, bordered by natural cowrie shells (kodi) and pom-pom lace. Suspended by braided maroon thread dori with fabric rosettes and beads, accompanied by a matching pair of handcrafted cowrie shell floral earrings with silver jhumki drops.\n\nKey Highlights:\n• 100% handcrafted by traditional artisans using sustainable, ethnic materials\n• Statement fabric pendant with oxidized German silver peacock and authentic cowrie shells\n• Includes complete matching set: statement necklace + handcrafted earrings\n• Skin-friendly, feather-lightweight, and comfortable for day-long festive wear\n• Perfect for Durga Puja, Haldi/Mehendi ceremonies, Navratri, handloom sarees & cultural celebrations\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹650/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "type": "Handcrafted Ethnic Fabric & Cowrie Shell Jewellery Set",
+      "craft": "Traditional Handcrafted Fabric Art, Cowrie Shell Embellishment & Metal Work",
+      "setContains": "1 Artisan Statement Necklace + 1 Pair Matching Cowrie Earrings",
+      "material": "Authentic Kalamkari Cotton Base, Natural Cowrie Shells, Oxidized Silver Charms, Thread Tassels",
+      "closure": "Adjustable Soft Thread Dori (Customizable Length)",
+      "weight": "Lightweight & Skin-Friendly (Comfortable for All-Day Wear)",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹650 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Handcrafted Necklace + 1 Pair Matching Handcrafted Earrings"
+    },
+    "sizes": [
+      "Free Size (Adjustable Thread Dori)"
+    ],
+    "colors": [
+      { "name": "Kalamkari Ochre & Crimson Red", "hex": "#ea580c" }
+    ]
+  },
+
+  // ==========================================
+  // --- FEATURED CURATIONS & GIFTING ---
   // ==========================================
 
   // 1. Gift Hamper Basket

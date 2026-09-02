@@ -335,6 +335,8 @@ export default function Contact() {
                   >
                     <option value="Women's Ethnic / Saree">Women's Ethnic & Sarees</option>
                     <option value="Designer Blouses">Designer Blouses & Padded Tops</option>
+                    <option value="Handcrafted Jewellery & Watches">Handcrafted Jewellery & Bracelet Watches</option>
+                    <option value="Printed Flasks & Tumblers">Custom Tumblers & Artistic Vacuum Flasks</option>
                     <option value="Nightwear & Loungewear">Plus Size Satin Nightwear & Kaftans</option>
                     <option value="Bags & Gifting Potlis">Handcrafted Bags, Slings & Pearl Potlis</option>
                     <option value="Cord Sets & Outfits">Co-ord Sets & Tops</option>

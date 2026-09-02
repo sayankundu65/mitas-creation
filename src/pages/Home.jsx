@@ -15,6 +15,7 @@ export default function Home() {
     { id: 'all', label: '🌟 All Collections' },
     { id: 'sarees', label: '🥻 Sarees & Handlooms' },
     { id: 'blouses', label: '👚 Designer Blouses' },
+    { id: 'jewellery', label: '💍 Jewellery & Watches' },
     { id: 'coords', label: '✨ Co-ords & Night Suits' },
     { id: 'bags', label: '👜 Bags, Slings & Potlis' },
     { id: 'bedsheets', label: '🛏️ Bedsheets & Home' },
@@ -25,6 +26,8 @@ export default function Home() {
 
   const giftingSubCategories = [
     { id: 'all', label: '✨ All Gifting & Essentials' },
+    { id: 'flasks-tumblers', label: '🍶 Flasks & Tumblers' },
+    { id: 'jewellery', label: '💍 Jewellery & Watches' },
     { id: 'hampers', label: '🧺 Gift Baskets & Hampers' },
     { id: 'potlis', label: '👝 Pom Pom Potlis & Pouches' },
     { id: 'totes', label: '👜 Ajrak & Canvas Totes' },
@@ -48,6 +51,7 @@ export default function Home() {
       (selectedCategory === 'gifting' && (product.isGifting || product.category === 'gifting')) ||
       (selectedCategory === 'sarees' && (product.category === 'sarees' || product.name.toLowerCase().includes('saree'))) ||
       (selectedCategory === 'blouses' && (product.category === 'blouses' || product.name.toLowerCase().includes('blouse'))) ||
+      (selectedCategory === 'jewellery' && (product.category === 'jewellery' || product.category === 'jewelry' || product.category === 'watches' || product.name.toLowerCase().includes('jewellery') || product.name.toLowerCase().includes('jewelry') || product.name.toLowerCase().includes('watch'))) ||
       (selectedCategory === 'coords' && (product.category === 'coords' || product.category === 'nightwear' || product.name.toLowerCase().includes('night suit') || product.name.toLowerCase().includes('cord') || product.name.toLowerCase().includes('co-ord'))) ||
       (selectedCategory === 'bags' && (product.category === 'bags' || product.name.toLowerCase().includes('bag') || product.name.toLowerCase().includes('pouch') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('sling') || product.name.toLowerCase().includes('tote') || product.name.toLowerCase().includes('purse'))) ||
       (selectedCategory === 'mens' && (product.category === 'mens' || product.category === 'men')) ||
@@ -59,6 +63,8 @@ export default function Home() {
   const giftingProducts = PRODUCTS.filter((product) => {
     if (!product.isGifting) return false;
     if (giftingTab === 'all') return true;
+    if (giftingTab === 'flasks-tumblers') return product.id.includes('flask') || product.id.includes('tumbler') || product.name.toLowerCase().includes('flask') || product.name.toLowerCase().includes('tumbler');
+    if (giftingTab === 'jewellery') return product.category === 'jewellery' || product.id.includes('jewellery') || product.id.includes('watch') || product.name.toLowerCase().includes('watch');
     if (giftingTab === 'hampers') return product.id.includes('hamper') || product.id.includes('basket') || product.name.toLowerCase().includes('hamper');
     if (giftingTab === 'bedsheets') return product.category === 'bedsheets' || product.id.includes('bed-cover');
     if (giftingTab === 'potlis') return product.id.includes('potli') || product.id.includes('pouch') || product.id.includes('sling') || product.id.includes('purse') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('pouch');
