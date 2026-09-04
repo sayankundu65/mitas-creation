@@ -1,6 +1,465 @@
 export const PRODUCTS = [
   // ==========================================
-  // --- NEWEST EXCLUSIVE ARRIVALS (7 PRODUCTS) ---
+  // --- NEW CATALOGUE LAUNCH (11 EXCLUSIVE SAREES) ---
+  // ==========================================
+
+  // 1. Luxurious Tissue Organza Cocktail Saree with Embroidered Blouse
+  {
+    "id": "cocktail-saree-tissue-organza-embroidery",
+    "name": "Luxurious Tissue Organza Cocktail Saree with Embroidered Blouse",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1550,
+    "originalPrice": 2499,
+    "tag": "New Catalogue Launch",
+    "rating": 5,
+    "reviewsCount": 38,
+    "images": [
+      "/cocktail saree luxurious tissue organza fabric/WhatsApp Image 2026-09-02 at 4.14.08 PM.jpeg",
+      "/cocktail saree luxurious tissue organza fabric/WhatsApp Image 2026-09-02 at 4.14.08 PM (1).jpeg",
+      "/cocktail saree luxurious tissue organza fabric/WhatsApp Image 2026-09-02 at 4.14.08 PM (2).jpeg",
+      "/cocktail saree luxurious tissue organza fabric/WhatsApp Image 2026-09-02 at 4.14.09 PM.jpeg",
+      "/cocktail saree luxurious tissue organza fabric/WhatsApp Image 2026-09-02 at 4.14.09 PM (1).jpeg",
+      "/cocktail saree luxurious tissue organza fabric/WhatsApp Image 2026-09-02 at 4.14.09 PM (2).jpeg"
+    ],
+    "shortDesc": "Step into a world of elegance with our latest cocktail saree collection, crafted in luxurious tissue organza fabric. Light, airy, and effortlessly graceful with intricate embroidery work.",
+    "fullDesc": "✨ Full Ready – New Catalogue Launch ✨\n\nStep into a world of elegance with our latest cocktail saree collection, crafted in luxurious tissue organza fabric. Light, airy, and effortlessly graceful, these designer sarees are a perfect blend of modern sophistication and timeless beauty.\n\nEach piece is beautifully adorned with intricate embroidery work that adds richness and a refined festive charm. Paired with a stunning blouse featuring detailed work, the ensemble is designed to give you a complete, ready-to-wear statement look.\n\nPerfect for parties, celebrations, and special occasions, these sarees are made for those who love to stand out with subtle glamour and elegance. 💫\n\n🌸 We Believe In Quality 🌸\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1550/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Luxurious Tissue Organza Fabric",
+      "craft": "Intricate Scalloped Floral Embroidery Work",
+      "blouse": "Paired with Stunning Designer Embroidered Blouse Piece",
+      "drape": "Light, Airy & Graceful Silhouette",
+      "occasion": "Cocktail Parties, Festive Celebrations, Weddings & Special Evenings",
+      "care": "Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1550 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Cocktail Tissue Organza Saree + 1 Designer Embroidered Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Radiant Sunshine Yellow",
+        "hex": "#eab308"
+      },
+      {
+        "name": "Pristine Ivory White",
+        "hex": "#f8fafc"
+      }
+    ]
+  },
+
+  // 2. Fresh Arrival Designer Saree – Mirror Work Elegance
+  {
+    "id": "fresh-arrival-designer-saree-mirror-work-tabi",
+    "name": "Fresh Arrival Designer Saree – Mirror Work Elegance",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1499,
+    "originalPrice": 2399,
+    "tag": "Original Mirror Handwork",
+    "rating": 5,
+    "reviewsCount": 45,
+    "images": [
+      "/Fresh Arrival Designer Saree – Mirror Work Elegance/WhatsApp Image 2026-09-02 at 4.12.12 PM.jpeg",
+      "/Fresh Arrival Designer Saree – Mirror Work Elegance/WhatsApp Image 2026-09-02 at 4.12.13 PM.jpeg",
+      "/Fresh Arrival Designer Saree – Mirror Work Elegance/WhatsApp Image 2026-09-02 at 4.12.13 PM (1).jpeg"
+    ],
+    "shortDesc": "Step into effortless grace with this beautiful soft Tabi saree, adorned with an elegant digital print, original mirror handwork, cutwork border with latkans, and paired with a printed silk blouse.",
+    "fullDesc": "🌸 Fresh Arrival Designer Saree – Mirror Work Elegance 🌸\n\n✨ Step into effortless grace with this beautiful soft Tabi saree, adorned with an elegant digital print that brings a modern yet timeless charm. The highlight lies in its original mirror handwork spread across the saree, adding a subtle shimmer that catches the light beautifully with every movement.\n\nThe finely detailed cutwork border on the pallu, enhanced with delicate latkans, adds a stylish and festive touch, making the drape look even more refined and eye-catching. Paired with a printed silk blouse, this ensemble creates a perfect balance of sophistication and contemporary style.\n\nLightweight, graceful, and designed to stand out—this saree is perfect for festive occasions, small celebrations, and day-to-evening looks. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\n💖 Price – ₹1499/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Premium Soft Tabi Silk Fabric",
+      "craft": "Original Mirror Handwork & Modern Digital Floral Art",
+      "border": "Finely Detailed Cutwork Border on Pallu with Delicate Latkans",
+      "blouse": "Paired with Matching Printed Silk Blouse Piece",
+      "drape": "Lightweight, Soft & Graceful Fall",
+      "occasion": "Festive Occasions, Celebrations & Day-to-Evening Events",
+      "care": "Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1499 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Soft Tabi Saree + 1 Printed Silk Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Muted Taupe & Fuchsia Bloom",
+        "hex": "#a8897c"
+      }
+    ]
+  },
+
+  // 3. Soft Aqua Japan Satin Silk Saree with Heavy Multicolor Embroidery
+  {
+    "id": "soft-aqua-japan-satin-silk-embroidered-saree",
+    "name": "Soft Aqua Japan Satin Silk Saree with Heavy Multicolor Embroidery",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 2100,
+    "originalPrice": 3299,
+    "tag": "Super Fine Japan Satin",
+    "rating": 5,
+    "reviewsCount": 52,
+    "images": [
+      "/Beautiful Saree .. soft aqua  pastel turquoise blue shade/WhatsApp Image 2026-09-02 at 3.53.14 PM.jpeg",
+      "/Beautiful Saree .. soft aqua  pastel turquoise blue shade/WhatsApp Image 2026-09-02 at 3.53.14 PM (1).jpeg",
+      "/Beautiful Saree .. soft aqua  pastel turquoise blue shade/WhatsApp Image 2026-09-02 at 3.53.15 PM.jpeg"
+    ],
+    "shortDesc": "Beautiful saree in a soft aqua / pastel turquoise blue shade with delicate multicolor floral embroidery along the border. Crafted in super fine quality Japan satin silk with exquisite heavy embroidery.",
+    "fullDesc": "Beautiful Saree .. soft aqua / pastel turquoise blue shade with delicate multicolor floral embroidery along the border. It’s a very soothing, elegant color that gives a fresh and graceful look.\n\nIndulge in pure elegance with this super fine quality Japan satin silk saree ✨\nCrafted to perfection, this stunning saree features exquisite heavy embroidery work that adds richness and intricate detailing to every drape. The luxurious satin silk fabric offers a smooth, glossy finish, flowing beautifully to create a graceful and sophisticated silhouette.\n\nSoft, comfortable, and easy to carry, it ensures effortless style even during long hours. Paired with a matching blouse piece, this gorgeous party wear saree is the perfect choice for weddings, festive occasions, and special evenings where you want to shine with timeless charm. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹2100/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Super Fine Quality Japan Satin Silk",
+      "craft": "Exquisite Heavy Multicolor Floral Thread Embroidery along Border",
+      "finish": "Smooth, Glossy Finish with Fluid Luxurious Drape",
+      "blouse": "Paired with Matching Blouse Piece",
+      "occasion": "Weddings, Festive Occasions & Special Evenings",
+      "care": "Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹2100 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Japan Satin Silk Saree + 1 Matching Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Pastel Turquoise / Soft Aqua Blue",
+        "hex": "#38bdf8"
+      }
+    ]
+  },
+
+  // 4. Super Premium Crepe Satin Silk Saree (Off-White & Black Floral)
+  {
+    "id": "super-premium-crepe-satin-silk-saree-off-white-black",
+    "name": "Super Premium Crepe Satin Silk Saree (Off-White & Black Floral)",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1050,
+    "originalPrice": 1899,
+    "tag": "Super Premium Crepe Satin",
+    "rating": 4.9,
+    "reviewsCount": 41,
+    "images": [
+      "/super premium crepe satin silk saree/WhatsApp Image 2026-09-02 at 3.42.35 PM.jpeg",
+      "/super premium crepe satin silk saree/WhatsApp Image 2026-09-02 at 3.42.36 PM.jpeg",
+      "/super premium crepe satin silk saree/WhatsApp Image 2026-09-02 at 3.42.36 PM (1).jpeg"
+    ],
+    "shortDesc": "Glorious off-white and black super premium crepe satin silk saree featuring an elegant monochrome floral print with smooth, glossy drape and matching blouse piece.",
+    "fullDesc": "Elevate your style with this super premium crepe satin silk saree ✨\nDesigned in a glorious off-white and black combination, the elegant floral print creates a striking balance of sophistication and charm. The rich crepe satin silk fabric offers a smooth, glossy drape that enhances your look with a refined, graceful finish.\n\nSoft, lightweight, and comfortable, this saree is easy to carry for long hours without compromising on style. Paired with a matching blouse piece, it’s a perfect choice for festive occasions, formal gatherings, and chic evening looks. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1050/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Super Premium Crepe Satin Silk",
+      "print": "Artistic Black Floral & Geometric Motifs on Off-White Canvas",
+      "finish": "Smooth, Glossy Drape with Refined Graceful Fall",
+      "blouse": "Paired with Matching Blouse Piece",
+      "occasion": "Festive Occasions, Formal Gatherings & Chic Evening Looks",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1050 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Crepe Satin Silk Saree + 1 Matching Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Glorious Off-White & Black",
+        "hex": "#f8fafc"
+      }
+    ]
+  },
+
+  // 5. Heavy Quality Crepe Satin Silk Saree (Golden & Navy Blue Floral)
+  {
+    "id": "heavy-quality-crepe-satin-silk-saree-golden-navy",
+    "name": "Heavy Quality Crepe Satin Silk Saree (Golden & Navy Blue Floral)",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1050,
+    "originalPrice": 1899,
+    "tag": "Golden & Navy Floral",
+    "rating": 4.9,
+    "reviewsCount": 44,
+    "images": [
+      "/heavy-quality crepe satin silk saree 2/WhatsApp Image 2026-09-02 at 3.38.17 PM.jpeg",
+      "/heavy-quality crepe satin silk saree 2/WhatsApp Image 2026-09-02 at 3.38.18 PM.jpeg",
+      "/heavy-quality crepe satin silk saree 2/WhatsApp Image 2026-09-02 at 3.38.18 PM (1).jpeg"
+    ],
+    "shortDesc": "Graceful blend of golden cream and deep navy blue floral prints on heavy-quality crepe satin silk. Soft, fluid fall with subtle sheen and matching blouse piece.",
+    "fullDesc": "Step into timeless elegance with this heavy-quality crepe satin silk saree ✨\nAdorned with a graceful blend of golden and deep navy blue floral prints, this saree exudes richness and sophistication. The luxurious fabric drapes beautifully with a soft, fluid fall and a subtle sheen that enhances its overall charm.\n\nDesigned for comfort as much as style, it is soft on the skin, easy to carry, and perfect for long wear. Paired with a matching blouse piece, this ensemble is ideal for festive occasions, evening gatherings, and special celebrations where you want to make a refined statement. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1050/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Heavy-Quality Crepe Satin Silk",
+      "print": "Graceful Blend of Golden Cream & Deep Navy Blue Floral Prints",
+      "finish": "Soft, Fluid Fall with a Subtle Luminous Sheen",
+      "blouse": "Paired with Matching Blouse Piece",
+      "occasion": "Festive Occasions, Evening Gatherings & Special Celebrations",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1050 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Heavy Crepe Satin Silk Saree + 1 Matching Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Golden Cream & Royal Navy Blue",
+        "hex": "#1e3a8a"
+      }
+    ]
+  },
+
+  // 6. Heavy Quality Crepe Satin Silk Saree (Soothing Firozi Shade)
+  {
+    "id": "heavy-quality-crepe-satin-silk-saree-firozi",
+    "name": "Heavy Quality Crepe Satin Silk Saree (Soothing Firozi Shade)",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1050,
+    "originalPrice": 1899,
+    "tag": "Soothing Firozi Shade",
+    "rating": 4.9,
+    "reviewsCount": 46,
+    "images": [
+      "/heavy-quality crepe satin silk saree/WhatsApp Image 2026-09-02 at 3.34.03 PM.jpeg",
+      "/heavy-quality crepe satin silk saree/WhatsApp Image 2026-09-02 at 3.34.04 PM.jpeg"
+    ],
+    "shortDesc": "Experience elegance in every drape with this heavy-quality crepe satin silk saree in a soothing firozi shade. Beautiful white floral print, smooth flowy texture, and matching blouse piece.",
+    "fullDesc": "Experience elegance in every drape with this heavy-quality crepe satin silk saree ✨\nDesigned in a soothing firozi shade, it features a beautiful floral print that adds a fresh and graceful charm to your look. The rich crepe satin silk fabric offers a smooth, flowy texture with a subtle sheen, giving you a refined and sophisticated appearance.\n\nSoft, comfortable, and easy to carry, this saree is perfect for long hours—whether it’s a festive celebration, casual gathering, or special occasion. Paired with a matching blouse piece, it completes a look that is effortlessly stylish and timeless. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1050/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Heavy-Quality Rich Crepe Satin Silk",
+      "print": "Fresh White Floral Botanicals on Firozi Turquoise Base",
+      "finish": "Smooth Flowy Texture with Subtle Sheen",
+      "blouse": "Paired with Matching Blouse Piece",
+      "occasion": "Festive Celebrations, Casual Gatherings & Special Occasions",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1050 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Heavy Crepe Satin Silk Saree + 1 Matching Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Soothing Firozi Turquoise",
+        "hex": "#06b6d4"
+      }
+    ]
+  },
+
+  // 7. Stunning Tiger-Printed Japan Satin Saree with Heavy Blouse
+  {
+    "id": "tiger-printed-japan-satin-saree",
+    "name": "Stunning Tiger-Printed Japan Satin Saree with Heavy Blouse",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1999,
+    "originalPrice": 2999,
+    "tag": "Animal Print Trend",
+    "rating": 5,
+    "reviewsCount": 64,
+    "images": [
+      "/tiger-printed Japan satin saree/WhatsApp Image 2026-09-02 at 3.29.47 PM.jpeg",
+      "/tiger-printed Japan satin saree/WhatsApp Image 2026-09-02 at 3.29.47 PM (1).jpeg"
+    ],
+    "shortDesc": "Make a bold statement with this stunning tiger-printed Japan satin saree. Luxurious glossy drape paired with a beautifully crafted black blouse piece with intricate heavy sequin work.",
+    "fullDesc": "Make a bold statement with this stunning tiger-printed Japan satin saree 🐅✨\nThe luxurious satin fabric offers a smooth, glossy drape that flows effortlessly, enhancing your silhouette with a rich, refined finish. The striking animal print adds a touch of fierce elegance, making it perfect for those who love to stand out with confidence.\n\nPaired with a beautifully crafted black blouse piece featuring intricate heavy work, this ensemble brings together glamour and sophistication in the most extraordinary way. Ideal for evening events, parties, and special occasions where making an impression is a must. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1999/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Luxurious Glossy Japan Satin Fabric",
+      "print": "Fierce Tiger / Leopard Animal Print Artistry",
+      "blouse": "Paired with Beautifully Crafted Black Blouse Piece with Intricate Heavy Sequin Work",
+      "drape": "Smooth, Glossy Drape Flowing Effortlessly",
+      "occasion": "Evening Parties, Cocktail Nights, Galas & Glamour Events",
+      "care": "Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1999 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Tiger-Printed Japan Satin Saree + 1 Heavy Work Black Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Warm Amber Tiger Print",
+        "hex": "#d97706"
+      }
+    ]
+  },
+
+  // 8. Beautiful Red and Black Combination Mirror Work Modal Saree
+  {
+    "id": "red-black-mirror-work-modal-saree",
+    "name": "Beautiful Red and Black Combination Mirror Work Modal Saree",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1050,
+    "originalPrice": 1899,
+    "tag": "Mirror Work Modal Silk",
+    "rating": 5,
+    "reviewsCount": 49,
+    "images": [
+      "/Beautiful Red and Black Combination Mirror Work Model Saree/WhatsApp Image 2026-09-02 at 3.25.46 PM.jpeg",
+      "/Beautiful Red and Black Combination Mirror Work Model Saree/WhatsApp Image 2026-09-02 at 3.25.47 PM.jpeg"
+    ],
+    "shortDesc": "Grace meets tradition in this beautiful mirror work modal silk saree featuring a striking red and black combination. Soft drape with subtle sparkle for festive occasions.",
+    "fullDesc": "Beautiful Red and Black Combination Miror Work Modal Saree \n\nGrace meets tradition in this beautiful mirror work modal silk saree ✨\nCrafted with finesse, the soft modal silk drapes effortlessly, offering both comfort and elegance. The intricate mirror work adds a subtle sparkle, catching the light with every movement and creating a truly mesmerizing look.\n\nPerfect for festive occasions, celebrations, or special gatherings, this saree blends timeless craftsmanship with a modern aesthetic — making it an absolute head-turner. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1050/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Ultra-Soft Modal Silk",
+      "craft": "Intricate Mirror Work & Classical Heritage Mandalas",
+      "drape": "Effortless, Feather-Light, Fluid Drape",
+      "blouse": "Matching Modal Silk Blouse Fabric Included",
+      "occasion": "Festive Occasions, Celebrations, Pooja & Special Gatherings",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1050 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Mirror Work Modal Silk Saree with Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Crimson Red & Midnight Black",
+        "hex": "#991b1b"
+      }
+    ]
+  },
+
+  // 9. Beautiful Combination Black and Off White Mirror Modal Saree
+  {
+    "id": "black-off-white-mirror-modal-saree",
+    "name": "Beautiful Combination Black and Off White Mirror Modal Saree",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1250,
+    "originalPrice": 2099,
+    "tag": "Monochrome Mirror Modal",
+    "rating": 5,
+    "reviewsCount": 54,
+    "images": [
+      "/Beautiful Combination Black and Off White Mirror Model Saree/WhatsApp Image 2026-09-02 at 3.23.17 PM (1).jpeg",
+      "/Beautiful Combination Black and Off White Mirror Model Saree/WhatsApp Image 2026-09-02 at 3.23.17 PM.jpeg",
+      "/Beautiful Combination Black and Off White Mirror Model Saree/WhatsApp Image 2026-09-02 at 3.23.17 PM (2).jpeg"
+    ],
+    "shortDesc": "Grace meets tradition in this beautiful mirror work modal silk saree in a stunning black and off-white combination. Intricate mirror work with soft modal silk drape.",
+    "fullDesc": "Beautiful Combination Black and Off White Miror Modal Saree \n\nGrace meets tradition in this beautiful mirror work modal silk saree ✨\nCrafted with finesse, the soft modal silk drapes effortlessly, offering both comfort and elegance. The intricate mirror work adds a subtle sparkle, catching the light with every movement and creating a truly mesmerizing look.\n\nPerfect for festive occasions, celebrations, or special gatherings, this saree blends timeless craftsmanship with a modern aesthetic — making it an absolute head-turner. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1250/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Ultra-Soft Modal Silk",
+      "craft": "Intricate Mirror Work & Monochrome Jaal Motif Detailing",
+      "drape": "Effortless, Flowing & Graceful Silhouette",
+      "blouse": "Matching Modal Silk Blouse Fabric Included",
+      "occasion": "Festive Occasions, Celebrations & Contemporary Evening Gatherings",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Black & Off-White Modal Silk Saree with Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Monochrome Black & Off-White",
+        "hex": "#18181b"
+      }
+    ]
+  },
+
+  // 10. Black Beauty Most Trending Mirror Modal Saree
+  {
+    "id": "black-beauty-trending-mirror-modal-saree",
+    "name": "Black Beauty Most Trending Mirror Modal Saree",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 1250,
+    "originalPrice": 2199,
+    "tag": "Most Trending Mirror Modal",
+    "rating": 5,
+    "reviewsCount": 61,
+    "images": [
+      "/Black Beauty Most Trending Mirror Model Saree/WhatsApp Image 2026-09-02 at 3.20.36 PM.jpeg",
+      "/Black Beauty Most Trending Mirror Model Saree/WhatsApp Image 2026-09-02 at 3.20.35 PM.jpeg",
+      "/Black Beauty Most Trending Mirror Model Saree/WhatsApp Image 2026-09-02 at 3.20.36 PM (1).jpeg"
+    ],
+    "shortDesc": "Black Beauty — Most trending mirror work modal silk saree. Deep jet black canvas adorned with sparkling mirror work, offering supreme softness and head-turning elegance.",
+    "fullDesc": "Black Beauty Most Trending Miror Modal Saree \n\nGrace meets tradition in this beautiful mirror work modal silk saree ✨\nCrafted with finesse, the soft modal silk drapes effortlessly, offering both comfort and elegance. The intricate mirror work adds a subtle sparkle, catching the light with every movement and creating a truly mesmerizing look.\n\nPerfect for festive occasions, celebrations, or special gatherings, this saree blends timeless craftsmanship with a modern aesthetic — making it an absolute head-turner. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹1250/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Premium Quality Soft Modal Silk",
+      "craft": "Dazzling All-Over Mirror Work & Bandhani Wave Borders",
+      "drape": "Ultra-Fluid, Feather-Light, Body-Hugging Fall",
+      "blouse": "Matching Black Modal Silk Blouse Piece",
+      "occasion": "Cocktail Parties, Festive Celebrations & Special Gatherings",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹1250 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Black Mirror Modal Silk Saree with Blouse Piece"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Midnight Black Diamond",
+        "hex": "#0f172a"
+      }
+    ]
+  },
+
+  // 11. Beautiful Red Hot Mirror Work Modal Saree
+  {
+    "id": "beautiful-red-hot-mirror-modal-saree",
+    "name": "Beautiful Red Hot Mirror Work Modal Saree",
+    "category": "sarees",
+    "isGifting": false,
+    "price": 999,
+    "originalPrice": 1699,
+    "tag": "Red Hot Mirror Saree",
+    "rating": 5,
+    "reviewsCount": 67,
+    "images": [
+      "/Beautiful Red Hot Saree/WhatsApp Image 2026-09-02 at 3.14.23 PM.jpeg",
+      "/Beautiful Red Hot Saree/WhatsApp Image 2026-09-02 at 3.14.23 PM (1).jpeg"
+    ],
+    "shortDesc": "Beautiful Red Hot Saree in soft modal silk with intricate mirror work border. Vibrant scarlet red tone that sparkles with every move — a show-stopping festive drape.",
+    "fullDesc": "Beautiful Red Hot Saree \n\nGrace meets tradition in this beautiful mirror work modal silk saree ✨\nCrafted with finesse, the soft modal silk drapes effortlessly, offering both comfort and elegance. The intricate mirror work adds a subtle sparkle, catching the light with every movement and creating a truly mesmerizing look.\n\nPerfect for festive occasions, celebrations, or special gatherings, this saree blends timeless craftsmanship with a modern aesthetic — making it an absolute head-turner. 💫\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund\n• ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles.\n\nPrice: ₹999/- only | Free shipping on buying any 2 articles.",
+    "details": {
+      "fabric": "Soft Breathable Modal Silk",
+      "craft": "Traditional Geometric Mirror Work Border",
+      "drape": "Lightweight, Soft & Fluid Silhouette",
+      "blouse": "Matching Red Blouse Fabric Included",
+      "occasion": "Weddings, Festivals, Karwa Chauth, Pooja & Celebrations",
+      "care": "Gentle Hand Wash / Dry Clean Recommended",
+      "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return",
+      "shippingNotice": "Price: ₹999 (Free Shipping on buying any 2 articles)",
+      "inclusions": "1 Red Hot Modal Saree with Blouse Fabric"
+    },
+    "sizes": [
+      "5.5m Saree + 0.8m Blouse Piece",
+      "Free Size (Standard Drape)"
+    ],
+    "colors": [
+      {
+        "name": "Scarlet Red Hot",
+        "hex": "#dc2626"
+      }
+    ]
+  },
+
+  // ==========================================
+  // --- PREVIOUS EXCLUSIVE ARRIVALS (7 BLOUSE & GIFTING PRODUCTS) ---
   // ==========================================
 
   // 1. Pure Embroidery Sleeveless Lace Blouse
