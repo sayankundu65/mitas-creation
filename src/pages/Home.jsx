@@ -63,9 +63,9 @@ export default function Home() {
   const giftingProducts = PRODUCTS.filter((product) => {
     if (!product.isGifting) return false;
     if (giftingTab === 'all') return true;
-    if (giftingTab === 'flasks-tumblers') return product.id.includes('flask') || product.id.includes('tumbler') || product.name.toLowerCase().includes('flask') || product.name.toLowerCase().includes('tumbler');
-    if (giftingTab === 'jewellery') return product.category === 'jewellery' || product.id.includes('jewellery') || product.id.includes('watch') || product.name.toLowerCase().includes('watch');
-    if (giftingTab === 'hampers') return product.id.includes('hamper') || product.id.includes('basket') || product.name.toLowerCase().includes('hamper');
+    if (giftingTab === 'flasks-tumblers') return product.id.includes('flask') || product.id.includes('tumbler') || product.id.includes('bottle') || product.name.toLowerCase().includes('flask') || product.name.toLowerCase().includes('tumbler') || product.name.toLowerCase().includes('bottle');
+    if (giftingTab === 'jewellery') return product.category === 'jewellery' || product.id.includes('jewellery') || product.id.includes('watch') || product.name.toLowerCase().includes('jewellery') || product.name.toLowerCase().includes('watch');
+    if (giftingTab === 'hampers') return product.id.includes('hamper') || product.id.includes('basket') || product.id.includes('thali') || product.id.includes('corporate') || product.name.toLowerCase().includes('hamper') || product.name.toLowerCase().includes('basket') || product.name.toLowerCase().includes('thali') || product.name.toLowerCase().includes('corporate');
     if (giftingTab === 'bedsheets') return product.category === 'bedsheets' || product.id.includes('bed-cover');
     if (giftingTab === 'potlis') return product.id.includes('potli') || product.id.includes('pouch') || product.id.includes('sling') || product.id.includes('purse') || product.name.toLowerCase().includes('potli') || product.name.toLowerCase().includes('pouch');
     if (giftingTab === 'vanity') return product.id === 'digital-mini-makeup-organiser-mirror';

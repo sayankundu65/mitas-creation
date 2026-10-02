@@ -1,5 +1,922 @@
 export const PRODUCTS = [
   // ==========================================
+  // --- NEW EXCLUSIVE LAUNCH (20 NEW ARRIVALS) ---
+  // ==========================================
+
+  // 1. Royal Silver Filigree Glass Bottle & Tumbler Set in Velvet Box
+  {
+      "id": "royal-silver-filigree-glass-bottle-tumblers-set",
+      "name": "Royal Silver Filigree Glass Bottle & Tumbler Set in Velvet Box",
+      "category": "gifting",
+      "isGifting": true,
+      "bulkOrderAvailable": true,
+      "bulkOrderNotice": "DM for Bulk Corporate & Wedding Gifting",
+      "price": 650,
+      "originalPrice": 1199,
+      "tag": "Royal Velvet Gift Set",
+      "rating": 5,
+      "reviewsCount": 42,
+      "images": [
+          "/glass bottle/WhatsApp Image 2026-10-02 at 4.16.02 PM.jpeg",
+          "/glass bottle/WhatsApp Image 2026-10-02 at 4.16.02 PM (1).jpeg"
+      ],
+      "shortDesc": "Exquisite handcrafted silver filigree mesh glass water bottle paired with 2 matching tumblers, presented in an opulent emerald teal velvet hardbound gift box. Ideal for bulk corporate and wedding favors.",
+      "fullDesc": "✨ Royal Silver Filigree Glass Bottle & Tumbler Luxury Gift Set ✨\n\nExperience royalty in craftsmanship with this exquisite drinkware gift ensemble. The set features a premium high-clarity glass bottle with matching glasses, adorned with handcrafted silver-plated filigree jaali work that gleams with regal elegance.\n\nPresented in an opulent emerald teal velvet hardbound gift box with a secure brass clasp, this set makes an unforgettable impression. Perfect for corporate bulk gifting, wedding return favors, festive hampers, and luxury housewarming gifts.\n\nKey Highlights:\n• Premium food-grade borosilicate glass with airtight stainless steel cap\n• Handcrafted silver filigree embossed fretwork\n• 2 matching filigree glass tumblers included\n• Royal emerald teal satin-lined velvet presentation box with latch\n• DM for bulk orders & custom corporate requirements\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹650/- only | DM for Bulk Corporate & Wedding Enquiries",
+      "details": {
+          "material": "High-Grade Glass with Ornate Silver-Toned Filigree Metal Casing",
+          "capacity": "Bottle: 750ml | Tumblers: 250ml each",
+          "presentation": "Satin-Lined Velvet Hardbound Gift Box with Brass Clasp Closure",
+          "occasion": "Corporate Gifting, Wedding Return Favors, Festive Hampers & Housewarming",
+          "care": "Hand Wash Gently with Mild Detergent; Avoid Abrasive Scrubbers",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid (No COD)",
+          "shippingNotice": "Price: ₹650/- | DM for Bulk Orders & Corporate Enquiries",
+          "inclusions": "1 Silver Filigree Glass Bottle + 2 Matching Tumblers + 1 Royal Velvet Gift Box"
+      },
+      "sizes": [
+          "1 Bottle (750ml) + 2 Glasses (250ml) in Velvet Box"
+      ],
+      "colors": [
+          {
+              "name": "Royal Emerald Teal & Silver Filigree",
+              "hex": "#047857"
+          }
+      ]
+  },
+
+  // 2. Artisan Shimmer Woven Gift Hamper Basket with Hinged Lid
+  {
+      "id": "artisan-shimmer-woven-gift-hamper-basket",
+      "name": "Artisan Shimmer Woven Gift Hamper Basket with Hinged Lid",
+      "category": "gifting",
+      "isGifting": true,
+      "bulkOrderAvailable": true,
+      "bulkOrderNotice": "DM for Bulk Orders & Trousseau Packing",
+      "price": 600,
+      "originalPrice": 999,
+      "tag": "Festive Hamper Essential",
+      "rating": 4.9,
+      "reviewsCount": 38,
+      "images": [
+          "/basket/WhatsApp Image 2026-10-02 at 4.16.18 PM.jpeg",
+          "/basket/WhatsApp Image 2026-10-02 at 4.16.18 PM (1).jpeg"
+      ],
+      "shortDesc": "Stunning handwoven shimmer hamper basket with gold zari cord weave, sturdy structured base, and hinged lid. Perfect for festive gifting, wedding trousseau, and dry fruit hampers.",
+      "fullDesc": "✨ Artisan Shimmer Woven Gift Hamper Basket with Hinged Lid ✨\n\nElevate your festive presentations with this handcrafted shimmer hamper basket. Handwoven using durable braided cords interwoven with radiant golden zari ribbons, it combines festive richness with practical durability.\n\nFeaturing an attached hinged lid and generous capacity, it is ideal for wedding trousseau packaging, Diwali sweets & dry fruit hampers, baby shower favor hampers, and vanity organization.\n\nKey Highlights:\n• Sturdy structured frame that holds its shape under weight\n• Braided shimmer gold zari cord interlaced with premium cotton\n• Hinged attached lid with secure closure\n• Available in Royal White-Gold and Festive Rose Pink-Gold\n• Bulk orders available for weddings, corporate events & festivities\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹600/- only | DM for Bulk Orders",
+      "details": {
+          "material": "Durable Structured Frame with Braided Shimmer Zari Cord & Cotton Weave",
+          "features": "Hinged Attached Lid, Sturdy Base, Shimmer Finish, Multi-Utility Organizer",
+          "dimensions": "Approx. 10 x 8 x 4.5 inches (Spacious Depth)",
+          "occasion": "Trousseau Packing, Diwali Hampers, Dry Fruit Baskets, Vanity Storage & Gifting",
+          "care": "Spot Clean with Dry Cloth or Soft Brush",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid (No COD)",
+          "shippingNotice": "Price: ₹600/- only | DM for Bulk Orders",
+          "inclusions": "1 Handcrafted Shimmer Hamper Basket with Attached Lid"
+      },
+      "sizes": [
+          "Standard Hamper Size (10\" x 8\" x 4.5\")"
+      ],
+      "colors": [
+          {
+              "name": "Ivory White & Golden Shimmer",
+              "hex": "#f8fafc"
+          },
+          {
+              "name": "Blush Rose Pink & Golden Shimmer",
+              "hex": "#f472b6"
+          }
+      ]
+  },
+
+  // 3. Premium Ribbed High-Neck Sleeveless Crop Top
+  {
+      "id": "premium-ribbed-high-neck-sleeveless-crop-top",
+      "name": "Premium Ribbed High-Neck Sleeveless Crop Top",
+      "category": "coords",
+      "isGifting": false,
+      "price": 300,
+      "originalPrice": 599,
+      "tag": "WhatsApp Only | No COD",
+      "rating": 4.8,
+      "reviewsCount": 45,
+      "images": [
+          "/Crop Top/WhatsApp Image 2026-10-02 at 4.17.05 PM.jpeg",
+          "/Crop Top/WhatsApp Image 2026-10-02 at 4.17.05 PM (1).jpeg",
+          "/Crop Top/WhatsApp Image 2026-10-02 at 4.17.05 PM (2).jpeg"
+      ],
+      "shortDesc": "Ultra-stretchable ribbed knit high-neck sleeveless crop top in royal blue and mauve purple. Soft, body-hugging, and versatile for everyday chic styling.",
+      "fullDesc": "💖 Premium Ribbed High-Neck Sleeveless Crop Top 💖\n\nUpgrade your everyday style with our chic and versatile ribbed knit crop top. Crafted from premium high-stretch ribbed cotton blend fabric, it hugs your curves comfortably while offering complete breathability and ease of movement.\n\nFeaturing a sleek mock turtleneck high neckline and clean sleeveless silhouette, this top pairs effortlessly with high-waisted denims, flared trousers, cargo pants, sarees, or layered under shrugs and blazers.\n\nKey Highlights:\n• High-stretch ribbed knit that retains its shape\n• Chic mock turtleneck high collar\n• Breathable, skin-friendly, and non-sheer fabric\n• Perfect for casual outings, college, workouts, or layering\n\nStore Policy:\n• 📱 WhatsApp Only Orders\n• ❌ No COD Available (100% Prepaid)\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n\nPrice: ₹300/- only | WhatsApp Only | No COD Available",
+      "details": {
+          "fabric": "Premium Stretchable Cotton-Spandex Ribbed Knit",
+          "neckline": "Chic High Mock Turtleneck",
+          "fit": "Comfortable Body-Hugging Stretch Fit",
+          "sleeve": "Sleeveless with Reinforced Ribbed Armholes",
+          "occasion": "Casual Daywear, College, Lounging, Layering & Parties",
+          "care": "Gentle Machine Wash in Cold Water; Dry in Shade",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid | 📱 WhatsApp Only",
+          "shippingNotice": "Price: ₹300/- only | WhatsApp Ordering Only | No COD Available",
+          "inclusions": "1 Premium Ribbed High-Neck Crop Top"
+      },
+      "sizes": [
+          "Free Size (Fits Bust 30-38 inches / XS to L)"
+      ],
+      "colors": [
+          {
+              "name": "Electric Royal Blue",
+              "hex": "#1d4ed8"
+          },
+          {
+              "name": "Mauve Berry Orchid",
+              "hex": "#a855f7"
+          }
+      ]
+  },
+
+  // 4. Premium Quality Floral Butter-Soft Lounge Night Suit Set
+  {
+      "id": "premium-floral-butter-soft-lounge-night-suit",
+      "name": "Premium Quality Floral Butter-Soft Lounge Night Suit Set",
+      "category": "nightwear",
+      "isGifting": true,
+      "price": 650,
+      "originalPrice": 1299,
+      "tag": "Free Shipping | Butter-Soft",
+      "rating": 5,
+      "reviewsCount": 52,
+      "images": [
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.16 PM.jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.17 PM.jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.17 PM (1).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.18 PM.jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.18 PM (1).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.18 PM (2).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.19 PM.jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.19 PM (1).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.19 PM (2).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.20 PM.jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.20 PM (1).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.20 PM (2).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.20 PM (3).jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.21 PM.jpeg",
+          "/Beautiful. Premium Quality Night Suit/WhatsApp Image 2026-10-02 at 4.18.21 PM (1).jpeg"
+      ],
+      "shortDesc": "Experience heavenly comfort with this butter-soft 95% Rayon & 5% Spandex loungewear set. Relaxed V-neck top paired with ruffled elasticated bottoms in chic floral prints.",
+      "fullDesc": "🌸 Premium Quality Butter-Soft Loungewear Night Suit Set 🌸\n\nIndulge in pure luxury and cloud-like comfort with our premium floral lounge night suit set. Crafted from high-grade 95% Rayon and 5% Spandex, the fabric feels unbelievably soft, cooling, and gentle against the skin.\n\nFeaturing a flattering relaxed-fit V-neck tee paired with matching elasticated bottoms detailed with cute lettuce/ruffled hems and an adjustable drawstring tie. Whether you're relaxing at home, catching up on restful sleep, or unwinding on vacation, this set provides unrivaled coziness with boutique elegance.\n\nKey Highlights:\n• High-end 95% Rayon + 5% Spandex butter-soft breathable knit\n• Relaxed V-neck top with contrast floral piping\n• Matching elasticated bottoms with feminine ruffle-edge hem\n• Cooling, lightweight, wrinkle-resistant, and super gentle on skin\n• Free Doorstep Shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹650/- only | Free Shipping Included",
+      "details": {
+          "fabric": "95% Premium Rayon + 5% Spandex (Butter-Soft & Breathable)",
+          "setIncludes": "Relaxed Fit V-Neck Top + Matching Elasticated Ruffle-Hem Bottom",
+          "feel": "Feather-Light, Cooling, Silky Touch & Super Stretchable",
+          "waistband": "Comfort Elastic with Adjustable Drawstring Tie",
+          "occasion": "Sleepwear, Weekend Lounging, Travel & Casual Home Living",
+          "care": "Machine Wash Cold on Gentle Cycle; Tumble Dry Low",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹650/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Butter-Soft Lounge Top + 1 Matching Bottom"
+      },
+      "sizes": [
+          "S (Bust 34-36)",
+          "M (Bust 38)",
+          "L (Bust 40)",
+          "XL (Bust 42)"
+      ],
+      "colors": [
+          {
+              "name": "Blush Pink & Botanical Bloom",
+              "hex": "#fbcfe8"
+          },
+          {
+              "name": "Pastel Lavender Orchid",
+              "hex": "#e9d5ff"
+          },
+          {
+              "name": "Sky Blue Wildflower",
+              "hex": "#bae6fd"
+          }
+      ]
+  },
+
+  // 5. Pure Linen Cotton Saree with Fine Golden Zari Stripes & Blouse Piece
+  {
+      "id": "pure-linen-cotton-saree-gold-zari-stripes",
+      "name": "Pure Linen Cotton Saree with Fine Golden Zari Stripes & Blouse Piece",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 2500,
+      "originalPrice": 3999,
+      "tag": "Pure Linen Luxury",
+      "rating": 5,
+      "reviewsCount": 36,
+      "images": [
+          "/Pure Lilen . Cotton Linen Saree/WhatsApp Image 2026-10-02 at 4.19.20 PM.jpeg",
+          "/Pure Lilen . Cotton Linen Saree/WhatsApp Image 2026-10-02 at 4.19.21 PM.jpeg",
+          "/Pure Lilen . Cotton Linen Saree/WhatsApp Image 2026-10-02 at 4.19.22 PM.jpeg",
+          "/Pure Lilen . Cotton Linen Saree/WhatsApp Image 2026-10-02 at 4.19.22 PM (1).jpeg"
+      ],
+      "shortDesc": "Authentic handloom pure linen cotton saree woven with rich multi-tone bands in rani pink, sunset tangerine, and crimson, separated by shimmering fine golden zari pinstripes. Comes with unstitched blouse piece.",
+      "fullDesc": "✨ Pure Linen Cotton Handloom Saree with Golden Zari Pinstripes ✨\n\nA connoisseur's choice in natural textiles. Handcrafted from organic high-count pure linen and combed cotton yarns, this saree is characterized by its sophisticated drape, natural slub texture, and radiant festive hues.\n\nThe saree features bold horizontal bands in rich magenta pink, sunset orange, and deep berry crimson, each delineated by shimmering fine metallic gold zari stripes. Paired with a running pure linen cotton blouse piece, this saree exudes aristocratic grace.\n\nKey Highlights:\n• 100% Organic Pure Linen Cotton Handloom Blend\n• Breathable, skin-friendly, and naturally lustrous\n• Intricately woven metallic gold zari pinstripes across the body\n• Complete with matching running blouse piece\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹2500/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "100% Organic Pure Linen Cotton Handloom Blend",
+          "weave": "Artisanal Multi-Color Striped Weave with Woven Gold Zari Ribbons",
+          "texture": "Breathable, Structured yet Soft Drape with Subtle Natural Slub Sheen",
+          "blouse": "Includes Running Pure Linen Cotton Blouse Piece (0.8m)",
+          "occasion": "Festive Receptions, High-Profile Events, Corporate Elegance & Puja",
+          "care": "Dry Clean Recommended for Longevity & Fabric Lustre",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹2500/- only | Free shipping on buying any 2 articles",
+          "inclusions": "1 Pure Linen Cotton Saree (5.5m) + 1 Matching Blouse Piece (0.8m)"
+      },
+      "sizes": [
+          "5.5m Saree + 0.8m Blouse Piece",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Sunset Tangerine & Rani Pink Stripes",
+              "hex": "#e11d48"
+          }
+      ]
+  },
+
+  // 6. Midnight Black Pure Handloom Jamdani Saree with Silver Zari Border & Tassels
+  {
+      "id": "midnight-black-pure-handloom-jamdani-saree",
+      "name": "Midnight Black Pure Handloom Jamdani Saree with Silver Zari Border & Tassels",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1050,
+      "originalPrice": 1799,
+      "tag": "Free Shipping | Bengal Handloom",
+      "rating": 4.9,
+      "reviewsCount": 48,
+      "images": [
+          "/Pure Handloom Saree  aaa/WhatsApp Image 2026-10-02 at 4.20.01 PM.jpeg",
+          "/Pure Handloom Saree  aaa/WhatsApp Image 2026-10-02 at 4.20.02 PM.jpeg",
+          "/Pure Handloom Saree  aaa/WhatsApp Image 2026-10-02 at 4.20.02 PM (1).jpeg"
+      ],
+      "shortDesc": "Authentic Bengal pure handloom cotton saree in deep jet black, featuring silver zari floral tree borders, woven geometric butas, striped zari pallu, and handcrafted braided tassels.",
+      "fullDesc": "🖤 Midnight Black Pure Handloom Jamdani Saree with Silver Zari 🖤\n\nCelebrate timeless Bengal craftsmanship with this exquisite pure handloom saree. Woven on traditional pit-looms using premium fine cotton yarns, it drapes with effortless feather-light grace and softness.\n\nThe jet-black body is ornamented with woven geometric square butis and framed by an elaborate silver zari border depicting artisanal tree-of-life and floral vines. The pallu showcases bold horizontal silver stripes finished with hand-braided dual-tone tassels.\n\nKey Highlights:\n• Pure Bengal Handloom Cotton with ultra-soft drape\n• Fine silver zari tree & floral vine Jamdani weave\n• Geometric square butis across the body\n• Striped silver zari aanchal with hand-knotted tassels\n• Free shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹1050/- only | Free Shipping Included",
+      "details": {
+          "fabric": "Pure Handloom Fine Cotton (Ultra Soft & Breathable)",
+          "craft": "Intricate Jamdani-Style Silver Zari Weaving on Border & Pallu",
+          "pallu": "Rich Striped Silver Zari Aanchal with Hand-Braided Tassels",
+          "border": "Elaborate Silver Zari Floral Tree & Foliage Weave",
+          "occasion": "Puja Celebrations, Cultural Gatherings, Evening Events & Gifting",
+          "care": "Gentle Hand Wash with Mild Liquid Detergent / Dry Clean",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1050/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Pure Handloom Cotton Saree with Tassels (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Midnight Jet Black & Silver Zari",
+              "hex": "#09090b"
+          }
+      ]
+  },
+
+  // 7. Monochrome Grid Checked Khadi Cotton Saree with Ikat Temple Border
+  {
+      "id": "monochrome-checked-khadi-cotton-saree-temple",
+      "name": "Monochrome Grid Checked Khadi Cotton Saree with Ikat Temple Border",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 999,
+      "originalPrice": 1699,
+      "tag": "Free Shipping | Premium Khadi",
+      "rating": 4.9,
+      "reviewsCount": 37,
+      "images": [
+          "/khadi cotton saree premium 999/WhatsApp Image 2026-10-02 at 4.20.50 PM.jpeg",
+          "/khadi cotton saree premium 999/WhatsApp Image 2026-10-02 at 4.20.50 PM (1).jpeg"
+      ],
+      "shortDesc": "Contemporary monochrome grid checks meet handspun khadi cotton tradition. Features feathered ikat temple transitions, crimson red border accents, and hand-knotted tassels.",
+      "fullDesc": "🤍 Monochrome Grid Checked Khadi Cotton Saree with Ikat Temple Border 🤍\n\nA contemporary reimagining of authentic Indian handspun khadi cotton. The striking black-and-white grid check body is contrasted by unbleached ivory transitions and feathered ikat temple jagged motifs.\n\nAccented with a subtle crimson red woven border band and finished with handcrafted two-tone fringe tassels, this saree is both sophisticated and versatile—perfect for work, academic conferences, or creative gatherings.\n\nKey Highlights:\n• 100% Handspun Pure Khadi Cotton\n• Classic windowpane grid checks in monochrome black & white\n• Feathered ikat temple transition border\n• Contrast crimson red temple border highlight\n• Hand-tied fringe tassels\n• Free shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹999/- only | Free Shipping Included",
+      "details": {
+          "fabric": "100% Handspun Pure Khadi Cotton",
+          "pattern": "Geometric Black & White Windowpane Checks with Ikat Temple Transition",
+          "pallu": "Contrasting Feathered Ikat Pallu with Handcrafted Tassels",
+          "border": "Crimson Red Woven Temple Border Contrast",
+          "occasion": "Daily Smart Wear, Office & College, Cultural Gatherings & Art Events",
+          "care": "Cold Gentle Hand Wash Separately",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹999/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Premium Khadi Cotton Saree (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Monochrome Black & Ivory with Crimson Accent",
+              "hex": "#18181b"
+          }
+      ]
+  },
+
+  // 8. Dual-Tone Metallic Sea Green Tissue Banarasi Saree with Latkan Tassels
+  {
+      "id": "dual-tone-tissue-banarasi-saree-latkan-tassels",
+      "name": "Dual-Tone Metallic Sea Green Tissue Banarasi Saree with Latkan Tassels",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1100,
+      "originalPrice": 1999,
+      "tag": "Free Shipping | Banarasi Metallic Shimmer",
+      "rating": 5,
+      "reviewsCount": 56,
+      "images": [
+          "/tissue banarasi saree premium quality/WhatsApp Image 2026-10-02 at 4.21.48 PM.jpeg",
+          "/tissue banarasi saree premium quality/WhatsApp Image 2026-10-02 at 4.21.48 PM (1).jpeg"
+      ],
+      "shortDesc": "Luminous dual-tone metallic tissue silk saree in shimmering sea green and antique gold, framed by traditional Banarasi zari borders, magenta satin piping, and vibrant hot-pink latkan tassels.",
+      "fullDesc": "✨ Dual-Tone Metallic Sea Green Tissue Banarasi Saree ✨\n\nStep into the spotlight with this mesmerizing metallic tissue Banarasi saree. Woven with dual-colored warp and weft threads, it produces an enchanting two-tone luminescence—shifting between rich sea green and antique gold with every step.\n\nThe saree is edged with an elaborate traditional Banarasi antique zari border, magenta satin piping, and dramatic handmade hot-pink latkan tassels that infuse playful festive glamour.\n\nKey Highlights:\n• Premium dual-tone metallic tissue silk with golden reflection\n• Antique zari woven traditional Banarasi floral vine border\n• Contrast rani magenta satin border piping\n• Full statement latkan pom-pom tassels on the aanchal\n• Free shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹1100/- only | Free Shipping Included",
+      "details": {
+          "fabric": "Premium Dual-Tone Metallic Tissue Silk Fabric",
+          "finish": "Radiant Gold-Green Shimmer Reflection with Crisp Festive Fall",
+          "border": "Traditional Banarasi Floral & Geometric Antique Zari Weaving with Magenta Piping",
+          "pallu": "Adorned with Statement Handcrafted Rani Pink Pom Pom & Latkan Tassels",
+          "occasion": "Weddings, Reception Parties, Festive Dinners & Cocktail Evenings",
+          "care": "Dry Clean Only",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1100/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Metallic Tissue Banarasi Saree with Tassels (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Shimmering Sea Green & Gold Zari",
+              "hex": "#115e59"
+          }
+      ]
+  },
+
+  // 9. Pristine Ivory Pure Khadi Cotton Saree with Sky Blue & Sunshine Yellow Dual Borders
+  {
+      "id": "pristine-ivory-pure-khadi-cotton-saree-dual-border",
+      "name": "Pristine Ivory Pure Khadi Cotton Saree with Sky Blue & Sunshine Yellow Dual Borders",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1200,
+      "originalPrice": 2099,
+      "tag": "Free Shipping | Authentic Khadi",
+      "rating": 4.9,
+      "reviewsCount": 34,
+      "images": [
+          "/Pure Khadi Cotton Saree new/WhatsApp Image 2026-10-02 at 4.22.29 PM.jpeg",
+          "/Pure Khadi Cotton Saree new/WhatsApp Image 2026-10-02 at 4.22.30 PM.jpeg"
+      ],
+      "shortDesc": "Breathable pure khadi cotton saree on an unbleached ivory canvas with sky blue upper border, sunshine yellow lower border, handwoven temple motifs in magenta and turquoise, and striped aanchal with tassels.",
+      "fullDesc": "🌿 Pristine Ivory Pure Khadi Cotton Saree with Dual Borders 🌿\n\nCelebrate effortless simplicity and artisanal authenticity with this premium pure khadi cotton saree. The soothing natural unbleached ivory body provides a clean, breathable canvas that stays comfortable through the warmest days.\n\nContrasted with a cheerful sunshine yellow lower border and sky-blue upper border, it features delicate handwoven triangular temple motifs in magenta and cyan along the edges. The pinstriped pallu is finished with colorful hand-tied tassels.\n\nKey Highlights:\n• 100% Handcrafted Pure Khadi Cotton\n• Fresh dual-border design in sunshine yellow and sky blue\n• Handwoven temple geometric motifs\n• Pinstriped handloom pallu with multi-color tassels\n• Free shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹1200/- only | Free Shipping Included",
+      "details": {
+          "fabric": "100% Premium Khadi Cotton (Breathable, Soft & Skin-Friendly)",
+          "border": "Vibrant Dual Borders (Sky Blue & Sunshine Yellow)",
+          "pallu": "Linear Striped Handloom Pallu with Sky-Blue & Yellow Tassels",
+          "motifs": "Handwoven Triangle Temple Geometric Motifs in Magenta & Cyan",
+          "occasion": "Morning Pujas, Literary Meets, Office Elegance, Summer Celebrations",
+          "care": "Gentle Hand Wash Separately with Mild Detergent",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1200/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Pure Khadi Cotton Saree with Tassels (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Pristine Ivory, Sky Blue & Sunshine Yellow",
+              "hex": "#fef9c3"
+          }
+      ]
+  },
+
+  // 10. Crimson Red Khadi Cotton Saree with Fine Geometric Grid Checks & Blouse Piece
+  {
+      "id": "crimson-red-khadi-cotton-saree-check-motif",
+      "name": "Crimson Red Khadi Cotton Saree with Fine Geometric Grid Checks & Blouse Piece",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1100,
+      "originalPrice": 1899,
+      "tag": "Free Shipping | Checks with Blouse",
+      "rating": 4.9,
+      "reviewsCount": 43,
+      "images": [
+          "/Khadi Cotton Saree Check Motif/WhatsApp Image 2026-10-02 at 4.23.47 PM.jpeg",
+          "/Khadi Cotton Saree Check Motif/WhatsApp Image 2026-10-02 at 4.23.47 PM (1).jpeg"
+      ],
+      "shortDesc": "Auspicious crimson red pure khadi cotton saree adorned with all-over delicate white grid checks, woven borders, hand-knotted pom-pom tassels, and paired with matching blouse piece.",
+      "fullDesc": "❤️ Crimson Red Khadi Cotton Saree with Fine Grid Checks ❤️\n\nRadiate auspicious warmth and festive joy in this classic crimson red khadi cotton saree. The all-over fine ivory grid check motif adds subtle depth and geometric elegance to the handspun cotton texture.\n\nAccented with solid red handloom borders and a striped pallu adorned with hand-knotted red and white tassels. Complete with a running blouse piece, this saree is a versatile pick for festive rituals, Durga Puja, Karwa Chauth, or gifting.\n\nKey Highlights:\n• Pure Handloom Khadi Cotton with airy comfortable fall\n• Auspicious crimson red with fine ivory grid checks\n• Hand-tied red and white pom-pom tassels on the aanchal\n• Includes running unstitched blouse piece\n• Free shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹1100/- only | Free Shipping Included",
+      "details": {
+          "fabric": "Pure Handloom Khadi Cotton",
+          "pattern": "All-Over Fine Ivory Geometric Grid Checks (Jaal Motif)",
+          "blouse": "Includes Matching Crimson Red Handloom Blouse Piece (0.8m)",
+          "pallu": "Detailed Striped Pallu Finished with Red & White Tassels",
+          "occasion": "Durga Puja, Karwa Chauth, Weddings, Traditional Gatherings & Gifting",
+          "care": "Gentle Hand Wash in Cold Water",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1100/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Khadi Cotton Saree (5.5m) + 1 Matching Blouse Piece (0.8m)"
+      },
+      "sizes": [
+          "5.5m Saree + 0.8m Blouse Piece",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Auspicious Crimson Red & White Checks",
+              "hex": "#b91c1c"
+          }
+      ]
+  },
+
+  // 11. Handcrafted Kundan & Pearl Designer Karwa Chauth Pooja Thali 3-Piece Set
+  {
+      "id": "handcrafted-kundan-pearl-karwa-chauth-thali-set",
+      "name": "Handcrafted Kundan & Pearl Designer Karwa Chauth Pooja Thali 3-Piece Set",
+      "category": "gifting",
+      "isGifting": true,
+      "bulkOrderAvailable": true,
+      "bulkOrderNotice": "DM for Custom Bulk Orders & Festive Hampers",
+      "price": 650,
+      "originalPrice": 1199,
+      "tag": "Karwa Chauth Festive Special",
+      "rating": 5,
+      "reviewsCount": 64,
+      "images": [
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.02 PM.jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.03 PM.jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.03 PM (1).jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.03 PM (2).jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.03 PM (3).jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.04 PM.jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.04 PM (1).jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.04 PM (2).jpeg",
+          "/karwachauth thali set/WhatsApp Image 2026-10-02 at 4.25.05 PM.jpeg"
+      ],
+      "shortDesc": "Celebrate the sacred bond of Karwa Chauth with this lavishly adorned 3-piece ritual set including decorated Pooja Thali, Chalni (Sieve), and Karwa Lota, embellished with royal velvet, golden gota lace, and pearls.",
+      "fullDesc": "🌙 Handcrafted Kundan & Pearl Designer Karwa Chauth 3-Piece Thali Set 🌙\n\nMake your Karwa Chauth puja truly unforgettable with this artisan-crafted 3-piece ceremonial set. Hand-decorated by traditional craftswomen, each piece is wrapped in rich velvet fabric and embellished with glistening gold beadwork, pearl clusters, kundan stones, and gota patti trims.\n\nThe complete ensemble includes a grand Pooja Thali, a decorated stainless steel Chalni (Channi/Sieve) for the moon-sighting ritual, and a matching decorated Karwa Lota (Pot). Available for individual celebrations or bulk festive hampers.\n\nKey Highlights:\n• Complete 3-Piece Set: Pooja Thali + Moon-Sighting Chalni + Karwa Lota\n• Crafted on premium stainless steel base with velvet and kundan embellishments\n• Intricate pearl motifs and golden bead border lace\n• Available in royal maroon, golden brocade, and ruby red themes\n• Bulk orders available for societies, kitty parties & corporate gifting\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹650/- only | DM for Bulk Orders & Festive Hampers",
+      "details": {
+          "setIncludes": "1 Decorated Stainless Steel Pooja Thali + 1 Matching Chalni (Sieve) + 1 Decorated Lota (Pot)",
+          "craft": "Heavy Kundan Beads, Gota Patti Border, Shimmer Velvet & Golden Ribbon Trim",
+          "base": "Durable Food-Grade Stainless Steel Base",
+          "occasion": "Karwa Chauth Puja, Ahoi Ashtami, Diwali, Festive Trousseau Gifting",
+          "bulkOrders": "Available for Bulk Orders, Society Gifting & Return Gifts (DM on WhatsApp)",
+          "care": "Wipe with Soft Dry Cloth; Do Not Submerge Embellishments in Water",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹650/- only | DM for Bulk Corporate & Society Gifting",
+          "inclusions": "1 Pooja Thali + 1 Chalni (Sieve) + 1 Karwa Lota"
+      },
+      "sizes": [
+          "Standard 3-Piece Festive Set (Thali ~11\", Chalni ~7\", Lota ~4\")"
+      ],
+      "colors": [
+          {
+              "name": "Royal Maroon & Gold Kundan",
+              "hex": "#831843"
+          },
+          {
+              "name": "Shimmer Golden Brocade",
+              "hex": "#d97706"
+          }
+      ]
+  },
+
+  // 12. Royal Rajwari Rajputana Kundan & Polki Choker Necklace Set with Earrings
+  {
+      "id": "royal-rajwari-kundan-choker-necklace-set",
+      "name": "Royal Rajwari Rajputana Kundan & Polki Choker Necklace Set with Earrings",
+      "category": "jewellery",
+      "isGifting": true,
+      "bulkOrderAvailable": true,
+      "bulkOrderNotice": "DM for Custom Bulk Jewellery & Wedding Favors",
+      "price": 750,
+      "originalPrice": 1499,
+      "tag": "Royal Heritage Collection",
+      "rating": 5,
+      "reviewsCount": 51,
+      "images": [
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.10 PM.jpeg",
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.10 PM (1).jpeg",
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.10 PM (2).jpeg",
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.11 PM.jpeg",
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.11 PM (1).jpeg",
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.11 PM (2).jpeg",
+          "/Rajwari Jewellery Collections/WhatsApp Image 2026-10-02 at 4.26.11 PM (3).jpeg"
+      ],
+      "shortDesc": "Fit for royalty: antique gold-plated Rajwari choker necklace crafted with ruby pink and emerald green enamel work, multi-gemstone cabochons, dangling pearl beads, and matching earrings.",
+      "fullDesc": "👑 Royal Rajwari Rajputana Kundan & Polki Choker Necklace Set 👑\n\nChannel majestic heritage glamour with our exclusive Rajwari jewellery collection. Inspired by the royal courts of Rajasthan, this statement choker necklace showcases antique gold micro-plating adorned with meenakari enamel work, faceted stones, and cluster pearl hangings.\n\nThe set includes a grand choker with an adjustable soft dori tie for customized comfort, accompanied by matching jhumka/drop earrings and maang tikka variations. Designed to turn heads at weddings, festive soirées, and cultural celebrations.\n\nKey Highlights:\n• Antique gold micro-plated brass alloy with royal heritage finish\n• Embedded with faceted ruby & emerald stones and lustrous faux pearls\n• Includes matching designer earrings\n• Adjustable soft zari dori closure fits all neck sizes\n• DM for bulk orders, bridesmaid gifting & custom selections\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹750/- only | DM for Bulk Wedding Favors & Custom Orders",
+      "details": {
+          "material": "High-Grade Brass Alloy with Antique Gold Micron Plating",
+          "stones": "Faceted Ruby & Emerald Enamel Stones, Hand-Set Polki Glass Crystals & Faux Pearl Drops",
+          "setIncludes": "1 Statement Rajwari Choker Necklace + 1 Pair Matching Drop Earrings",
+          "closure": "Adjustable Soft Zari Dori Drawstring for Perfect Neck Fit",
+          "occasion": "Weddings, Sangeet, Mehendi, Festive Celebrations, Bridal Trousseau",
+          "care": "Keep Away from Perfumes, Moisture & Chemicals; Store in Air-Tight Pouch",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹750/- only | DM for Bulk Wedding Orders & Custom Designs",
+          "inclusions": "1 Royal Rajwari Choker + 1 Pair Designer Earrings"
+      },
+      "sizes": [
+          "Free Size (Adjustable Zari Dori)"
+      ],
+      "colors": [
+          {
+              "name": "Antique Gold with Ruby & Emerald",
+              "hex": "#b45309"
+          },
+          {
+              "name": "Navratan Multicolor & Pearl",
+              "hex": "#f59e0b"
+          }
+      ]
+  },
+
+  // 13. Traditional Bengal Tant Benarasi Saree with Rich Red Velvet Zari Border
+  {
+      "id": "bengal-tant-benarasi-saree-red-velvet-border",
+      "name": "Traditional Bengal Tant Benarasi Saree with Rich Red Velvet Zari Border",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1100,
+      "originalPrice": 1899,
+      "tag": "Royal Velvet Border Tant",
+      "rating": 4.9,
+      "reviewsCount": 39,
+      "images": [
+          "/Tant Benarasi Saree red velvet border/WhatsApp Image 2026-10-02 at 4.29.21 PM.jpeg",
+          "/Tant Benarasi Saree red velvet border/WhatsApp Image 2026-10-02 at 4.29.21 PM (1).jpeg",
+          "/Tant Benarasi Saree red velvet border/WhatsApp Image 2026-10-02 at 4.29.21 PM (2).jpeg"
+      ],
+      "shortDesc": "Lightweight Bengal Tant weaving fused with opulent Benarasi golden zari work, highlighted by a scarlet red velvet border band with traditional embossed golden zari paisleys.",
+      "fullDesc": "❤️ Traditional Bengal Tant Benarasi Saree with Red Velvet Zari Border ❤️\n\nA regal confluence of two iconic Indian weaving traditions: the breezy lightweight crispness of Bengal Tant and the majestic grandeur of Benarasi zari craftsmanship.\n\nThe handloom body features cream and crimson pinstripes with subtle gold zari butis, crowned by a rich scarlet red velvet ribbon border embossed with traditional gold zari paisley and peacock motifs. A standout drape for traditional pujas, weddings, and formal festivities.\n\nKey Highlights:\n• Fine Bengal Tant cotton-silk handloom weave\n• Opulent red velvet border band with golden zari paisleys\n• Beige and crimson striped body with gold butas\n• Woven Benarasi gold zari pallu\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹1100/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "Fine Bengal Tant Cotton-Silk Blend",
+          "border": "Luxurious Scarlet Red Velvet Ribbon Border with Woven Golden Zari Paisleys",
+          "body": "Beige & Crimson Pinstriped Handloom Body with Scattered Gold Zari Butas",
+          "pallu": "Rich Golden Zari Woven Pallu in Banarasi Motif",
+          "occasion": "Durga Puja Ashtami, Wedding Receptions, Festive Gatherings & Traditional Ceremonies",
+          "care": "Gentle Hand Wash or Dry Clean",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1100/- only | Free shipping on buying any 2 articles",
+          "inclusions": "1 Bengal Tant Benarasi Saree (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Royal Scarlet Red & Gold Cream",
+              "hex": "#991b1b"
+          }
+      ]
+  },
+
+  // 14. Vibrant Chartreuse Parrot Green Kota Linen Saree with Golden Zari Temple Border
+  {
+      "id": "chartreuse-parrot-green-kota-linen-saree",
+      "name": "Vibrant Chartreuse Parrot Green Kota Linen Saree with Golden Zari Temple Border",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1200,
+      "originalPrice": 1999,
+      "tag": "Premium Kota Weave",
+      "rating": 4.9,
+      "reviewsCount": 35,
+      "images": [
+          "/Kota Linen Saree/WhatsApp Image 2026-10-02 at 4.30.17 PM.jpeg",
+          "/Kota Linen Saree/WhatsApp Image 2026-10-02 at 4.30.17 PM (1).jpeg",
+          "/Kota Linen Saree/WhatsApp Image 2026-10-02 at 4.30.18 PM.jpeg",
+          "/Kota Linen Saree/WhatsApp Image 2026-10-02 at 4.30.18 PM (1).jpeg"
+      ],
+      "shortDesc": "Luminous Kota linen saree in fresh chartreuse parrot green, adorned with rich woven golden zari temple borders, circular gold coin butis, mustard piping, and tassels.",
+      "fullDesc": "💚 Vibrant Chartreuse Parrot Green Kota Linen Saree with Golden Zari Temple Border 💚\n\nRadiate refreshing charm in this high-quality Kota linen saree. Crafted with the celebrated airy check-textured weave of Kota doria blended with breathable linen, it offers crisp elegance with ultra-comfortable draping.\n\nDipped in a mesmerizing parrot green chartreuse shade, the saree is adorned with woven golden zari coin butis and bordered by a grand golden zari temple (korvai) border with mustard yellow selvedge piping. Finished with delicate hand-knotted tassels.\n\nKey Highlights:\n• Premium Kota Doria Linen handloom weave\n• All-over woven gold zari coin (Ashrafi) motifs\n• Grand triangular temple border in rich golden zari\n• Contrasting mustard yellow piping and handcrafted tassels\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹1200/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "Premium Kota Doria Linen Blend",
+          "border": "Elaborate Woven Golden Zari Triangle Temple Border with Mustard Gold Piping",
+          "body": "All-Over Woven Golden Zari Coin (Ashrafi) Butis with Sheer Textured Kota Weave",
+          "pallu": "Grand Zari Woven Pallu Finished with Delicate Hand-Tied Tassels",
+          "occasion": "Daytime Festive Gatherings, Puja Ceremonies, Haldi/Mehendi, Formal Brunches",
+          "care": "Dry Clean Recommended / Gentle Hand Wash",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1200/- only | Free shipping on buying any 2 articles",
+          "inclusions": "1 Kota Linen Saree with Tassels (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Chartreuse Parrot Green & Mustard Gold",
+              "hex": "#84cc16"
+          }
+      ]
+  },
+
+  // 15. Olive Gold Dual-Tone Shimmer Tissue Linen Saree with Wine Purple Border
+  {
+      "id": "olive-gold-dual-tone-tissue-linen-saree",
+      "name": "Olive Gold Dual-Tone Shimmer Tissue Linen Saree with Wine Purple Border",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 999,
+      "originalPrice": 1699,
+      "tag": "Dual-Tone Shimmer",
+      "rating": 4.8,
+      "reviewsCount": 31,
+      "images": [
+          "/Tissue Linen Saree/WhatsApp Image 2026-10-02 at 4.30.45 PM.jpeg",
+          "/Tissue Linen Saree/WhatsApp Image 2026-10-02 at 4.30.46 PM.jpeg",
+          "/Tissue Linen Saree/WhatsApp Image 2026-10-02 at 4.30.46 PM (1).jpeg",
+          "/Tissue Linen Saree/WhatsApp Image 2026-10-02 at 4.30.46 PM (2).jpeg"
+      ],
+      "shortDesc": "Airy tissue linen saree radiating an ethereal olive moss green and antique gold shimmer sheen, contrasting against a rich wine magenta border and hand-knotted tassels.",
+      "fullDesc": "🌿 Olive Gold Dual-Tone Shimmer Tissue Linen Saree 🌿\n\nUnderstated luxury meets modern glamour in this tissue linen creation. The weave blends fine linen yarns with metallic tissue threads, creating a dynamic surface that reflects shimmering tones of antique gold and olive moss green.\n\nFramed by a contrasting rich wine purple / magenta border and detailed with hand-braided dual-tone fringe tassels, this saree drapes with lightweight poise—holding immaculate pleats without feeling heavy.\n\nKey Highlights:\n• Lightweight dual-tone tissue linen fabric\n• Ethereal antique golden sheen on an olive green base\n• Contrast wine magenta border band\n• Finished with matching hand-knotted tassels on the aanchal\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹999/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "Fine Dual-Tone Tissue Linen Fabric (Lightweight & Shimmering)",
+          "drape": "Effortlessly Fluid, Airy & Holds Crisp Pleats Beautifully",
+          "border": "Deep Wine Magenta Satin-Finish Solid Border Accent",
+          "pallu": "Shimmer Pallu with Hand-Braided Olive & Magenta Dual-Tone Tassels",
+          "occasion": "Cocktail Evenings, Festive Receptions, Gallery Openings & Dinner Soirées",
+          "care": "Gentle Hand Wash or Dry Clean",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹999/- only | Free shipping on buying any 2 articles",
+          "inclusions": "1 Tissue Linen Saree with Tassels (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Antique Olive Gold & Wine Magenta",
+              "hex": "#4d7c0f"
+          }
+      ]
+  },
+
+  // 16. Handcrafted Artisan Patchwork Khadi Cotton Saree with Devanagari Calligraphy Motifs
+  {
+      "id": "artisan-patchwork-script-khadi-cotton-saree",
+      "name": "Handcrafted Artisan Patchwork Khadi Cotton Saree with Devanagari Calligraphy Motifs",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 999,
+      "originalPrice": 1699,
+      "tag": "Artisanal Hand Patchwork",
+      "rating": 4.9,
+      "reviewsCount": 46,
+      "images": [
+          "/Khadi Cotton Saree with Patch work/WhatsApp Image 2026-10-02 at 4.31.23 PM.jpeg",
+          "/Khadi Cotton Saree with Patch work/WhatsApp Image 2026-10-02 at 4.31.23 PM (1).jpeg"
+      ],
+      "shortDesc": "A wearable art piece featuring a charcoal grey pinstriped handloom khadi base adorned with vibrant appliqué patchwork blocks of traditional Devanagari script calligraphy, batik, and bandhani.",
+      "fullDesc": "🎨 Handcrafted Artisan Patchwork Khadi Cotton Saree 🎨\n\nMake a discerning artistic statement with this handcrafted khadi cotton patchwork saree. Set against a textured slate charcoal grey handloom base with subtle vertical multi-color pinstripes, the saree is intricately adorned with artisan appliqué patch blocks.\n\nThe patchwork features hand-printed Devanagari calligraphy script squares, earthy green crackle batik patterns, and bandhani-printed crimson blocks. A true celebration of Indian textile arts and indie aesthetics.\n\nKey Highlights:\n• Pure handloom khadi cotton with textured weave\n• Hand-stitched patchwork featuring Devanagari calligraphy & batik motifs\n• Vermillion red solid border trim\n• Finished with rustic black & red hand-tied tassels\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹999/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "100% Pure Handloom Khadi Cotton",
+          "craft": "Artisanal Hand-Stitched Patchwork with Devanagari Script, Batik & Bandhani Motifs",
+          "border": "Solid Vermillion Red Handloom Border",
+          "pallu": "Heavy Patchwork Art Aanchal with Braided Thread Tassels",
+          "occasion": "Cultural Functions, Literary Festivals, Art Exhibitions, Ethnic Workwear",
+          "care": "Cold Hand Wash Separately with Mild Detergent",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹999/- only | Free shipping on buying any 2 articles",
+          "inclusions": "1 Handcrafted Patchwork Khadi Saree (5.5m)"
+      },
+      "sizes": [
+          "5.5m Saree",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Slate Charcoal & Multi-Color Artisan Patchwork",
+              "hex": "#4b5563"
+          }
+      ]
+  },
+
+  // 17. Royal Oriental Fine Art Insulated Mini Vacuum Flask (300ml)
+  {
+      "id": "oriental-fine-art-mini-vacuum-flask-300ml",
+      "name": "Royal Oriental Fine Art Insulated Mini Vacuum Flask (300ml)",
+      "category": "gifting",
+      "isGifting": true,
+      "price": 350,
+      "originalPrice": 699,
+      "tag": "Compact Travel Thermal",
+      "rating": 4.8,
+      "reviewsCount": 38,
+      "images": [
+          "/Vacuum flask 300ml/WhatsApp Image 2026-10-02 at 4.33.32 PM.jpeg",
+          "/Vacuum flask 300ml/WhatsApp Image 2026-10-02 at 4.33.32 PM (1).jpeg"
+      ],
+      "shortDesc": "Double-wall insulated stainless steel 300ml mini vacuum flask featuring 3D embossed oriental fine art and peacock motifs, leak-proof steel lid with metal carry ring.",
+      "fullDesc": "🍶 Royal Oriental Fine Art Insulated Mini Vacuum Flask (300ml) 🍶\n\nStay refreshed on the move with this pocket-sized luxury thermal flask. Crafted with food-grade 304 double-wall vacuum insulation, it maintains your beverages piping hot or icy cold for up to 8-12 hours.\n\nThe exterior is adorned with intricate 3D embossed oriental heritage artwork—showcasing majestic peacocks, blooming peonies, and mythical dragon motifs with rich metallic luster. Equipped with a leak-proof stainless steel cap and heavy-duty carry ring.\n\nKey Highlights:\n• Double-wall 304 food-grade stainless steel vacuum insulation\n• Keeps beverages hot or cold for 8-12 hours\n• Compact 300ml portable size fits easily into handbags, backpacks & cup holders\n• Airtight leak-proof cap with integrated metal carry ring\n• Embossed fine art motifs with scratch-resistant metallic finish\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 📦 Price: ₹350 + Shipping\n\nPrice: ₹350/- only + Shipping Charges",
+      "details": {
+          "material": "Double-Wall Food-Grade 304 Stainless Steel (BPA-Free)",
+          "capacity": "300ml (Compact Pocket/Bag Size)",
+          "insulation": "Keeps Hot or Cold for 8-12 Hours",
+          "lid": "Screw-On Leak-Proof Stainless Steel Lid with Sturdy Metal Carry Ring",
+          "finish": "Textured 3D Embossed Oriental Heritage & Peacock Fine Art Print",
+          "occasion": "Daily Commute, Office Desk, Handbag Essential, Return Gifting",
+          "care": "Hand Wash with Soft Sponge; Do Not Microwave",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹350/- only + Shipping Charges",
+          "inclusions": "1 Insulated Mini Vacuum Flask (300ml)"
+      },
+      "sizes": [
+          "300ml (Height ~15cm, Diameter ~6.5cm)"
+      ],
+      "colors": [
+          {
+              "name": "Imperial Peacock Gold",
+              "hex": "#d97706"
+          },
+          {
+              "name": "Mythic Dragon Bronze",
+              "hex": "#78350f"
+          },
+          {
+              "name": "Midnight Peacock Navy",
+              "hex": "#0f172a"
+          },
+          {
+              "name": "Botanical Blossom Jade",
+              "hex": "#0d9488"
+          }
+      ]
+  },
+
+  // 18. Executive Luxe Leatherette Notebook & Pen Corporate Gift Hamper Box Set
+  {
+      "id": "executive-luxe-leatherette-corporate-gift-set",
+      "name": "Executive Luxe Leatherette Notebook & Pen Corporate Gift Hamper Box Set",
+      "category": "gifting",
+      "isGifting": true,
+      "bulkOrderAvailable": true,
+      "bulkOrderNotice": "DM for Corporate Bulk Orders & Custom Logo Branding",
+      "price": 799,
+      "originalPrice": 1599,
+      "tag": "Corporate & Bulk Gifting",
+      "rating": 5,
+      "reviewsCount": 47,
+      "images": [
+          "/corporate gifts/WhatsApp Image 2026-10-02 at 4.35.30 PM.jpeg",
+          "/corporate gifts/WhatsApp Image 2026-10-02 at 4.35.30 PM (1).jpeg",
+          "/corporate gifts/WhatsApp Image 2026-10-02 at 4.35.31 PM.jpeg",
+          "/corporate gifts/WhatsApp Image 2026-10-02 at 4.35.31 PM (1).jpeg",
+          "/corporate gifts/WhatsApp Image 2026-10-02 at 4.35.31 PM (2).jpeg"
+      ],
+      "shortDesc": "Premium executive gift combo in textured vegan leather with gold accents, featuring magnetic-clasp diary, metal ballpoint pen, keychain, and card holder in a luxury gift box.",
+      "fullDesc": "💼 Executive Luxe Leatherette Corporate Gift Hamper Set 💼\n\nLeave a lasting professional impression with this luxury corporate gift ensemble. Designed for discerning professionals, corporate executives, and VIP gifting, each accessory is crafted in textured vegan leather with polished gold/metallic hardware.\n\nPresented in an elegant hardbound presentation gift box with custom foam cushioning, the set includes an A5 magnetic clasp executive diary notebook, a weighty metallic ballpoint writing pen, a leatherette-wrapped metal keychain, and a sleek visiting card holder.\n\nKey Highlights:\n• Premium 4-in-1 executive business combo in hardbound gift box\n• A5 textured vegan leather journal diary with magnetic flap lock\n• Heavyweight metallic twist/click ballpoint pen\n• Matching leatherette & chrome metal key ring\n• Polished metal and leather visiting card holder\n• Custom company logo embossing/printing available for bulk corporate orders\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 💼 DM for Bulk Corporate Orders & Custom Branding\n\nPrice: ₹799/- only | DM for Bulk Orders Only",
+      "details": {
+          "setIncludes": "1 Textured Leatherette Notebook/Diary + 1 Heavy Metal Ballpoint Pen + 1 Metal & Leather Keychain + 1 Visiting Card Case",
+          "packaging": "Velvet / Molded Foam Cushioned Luxury Hardbound Presentation Gift Box",
+          "customization": "Bulk Orders Available with Custom Company Logo Printing / Embossing (DM on WhatsApp)",
+          "material": "High-Grade Vegan Leatherette & Polished Brass/Chrome Alloy",
+          "occasion": "Corporate Gifting, Annual Conclaves, Client Appreciation, Boss & Employee Gifting",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "DM for Bulk Corporate Orders & Custom Logo Enquiries",
+          "inclusions": "Complete 4-Piece Executive Set in Hardbound Gift Box"
+      },
+      "sizes": [
+          "Standard Executive Box Set (A5 Diary + Accessories)"
+      ],
+      "colors": [
+          {
+              "name": "Forest Green & Gold Accents",
+              "hex": "#15803d"
+          },
+          {
+              "name": "Classic Midnight Charcoal",
+              "hex": "#1e293b"
+          }
+      ]
+  },
+
+  // 19. The Iconic Kolkata Heritage Saree – Howrah Bridge, Yellow Taxi & Rickshaw
+  {
+      "id": "iconic-kolkata-heritage-viral-handloom-saree",
+      "name": "The Iconic Kolkata Heritage Saree – Howrah Bridge, Yellow Taxi & Rickshaw",
+      "category": "sarees",
+      "isGifting": false,
+      "price": 1100,
+      "originalPrice": 1999,
+      "tag": "Viral Kolkata Heritage Trend",
+      "rating": 5,
+      "reviewsCount": 68,
+      "images": [
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.23 PM.jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.24 PM.jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.24 PM (1).jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.24 PM (2).jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.25 PM.jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.25 PM (1).jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.25 PM (2).jpeg",
+          "/most viral and trending saree kolkatas heritage/WhatsApp Image 2026-10-02 at 4.56.25 PM (3).jpeg"
+      ],
+      "shortDesc": "The most viral and trending saree celebrating Kolkata's timeless soul. Featuring artistic illustrations of the Howrah Bridge silhouette, Kolkata's legendary yellow taxi, hand-pulled rickshaw, and iconic tram.",
+      "fullDesc": "🌉 The Iconic Kolkata Heritage Saree – City of Joy Special 🚖\n\nThis is currently the most viral and trending saree across Bengal and beyond—one specially crafted to uphold Kolkata's eternal cultural heritage.\n\nWoven on breathable, butter-soft handloom cotton, it features a panoramic artistic depiction of the architectural Howrah Bridge silhouette against the skyline, along with Kolkata's iconic yellow Ambassador taxi—which is proudly still in use today—the traditional hand-pulled rickshaw, and the heritage Kolkata tramway.\n\nFramed with a vibrant red and yellow handloom pinstripe border (Laal-Holud Paar), this saree captures the nostalgia, intellectual romance, and timeless vibrancy of Kolkata. An absolute must-have for Durga Puja, cultural events, and lovers of Bengal's rich legacy.\n\nKey Highlights:\n• Most viral & trending heritage concept saree\n• Artistic depiction of Howrah Bridge, Yellow Ambassador Taxi, Rickshaw & Tram\n• Premium soft Bengal handloom cotton fabric with airy drape\n• Traditional Laal-Holud (Red & Yellow) pinstriped border\n• Includes matching heritage motif blouse piece\n• Free shipping included!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 FREE SHIPPING INCLUDED\n\nPrice: ₹1100/- only | Free Shipping Included",
+      "details": {
+          "fabric": "Premium Soft Bengal Handloom Cotton",
+          "theme": "Authentic Kolkata Heritage Montage (Howrah Bridge, Iconic Yellow Ambassador Taxi, Hand-Pulled Rickshaw & Tram)",
+          "border": "Vibrant Red & Yellow Handloom Pinstriped Border (Laal-Holud Paar)",
+          "pallu": "Dramatic Howrah Bridge Silhouette Architectural Pallu",
+          "blouse": "Includes Matching Heritage Motif Blouse Piece (0.8m)",
+          "occasion": "Durga Puja, Kolkata Heritage Walks, Cultural Festivals, Bengali Celebrations & Gifting",
+          "care": "Cold Gentle Hand Wash / Dry Clean",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹1100/- only | FREE SHIPPING INCLUDED",
+          "inclusions": "1 Kolkata Heritage Saree (5.5m) + 1 Matching Blouse Piece (0.8m)"
+      },
+      "sizes": [
+          "5.5m Saree + 0.8m Blouse Piece",
+          "Free Size (Standard Drape)"
+      ],
+      "colors": [
+          {
+              "name": "Heritage Ivory with Yellow Taxi & Red Border",
+              "hex": "#fef08a"
+          }
+      ]
+  },
+
+  // 20. Premium Jacquard Brocade Gold Floral Stretchable Readymade Blouse
+  {
+      "id": "premium-jacquard-brocade-stretchable-blouse",
+      "name": "Premium Jacquard Brocade Gold Floral Stretchable Readymade Blouse",
+      "category": "blouses",
+      "isGifting": false,
+      "price": 650,
+      "originalPrice": 1199,
+      "tag": "Free Shipping on 2 | 4-Way Stretch",
+      "rating": 5,
+      "reviewsCount": 58,
+      "images": [
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.22 PM.jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.22 PM (1).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.23 PM.jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.23 PM (1).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.23 PM (2).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.23 PM (3).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.24 PM.jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.24 PM (1).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.24 PM (2).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.24 PM (3).jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.25 PM.jpeg",
+          "/Beautiful Stretchable Blouse/WhatsApp Image 2026-10-02 at 5.15.25 PM (1).jpeg"
+      ],
+      "shortDesc": "Exquisite 4-way stretch readymade designer blouse crafted in rich jacquard brocade with embossed golden floral weaving, flattering round scoop neckline, and elbow-length sleeves.",
+      "fullDesc": "💖 Premium Jacquard Brocade Gold Floral Stretchable Readymade Blouse 💖\n\nSay goodbye to tailor fitting hassles! This premium stretchable readymade blouse is engineered with high-recovery 4-way stretch jacquard brocade fabric that hugs your body flawlessly from bust sizes 32 to 44.\n\nWoven with opulent golden zari floral sprays on rich festive backgrounds, it features an elegant scoop neckline, a stylish back cut, and graceful elbow-length sleeves. Pair it effortlessly with silk, handloom, organza, or georgette sarees and lehengas for instant festive glam.\n\nKey Highlights:\n• High-recovery 4-way stretch jacquard brocade knit\n• Opulent golden zari embossed floral weaving\n• Flattering front scoop neckline & deep curved back\n• Graceful elbow-length sleeves\n• Adaptive stretch fit: Comfortably fits bust sizes 32 to 44\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹650/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "High-Elasticity Premium Jacquard Brocade Knit (4-Way Stretch)",
+          "craft": "Rich Golden Zari Floral & Foliage Weaving",
+          "neckline": "Flattering Front Scoop & Deep Round Back",
+          "sleeves": "Elbow-Length Sleeves with Reinforced Borders",
+          "fit": "Adaptive Stretch Fit (Seamlessly stretches across sizes 32 to 44 without tightening)",
+          "occasion": "Weddings, Festive Sarees, Lehenga Pairing, Party Wear",
+          "care": "Gentle Hand Wash in Cold Water; Do Not Wring; Dry in Shade",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹650/- only | Free Shipping on buying any 2 articles",
+          "inclusions": "1 Premium Jacquard Brocade Stretchable Blouse"
+      },
+      "sizes": [
+          "Free Size (Stretchable Bust 32 - 44 inches / Free Fit)"
+      ],
+      "colors": [
+          {
+              "name": "Bridal Maroon & Gold",
+              "hex": "#881337"
+          },
+          {
+              "name": "Royal Emerald Green & Gold",
+              "hex": "#065f46"
+          },
+          {
+              "name": "Royal Navy Blue & Gold",
+              "hex": "#1e3a8a"
+          },
+          {
+              "name": "Festive Rani Pink & Gold",
+              "hex": "#db2777"
+          },
+          {
+              "name": "Rich Golden Yellow",
+              "hex": "#eab308"
+          }
+      ]
+  },
+
+  // ==========================================
   // --- NEW CATALOGUE LAUNCH (11 EXCLUSIVE SAREES) ---
   // ==========================================
 
