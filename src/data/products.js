@@ -1,5 +1,155 @@
 export const PRODUCTS = [
   // ==========================================
+  // --- NEW STRETCHABLE DESIGNER BLOUSES LAUNCH ---
+  // ==========================================
+
+  // 1. Artisan Tree-of-Life Motif Stretchable Blouse in Sage Green
+  {
+      "id": "artisan-tree-of-life-stretchable-blouse-sage-green",
+      "name": "Artisan Tree-of-Life Motif Stretchable Blouse in Sage Green",
+      "category": "blouses",
+      "isGifting": false,
+      "price": 650,
+      "originalPrice": 1199,
+      "tag": "Tree of Life Motif | 4-Way Stretch",
+      "rating": 4.9,
+      "reviewsCount": 37,
+      "images": [
+          "/Beautiful crafted stretchable blouse sage green/WhatsApp Image 2026-10-02 at 5.35.11 PM.jpeg",
+          "/Beautiful crafted stretchable blouse sage green/WhatsApp Image 2026-10-02 at 5.35.11 PM (1).jpeg",
+          "/Beautiful crafted stretchable blouse sage green/WhatsApp Image 2026-10-02 at 5.35.12 PM.jpeg",
+          "/Beautiful crafted stretchable blouse sage green/WhatsApp Image 2026-10-02 at 5.35.12 PM (1).jpeg",
+          "/Beautiful crafted stretchable blouse sage green/WhatsApp Image 2026-10-02 at 5.35.13 PM.jpeg"
+      ],
+      "shortDesc": "Artisan-crafted stretchable cotton-lycra designer blouse in an earthy sage green, featuring vibrant multi-colored Tree-of-Life motifs on the back and elbow sleeves with a comfortable adaptive fit.",
+      "fullDesc": "🌿 Artisan Tree-of-Life Motif Stretchable Blouse in Sage Green 🌿\n\nExperience effortless ethnic elegance with this beautifully crafted stretchable designer blouse. Dipped in an earthy and sophisticated sage green shade, this blouse is crafted from premium high-stretch cotton lycra that gently hugs your body with breathable ease.\n\nThe highlight is the intricate multi-colored Tree-of-Life / Madhubani-inspired botanical motif featured on the back and along the elbow-length sleeves. It effortlessly pairs with handloom, khadi, linen, and silk sarees for a refined boutique look without the fuss of custom tailoring.\n\nKey Highlights:\n• High-recovery 4-way stretch cotton lycra for maximum comfort\n• Intricate multi-colored Tree-of-Life motif printed on back & sleeves\n• Classic modest round neckline and flattering cut\n• Elbow-length sleeves with reinforced stitch edges\n• Adaptive stretch fit: Comfortably accommodates bust sizes 32 to 42\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹650/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "Premium Cotton Lycra Knit (High Recovery 4-Way Stretch)",
+          "craft": "Vibrant Multi-Color Tree-of-Life / Madhubani-Style Botanical Motif on Back & Sleeves",
+          "neckline": "Classic Modest Round Neckline with Deep Comfort Cut",
+          "sleeves": "Elbow-Length Sleeves with Coordinated Sleeve Motif",
+          "fit": "Adaptive Stretch Body-Hug Fit (Fits Bust 32 - 42 inches comfortably)",
+          "occasion": "Daily Smart Ethnic, Handloom Saree Pairing, Office, Puja & Cultural Meets",
+          "care": "Gentle Hand Wash in Cold Water; Dry in Shade; Do Not Bleach",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹650/- only | Free Shipping on buying any 2 articles",
+          "inclusions": "1 Artisan Tree-of-Life Stretchable Blouse"
+      },
+      "sizes": [
+          "Free Size (Stretchable Bust 32 - 42 inches / Free Fit)"
+      ],
+      "colors": [
+          {
+              "name": "Earthy Sage & Olive Green",
+              "hex": "#556b2f"
+          }
+      ]
+  },
+
+  // 2. Gracious Golden Shimmer Plunge V-Neck Stretchable Readymade Blouse
+  {
+      "id": "gracious-golden-shimmer-v-neck-stretchable-blouse",
+      "name": "Gracious Golden Shimmer Plunge V-Neck Stretchable Readymade Blouse",
+      "category": "blouses",
+      "isGifting": false,
+      "price": 600,
+      "originalPrice": 1099,
+      "tag": "Video Included | Golden Shimmer",
+      "rating": 5,
+      "reviewsCount": 44,
+      "images": [
+          "/Beautiful Blouse. V neck . Gracious Gloden/WhatsApp Image 2026-10-02 at 5.36.14 PM.jpeg",
+          "/Beautiful Blouse. V neck . Gracious Gloden/WhatsApp Image 2026-10-02 at 5.36.14 PM (1).jpeg",
+          "/Beautiful Blouse. V neck . Gracious Gloden/WhatsApp Image 2026-10-02 at 5.36.14 PM (2).jpeg",
+          "/Beautiful Blouse. V neck . Gracious Gloden/WhatsApp Image 2026-10-02 at 5.36.14 PM (3).jpeg",
+          "/Beautiful Blouse. V neck . Gracious Gloden/WhatsApp Image 2026-10-02 at 5.36.17 PM.jpeg",
+          "/Beautiful Blouse. V neck . Gracious Gloden/WhatsApp Video 2026-10-02 at 5.36.16 PM.mp4"
+      ],
+      "shortDesc": "Glamorous textured metallic golden shimmer stretchable blouse with an alluring plunge V-neckline and elegant elbow sleeves. High-stretch, comfortable fabric with luminous festive sparkle.",
+      "fullDesc": "✨ Gracious Golden Shimmer Plunge V-Neck Stretchable Blouse ✨\n\nMake a radiant entrance with this show-stopping golden shimmer stretchable readymade blouse. Crafted from fine metallic lurex-blended knit fabric, it creates an enchanting sparkle that catches ambient light at every festive angle.\n\nFeaturing an alluring plunge V-neckline, full back coverage, and graceful elbow-length sleeves, this blouse seamlessly molds to your silhouette. The inner lining is soft and non-prickly against the skin. Comes with a video preview demonstrating its rich shimmer and stretch!\n\nKey Highlights:\n• High-stretch metallic lurex shimmer knit with soft inner lining\n• Flattering plunge V-neck design\n• Graceful elbow-length sleeves\n• Universal festive metallic gold pairs with almost any saree or lehenga\n• Adaptive stretch fit: Comfortably accommodates bust sizes 32 to 44\n• Demonstration video included!\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹600/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "High-Stretch Metallic Shimmer Lurex Knit Blend",
+          "finish": "Subtle All-Over Glimmering Gold Luster (Soft on Inner Skin, Non-Prickly)",
+          "neckline": "Flattering Plunge V-Neckline with Reinforced Piping",
+          "sleeves": "Tailored Elbow-Length Sleeves",
+          "fit": "Adaptive 4-Way Stretch (Comfortably fits sizes 32 to 44 / S to XXL)",
+          "occasion": "Weddings, Reception Parties, Festive Sarees, Lehenga Pairing & Cocktails",
+          "care": "Gentle Hand Wash in Cold Water; Dry Flat; Do Not Iron Directly on Shimmer",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹600/- only | Free Shipping on buying any 2 articles",
+          "inclusions": "1 Gracious Golden Shimmer V-Neck Stretchable Blouse"
+      },
+      "sizes": [
+          "Free Size (Stretchable Bust 32 - 44 inches / Free Fit)"
+      ],
+      "colors": [
+          {
+              "name": "Gracious Radiant Gold",
+              "hex": "#eab308"
+          }
+      ]
+  },
+
+  // 3. Sleeveless Premium Cotton Lycra 4-Way Stretchable Readymade Blouse
+  {
+      "id": "sleeveless-premium-cotton-lycra-stretchable-blouse",
+      "name": "Sleeveless Premium Cotton Lycra 4-Way Stretchable Readymade Blouse",
+      "category": "blouses",
+      "isGifting": false,
+      "price": 400,
+      "originalPrice": 799,
+      "tag": "Wardrobe Essential | 4-Way Stretch",
+      "rating": 4.9,
+      "reviewsCount": 53,
+      "images": [
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.01 PM.jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.01 PM (1).jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.01 PM (2).jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.01 PM (3).jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.02 PM.jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.02 PM (1).jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.02 PM (2).jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.02 PM (3).jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.03 PM.jpeg",
+          "/Sleeve less , premium quality stretchable blouse/WhatsApp Image 2026-10-02 at 5.38.03 PM (1).jpeg"
+      ],
+      "shortDesc": "Versatile wardrobe staple crafted in butter-soft premium cotton lycra with full 4-way stretch. Features a flattering scoop round neck, broad bra-friendly straps, and seamless comfort.",
+      "fullDesc": "🌸 Sleeveless Premium Cotton Lycra 4-Way Stretchable Blouse 🌸\n\nThe ultimate blend of comfort, convenience, and contemporary chic. Tailored from premium combed cotton-rich lycra knit, this sleeveless readymade blouse provides superior elasticity, breathability, and non-sheer coverage throughout the day.\n\nFeaturing broad shoulder straps designed to conceal bra straps, a clean round scoop neckline, and a flattering curved back. Ideal for pairing with daily handloom sarees, printed georgettes, partywear, or even as an ethnic crop top.\n\nKey Highlights:\n• High-grade breathable combed cotton lycra (4-way stretch)\n• Flattering front scoop neckline & deep curved back\n• Broad bra-friendly comfort shoulder straps\n• Non-slip elasticated bottom band for a snug fit\n• Adaptive stretch fit: Comfortably accommodates bust sizes 32 to 42\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹400/- only | Free shipping on buying any 2 articles",
+      "details": {
+          "fabric": "Premium Combed Cotton Lycra (High-Elasticity 4-Way Stretch)",
+          "neckline": "Flattering Round Scoop Neck & Deep Curved Back",
+          "straps": "Broad Comfort Shoulder Straps (Bra-Friendly Design)",
+          "fit": "Adaptive Contoured Stretch Fit (Seamlessly fits bust 32 to 42 inches)",
+          "occasion": "Daily Wear, Saree Pairing, Layering, Casual Chic & Festive Styling",
+          "care": "Machine Wash Cold with Like Colors; Tumble Dry Low",
+          "policy": "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid Orders (No COD)",
+          "shippingNotice": "Price: ₹400/- only | Free Shipping on buying any 2 articles",
+          "inclusions": "1 Sleeveless Premium Stretchable Blouse"
+      },
+      "sizes": [
+          "Free Size (Stretchable Bust 32 - 42 inches / Free Fit)"
+      ],
+      "colors": [
+          {
+              "name": "Rich Plum Berry",
+              "hex": "#701a75"
+          },
+          {
+              "name": "Classic Crimson Maroon",
+              "hex": "#881337"
+          },
+          {
+              "name": "Jet Black",
+              "hex": "#09090b"
+          },
+          {
+              "name": "Rani Pink",
+              "hex": "#db2777"
+          }
+      ]
+  },
+
+  // ==========================================
   // --- NEW EXCLUSIVE LAUNCH (20 NEW ARRIVALS) ---
   // ==========================================
 
