@@ -1,5 +1,197 @@
 export const PRODUCTS = [
   // ==========================================
+  // --- NEW FESTIVE, POOJA & LUXURY GIFTING LAUNCH ---
+  // ==========================================
+
+  // 1. Ganpati Ji Luxury Festive Gift Hamper with Idol & Velvet Bag
+  {
+    id: "ganpati-ji-luxury-festive-gift-hamper",
+    name: "Ganpati Ji Luxury Festive Gift Hamper with Idol & Velvet Bag",
+    category: "gifting",
+    isGifting: true,
+    bulkOrderAvailable: true,
+    bulkOrderNotice: "Festive Hamper | DM for Corporate & Bulk Orders",
+    price: 850,
+    originalPrice: 1499,
+    tag: "Festive Hamper | Divine Ganesha",
+    rating: 5.0,
+    reviewsCount: 42,
+    images: [
+      "/ganpati hamper/WhatsApp Image 2026-10-02 at 3.26.25 PM.jpeg"
+    ],
+    shortDesc: "Regal champagne-beige velvet structured gift hamper bag featuring an arched handle, circular display window with kundan and pearl borders, floral brooch with latkan hangings, and an auspicious golden Lord Ganesha idol.",
+    fullDesc: "✨ Ganpati Ji Luxury Festive Gift Hamper ✨\n\nInvite divine prosperity, blessings, and auspicious elegance into your celebrations with our exquisitely curated Ganpati Ji Luxury Festive Gift Hamper. Thoughtfully designed to make festive gifting unforgettable, this hamper brings together sacred reverence and opulent artisanal craftsmanship.\n\nThe ensemble is presented in a premium champagne-beige velvet structured tote bag with an integrated cut-out carry handle and secure top snap-button closure. The centerpiece features a circular peek-through window richly framed with hand-embellished pearl beads, glistening gold lace, and an artisan floral brooch with pearl drop tassels (latkans). Resting gracefully inside is a radiant golden Lord Ganesha idol, evoking spiritual peace and joy.\n\nKey Highlights:\n• Complete Festive Gift Ensemble in rich champagne velvet tote\n• Includes high-luster radiant golden Lord Ganesha idol\n• Circular clear display window encircled by intricate pearl & zardozi-style trims\n• Flawless artisanal brooch with pearl drop tassels (latkans)\n• Sturdy structured base that holds sweets, dry fruits, or puja samagri\n• Ideal for Diwali gifting, Ganesh Chaturthi, housewarmings, and corporate celebrations\n• DM for custom bulk orders and corporate branding\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹850/- only | Free shipping on buying any 2 articles",
+    details: {
+      material: "Premium High-Density Velvet, Gold Brocade Trims, Faux Pearls & Brass-Finish Idol",
+      inclusions: "1 Designer Velvet Hamper Bag + 1 Golden Ganpati Ji Idol + Brooch & Pearl Latkan",
+      dimensions: "Hamper Bag: Approx. 11\" Height x 8.5\" Width x 4\" Gusset Base",
+      finish: "Champagne Beige Velvet with Ornate Pearl and Kundan Motif Border",
+      occasion: "Diwali, Ganesh Utsav, Griha Pravesh, Corporate Gifting & Return Gifts",
+      care: "Spot Clean with Dry Cloth; Keep Idol Away from Direct Moisture",
+      policy: "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid (No COD)",
+      shippingNotice: "Price: ₹850/- only | Free Shipping on buying any 2 articles"
+    },
+    sizes: [
+      "Standard Luxury Festive Hamper Set"
+    ],
+    colors: [
+      {
+        name: "Champagne Beige Velvet & Radiant Gold",
+        hex: "#d4af37"
+      }
+    ]
+  },
+
+  // 2. Diwali Special Handcrafted Pure Brass Tulsi Diya / Mandir Deepam
+  {
+    id: "handcrafted-pure-brass-tulsi-diya-diwali-special",
+    name: "Diwali Special Handcrafted Pure Brass Tulsi Diya / Mandir Deepam",
+    category: "gifting",
+    isGifting: true,
+    bulkOrderAvailable: true,
+    bulkOrderNotice: "Diwali Special | Bulk Gifting Enquiries Welcome",
+    price: 550,
+    originalPrice: 999,
+    tag: "Diwali Special | 100% Pure Brass",
+    rating: 4.9,
+    reviewsCount: 38,
+    images: [
+      "/tulsi diya/WhatsApp Image 2026-10-02 at 3.26.51 PM.jpeg"
+    ],
+    shortDesc: "Auspicious architectural Tulsi Vrindavan sanctum diya crafted in 100% pure solid brass. Features embossed sacred Swastik motifs, stepped sanctum pillars, and a deep brass oil basin for long-lasting festive illumination.",
+    fullDesc: "🪔 Diwali Special Handcrafted Pure Brass Tulsi Diya 🪔\n\nIlluminate your home with divine radiance and sacred positivity with our Diwali Special Tulsi Diya. Modelled on the revered sacred Tulsi Kyara / Vrindavan temple sanctum, this eternal deepam is meticulously cast from 100% solid virgin brass with a gleaming mirror-polished gold luster.\n\nEach facet of the sanctum is beautifully embossed with the auspicious Swastik symbol, representing peace, prosperity, and spiritual auspiciousness. The top cradle securely supports a wide brass oil diya bowl with wick slot, ensuring uninterrupted burning during Diwali puja, evening aarti, and daily mandir devotion.\n\nKey Highlights:\n• Cast from 100% solid premium virgin brass (weighty & durable)\n• Sacred Tulsi Vrindavan architectural design with four crowning finials\n• Embossed sacred Swastik symbols on all sides for good fortune\n• Deep oil reservoir designed for extended burn time with cotton wicks\n• Easy to clean and polish for generational longevity\n• Perfect festive gift for Diwali, Dhanteras, housewarmings & wedding return favors\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: ₹550/- only | Free shipping on buying any 2 articles",
+    details: {
+      material: "100% Solid Virgin Brass (Pital)",
+      motif: "Embossed Sacred Swastik & Temple Pillar Sanctum",
+      finish: "Hand-Polished Brilliant Golden Brass Luster",
+      weight: "Approx. 280 grams solid brass build",
+      occasion: "Diwali Puja, Daily Mandir Aarti, Dhanteras, Housewarming & Return Favors",
+      care: "Clean with Pitambari powder or lemon & salt paste for perpetual golden shine",
+      policy: "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid (No COD)",
+      shippingNotice: "Price: ₹550/- only | Free Shipping on buying any 2 articles",
+      inclusions: "1 Pure Brass Tulsi Vrindavan Diya Deepam"
+    },
+    sizes: [
+      "Standard Temple Sanctum Height (~4.5 Inches)"
+    ],
+    colors: [
+      {
+        name: "Shimmering Golden Brass",
+        hex: "#eab308"
+      }
+    ]
+  },
+
+  // 3. 100% Pure Brass Sri Yantra Lotus Katori Bowl (4" & 5")
+  {
+    id: "pure-brass-sri-yantra-lotus-katori-bowl",
+    name: "100% Pure Brass Sri Yantra Lotus Katori Bowl (4\" & 5\")",
+    category: "gifting",
+    isGifting: true,
+    bulkOrderAvailable: true,
+    bulkOrderNotice: "Available in 4\" (₹350) & 5\" (₹450) | DM for Bulk Orders",
+    price: 350,
+    originalPrice: 599,
+    priceRange: "₹350 – ₹450",
+    sizes: [
+      "4 Inch (₹350)",
+      "5 Inch (₹450)"
+    ],
+    sizePrices: {
+      "4 Inch (₹350)": 350,
+      "5 Inch (₹450)": 450
+    },
+    sizeOriginalPrices: {
+      "4 Inch (₹350)": 599,
+      "5 Inch (₹450)": 799
+    },
+    tag: "Sacred Sri Yantra | 100% Pure Brass",
+    rating: 5.0,
+    reviewsCount: 47,
+    images: [
+      "/100 Pure Brass katori/WhatsApp Image 2026-10-02 at 3.28.08 PM.jpeg",
+      "/100 Pure Brass katori/WhatsApp Image 2026-10-02 at 3.28.08 PM (1).jpeg",
+      "/100 Pure Brass katori/WhatsApp Image 2026-10-02 at 3.28.08 PM (2).jpeg"
+    ],
+    shortDesc: "Sacred 100% pure brass puja katori bowl featuring a scalloped lotus petal rim and masterfully etched authentic Sri Yantra sacred geometry. Available in 4-inch (₹350) and 5-inch (₹450) for Lakshmi puja, naivedya offerings, and spiritual decor.",
+    fullDesc: "🌺 100% Pure Brass Sri Yantra Lotus Katori Bowl (4\" & 5\") 🌺\n\nExperience celestial harmony and divine abundance with this masterfully engraved 100% Pure Brass Sri Yantra Lotus Katori. Handcrafted by master coppersmiths, this holy offering vessel is designed according to authentic Vedic geometry.\n\nThe base of the bowl features the authentic Maha Meru Sri Yantra — depicting the 9 interlocking triangles representing Shiva and Shakti, centered around the Bindu (the source point of all cosmic creation). The raised rim is delicately fashioned into blooming lotus petals, resting on a pedestal ring base.\n\nAvailable in two versatile sizes:\n• 4 Inch Diameter: ₹350/- only\n• 5 Inch Diameter: ₹450/- only\n\nIdeal for keeping Gunja seeds, Gomti chakras, yellow kowdies, prasad, naivedya, kumkum, or floating flower petals in your puja sthan.\n\nKey Highlights:\n• 100% Pure High-Grade Solid Brass with high vibration energy\n• Authentic Sri Yantra sacred geometry precisely etched in center\n• Blooming lotus petal scalloped contour with pedestal base\n• Available in 4-inch (₹350) and 5-inch (₹450) options\n• Ideal for Diwali, Lakshmi Puja, Vaastu correction & divine gifting\n• Free shipping on buying any 2 articles!\n\nStore Policy:\n• ✅ Exchange Available\n• ❌ No Refund | ❌ No Return\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Free Shipping on buying any 2 articles\n\nPrice: 4 Inch - ₹350/- | 5 Inch - ₹450/- | Free shipping on buying any 2 articles",
+    details: {
+      material: "100% Solid Pure Virgin Brass",
+      craft: "Authentic Precision-Etched Sri Yantra Sacred Geometry & Fluted Lotus Rim",
+      dimensions: "4 Inch (~10 cm Dia, ₹350) | 5 Inch (~12.5 cm Dia, ₹450)",
+      finish: "Mirror Golden Brass Polish",
+      usage: "Pooja Offerings, Gomti Chakra / Kauri Placement, Naivedyam & Vaastu",
+      care: "Wipe with soft cloth. Use lemon juice or Pitambari to restore gleam.",
+      policy: "✅ Exchange Available | ❌ No Refund | ❌ No Return | 💳 100% Prepaid (No COD)",
+      shippingNotice: "4\" at ₹350 | 5\" at ₹450 | Free Shipping on buying any 2 articles",
+      inclusions: "1 Pure Brass Sri Yantra Lotus Petal Katori Bowl"
+    },
+    colors: [
+      {
+        name: "Lustrous Vedic Brass Gold",
+        hex: "#facc15"
+      }
+    ]
+  },
+
+  // 4. Artisan Metal Jar with Designer Basket Luxury Hamper Ensemble (DM for Bulk Order Only)
+  {
+    id: "artisan-metal-jar-with-designer-basket",
+    name: "Artisan Metal Jar with Designer Basket Luxury Hamper Ensemble",
+    category: "gifting",
+    isGifting: true,
+    bulkOrderAvailable: true,
+    bulkOrderOnly: true,
+    bulkOrderNotice: "DM for Bulk Orders Only | Wedding Favors & Corporate Gifting",
+    price: 0,
+    originalPrice: 0,
+    tag: "DM for Bulk Order Only",
+    rating: 5.0,
+    reviewsCount: 56,
+    images: [
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.46 PM.jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.45 PM.jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.47 PM.jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.44 PM.jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.45 PM (2).jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.46 PM (2).jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.45 PM (1).jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.46 PM (3).jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.45 PM (3).jpeg",
+      "/metal jar with basket/WhatsApp Image 2026-10-02 at 3.30.46 PM (1).jpeg"
+    ],
+    shortDesc: "Opulent bulk gifting collection of hammered brass and ceramic treat jars crowned with metallic floral finial lids, nestled inside ornate gold filigree wire baskets, chariot carriages, and satin-lined luxury trunk gift boxes.",
+    fullDesc: "✨ Artisan Metal Jar with Designer Basket Luxury Hamper Ensemble ✨\n\n[DM FOR BULK ORDER ONLY - CUSTOM PACKAGING AVAILABLE]\n\nMake an unforgettable statement at your wedding celebrations, corporate milestone events, and festive gatherings with our premier Metal Jar & Designer Basket Gifting Collection. Meticulously designed for luxury return favors and bulk trousseau presentations, this collection presents a regal fusion of traditional artistry and contemporary splendor.\n\nFeaturing hand-hammered metallic and ceramic jars topped with sculpted multi-petal golden flower finials, arranged inside gold-electroplated filigree mesh baskets, fairytale carriage stands, and velvet-padded hardbound presentation boxes with ornate brass latches.\n\nCustom Bulk Configurations Available:\n• Set of 1, 2, 3 or 4 treat jars in coordinating gold baskets\n• Luxury Hardbound Presentation Trunk with Golden Serving Platter\n• Whimsical Bird-Cage & Fairytale Chariot Metal Carriage Stands\n• Bespoke dry fruit, chocolate & sweet fillings upon request\n• Personalized logo embossing, name tags, and ribbons\n\nStore Policy:\n• 📦 Exclusively for Bulk Orders (Weddings, Corporate, Return Gifts)\n• 💬 DM directly on WhatsApp for customized quantity quotes & delivery schedules\n• 💳 100% Prepaid Orders (No COD)\n• 🚚 Safe insured bulk delivery across India",
+    details: {
+      material: "Hammered Metal Alloys, Food-Grade Ceramic, Electroplated Gold Wire Basket",
+      configurations: "Single Jar Basket, Double Jar Set, 3-Jar Rose Basket, 4-Jar Hamper Box & Chariot Stand",
+      finish: "Antiqued Brass Gold, Luminous White Ceramic with Gold Flower Lid",
+      capacity: "Approx. 250ml - 400ml per jar (Ideal for dry fruits, mukhwas, sweets)",
+      occasion: "Wedding Return Favors, Corporate VIP Gifting, Diwali Hampers & Trousseau Packing",
+      customization: "Full Custom Tagging, Logo Ribbon & Box Colors Available on WhatsApp",
+      policy: "Bulk Orders Only | Direct WhatsApp Consultation | 100% Prepaid",
+      shippingNotice: "DM on WhatsApp for Bulk Order Pricing & Quotation"
+    },
+    sizes: [
+      "Bulk Custom Options (Single, 2-Jar, 3-Jar, 4-Jar & Luxury Trunk Sets)"
+    ],
+    colors: [
+      {
+        name: "Royal Golden Hammered",
+        hex: "#d4af37"
+      },
+      {
+        name: "Artisan White Ceramic with Gold Lid",
+        hex: "#ffffff"
+      },
+      {
+        name: "Jewel Teal & Sapphire Carriage",
+        hex: "#0891b2"
+      }
+    ]
+  },
+
+  // ==========================================
   // --- NEW STRETCHABLE DESIGNER BLOUSES LAUNCH ---
   // ==========================================
 

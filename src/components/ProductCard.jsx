@@ -9,7 +9,9 @@ const isVideoFile = (url) => typeof url === 'string' && /\.(mp4|webm|mov|ogg)$/i
 export default function ProductCard({ product }) {
   const [isFullscreenOpen, setIsFullscreenOpen] = useState(false);
   const [selectedImgIndex, setSelectedImgIndex] = useState(0);
-  const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+  const discount = product.originalPrice && product.price
+    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+    : 0;
 
   const videoCount = product.images?.filter(isVideoFile).length || 0;
   const photoCount = (product.images?.length || 0) - videoCount;
@@ -159,19 +161,36 @@ export default function ProductCard({ product }) {
             </span>
           ) : <span />}
 
-          <span
-            style={{
-              fontSize: '0.72rem',
-              fontWeight: '700',
-              padding: '0.25rem 0.55rem',
-              borderRadius: '9999px',
-              background: 'rgba(34, 197, 94, 0.9)',
-              color: '#052e16',
-              backdropFilter: 'blur(8px)'
-            }}
-          >
-            {discount}% OFF
-          </span>
+          {product.bulkOrderOnly ? (
+            <span
+              style={{
+                fontSize: '0.72rem',
+                fontWeight: '700',
+                padding: '0.25rem 0.6rem',
+                borderRadius: '9999px',
+                background: 'linear-gradient(135deg, #ec4899 0%, #a855f7 100%)',
+                color: '#ffffff',
+                backdropFilter: 'blur(8px)',
+                letterSpacing: '0.04em'
+              }}
+            >
+              BULK ORDER ONLY
+            </span>
+          ) : (
+            <span
+              style={{
+                fontSize: '0.72rem',
+                fontWeight: '700',
+                padding: '0.25rem 0.55rem',
+                borderRadius: '9999px',
+                background: 'rgba(34, 197, 94, 0.9)',
+                color: '#052e16',
+                backdropFilter: 'blur(8px)'
+              }}
+            >
+              {discount}% OFF
+            </span>
+          )}
         </div>
 
         {/* Action Overlay: Details & Full Screen */}
@@ -319,12 +338,33 @@ export default function ProductCard({ product }) {
 
         {/* Price Row */}
         <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.5rem', marginTop: '0.25rem' }}>
-          <span style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fbcfe8' }}>
-            ₹{product.price.toLocaleString('en-IN')}
-          </span>
-          <span style={{ fontSize: '0.85rem', color: '#94a3b8', textDecoration: 'line-through' }}>
-            ₹{product.originalPrice.toLocaleString('en-IN')}
-          </span>
+          {product.bulkOrderOnly ? (
+            <span style={{ fontSize: '1.05rem', fontWeight: '700', color: '#f472b6', letterSpacing: '0.02em' }}>
+              DM for Bulk Order Only
+            </span>
+          ) : product.priceRange ? (
+            <>
+              <span style={{ fontSize: '1.22rem', fontWeight: '700', color: '#fbcfe8' }}>
+                {product.priceRange}
+              </span>
+              {product.originalPrice ? (
+                <span style={{ fontSize: '0.85rem', color: '#94a3b8', textDecoration: 'line-through' }}>
+                  ₹{product.originalPrice.toLocaleString('en-IN')}
+                </span>
+              ) : null}
+            </>
+          ) : (
+            <>
+              <span style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fbcfe8' }}>
+                ₹{product.price ? product.price.toLocaleString('en-IN') : '0'}
+              </span>
+              {product.originalPrice ? (
+                <span style={{ fontSize: '0.85rem', color: '#94a3b8', textDecoration: 'line-through' }}>
+                  ₹{product.originalPrice.toLocaleString('en-IN')}
+                </span>
+              ) : null}
+            </>
+          )}
         </div>
 
         {/* Mini Policy Strip: Exchange ✅ | No Refund ❌ | No Return ❌ */}
@@ -352,9 +392,13 @@ export default function ProductCard({ product }) {
 
         {/* Action Buttons */}
         <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
-          {/* Primary Buy Now WhatsApp CTA */}
+          {/* Primary Buy Now / Bulk WhatsApp CTA */}
           <a
-            href={BRAND_INFO.whatsappGroupLink}
+            href={
+              product.bulkOrderOnly
+                ? `https://wa.me/917011318218?text=${encodeURIComponent(`Hi Mita's Creation, I would like to inquire about bulk ordering "${product.name}". Please share the quotation and details.`)}`
+                : BRAND_INFO.whatsappGroupLink
+            }
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -365,25 +409,33 @@ export default function ProductCard({ product }) {
               gap: '0.4rem',
               padding: '0.65rem 0.8rem',
               borderRadius: '12px',
-              background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+              background: product.bulkOrderOnly
+                ? 'linear-gradient(135deg, #ec4899 0%, #a855f7 100%)'
+                : 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
               color: '#ffffff',
               textDecoration: 'none',
               fontWeight: '600',
               fontSize: '0.86rem',
-              boxShadow: '0 4px 14px rgba(37, 211, 102, 0.3)',
+              boxShadow: product.bulkOrderOnly
+                ? '0 4px 14px rgba(236, 72, 153, 0.35)'
+                : '0 4px 14px rgba(37, 211, 102, 0.3)',
               transition: 'all 0.2s ease'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'scale(1.02)';
-              e.currentTarget.style.boxShadow = '0 6px 18px rgba(37, 211, 102, 0.5)';
+              e.currentTarget.style.boxShadow = product.bulkOrderOnly
+                ? '0 6px 18px rgba(236, 72, 153, 0.5)'
+                : '0 6px 18px rgba(37, 211, 102, 0.5)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = '0 4px 14px rgba(37, 211, 102, 0.3)';
+              e.currentTarget.style.boxShadow = product.bulkOrderOnly
+                ? '0 4px 14px rgba(236, 72, 153, 0.35)'
+                : '0 4px 14px rgba(37, 211, 102, 0.3)';
             }}
           >
             <MessageCircle size={15} fill="#ffffff" color="transparent" />
-            <span>Buy Now</span>
+            <span>{product.bulkOrderOnly ? 'DM on WhatsApp' : 'Buy Now'}</span>
           </a>
 
           {/* View Details Link */}

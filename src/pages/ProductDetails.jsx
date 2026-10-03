@@ -37,7 +37,17 @@ export default function ProductDetails() {
   // Related products from remaining catalog listings
   const relatedProducts = PRODUCTS.filter((p) => p.id !== product.id).slice(0, 3);
 
-  const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+  const currentPrice = (product?.sizePrices && product.sizePrices[selectedSize]) !== undefined
+    ? product.sizePrices[selectedSize]
+    : (product?.price || 0);
+
+  const currentOriginalPrice = (product?.sizeOriginalPrices && product.sizeOriginalPrices[selectedSize]) !== undefined
+    ? product.sizeOriginalPrices[selectedSize]
+    : (product?.originalPrice || 0);
+
+  const discount = currentOriginalPrice && currentPrice
+    ? Math.round(((currentOriginalPrice - currentPrice) / currentOriginalPrice) * 100)
+    : 0;
 
   const handleShare = () => {
     if (navigator.clipboard) {
@@ -352,25 +362,42 @@ export default function ProductDetails() {
                 marginBottom: '1.25rem'
               }}
             >
-              <span style={{ fontSize: '2rem', fontWeight: '700', color: '#fbcfe8' }}>
-                ₹{product.price.toLocaleString('en-IN')}
-              </span>
-              <span style={{ fontSize: '1.1rem', color: '#94a3b8', textDecoration: 'line-through' }}>
-                ₹{product.originalPrice.toLocaleString('en-IN')}
-              </span>
-              <span
-                style={{
-                  padding: '0.3rem 0.75rem',
-                  borderRadius: '9999px',
-                  background: 'rgba(34, 197, 94, 0.15)',
-                  border: '1px solid rgba(34, 197, 94, 0.35)',
-                  color: '#4ade80',
-                  fontSize: '0.82rem',
-                  fontWeight: '700'
-                }}
-              >
-                Save {discount}% Today
-              </span>
+              {product.bulkOrderOnly ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                  <span style={{ fontSize: '1.8rem', fontWeight: '700', color: '#f472b6' }}>
+                    DM for Bulk Order Only
+                  </span>
+                  <span style={{ fontSize: '0.86rem', color: '#cbd5e1' }}>
+                    ✨ Direct WhatsApp quotation with custom packaging, logo tagging &amp; wholesale pricing.
+                  </span>
+                </div>
+              ) : (
+                <>
+                  <span style={{ fontSize: '2rem', fontWeight: '700', color: '#fbcfe8' }}>
+                    ₹{currentPrice.toLocaleString('en-IN')}
+                  </span>
+                  {currentOriginalPrice > 0 && (
+                    <span style={{ fontSize: '1.1rem', color: '#94a3b8', textDecoration: 'line-through' }}>
+                      ₹{currentOriginalPrice.toLocaleString('en-IN')}
+                    </span>
+                  )}
+                  {discount > 0 && (
+                    <span
+                      style={{
+                        padding: '0.3rem 0.75rem',
+                        borderRadius: '9999px',
+                        background: 'rgba(34, 197, 94, 0.15)',
+                        border: '1px solid rgba(34, 197, 94, 0.35)',
+                        color: '#4ade80',
+                        fontSize: '0.82rem',
+                        fontWeight: '700'
+                      }}
+                    >
+                      Save {discount}% Today
+                    </span>
+                  )}
+                </>
+              )}
 
               {isHangingSoap && (
                 <span
@@ -654,16 +681,25 @@ export default function ProductDetails() {
               </button>
             </div>
 
-            {/* PRIMARY CTA: BUY NOW ON WHATSAPP */}
+            {/* PRIMARY CTA: BUY NOW / BULK ON WHATSAPP */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2.5rem' }}>
-              <WhatsAppButton
-                text={`Buy Now on WhatsApp (₹${(product.price * quantity).toLocaleString('en-IN')})`}
-                productName={`${product.name} (Qty: ${quantity}, Tone: ${selectedColor})`}
-                size="lg"
-                fullWidth={true}
-              />
+              {product.bulkOrderOnly ? (
+                <WhatsAppButton
+                  text="🎁 DM on WhatsApp for Bulk Order Quotation"
+                  productName={`Bulk Order Enquiry for ${product.name}`}
+                  size="lg"
+                  fullWidth={true}
+                />
+              ) : (
+                <WhatsAppButton
+                  text={`Buy Now on WhatsApp (₹${(currentPrice * quantity).toLocaleString('en-IN')})`}
+                  productName={`${product.name} (Qty: ${quantity}${selectedSize && selectedSize !== 'Standard' ? `, Size: ${selectedSize}` : ''}${selectedColor && selectedColor !== 'Default' ? `, Tone: ${selectedColor}` : ''})`}
+                  size="lg"
+                  fullWidth={true}
+                />
+              )}
 
-              {product.bulkOrderAvailable && (
+              {product.bulkOrderAvailable && !product.bulkOrderOnly && (
                 <WhatsAppButton
                   text="🎁 Inquire for Bulk Order / Return Gifts"
                   productName={`Bulk Order Enquiry for ${product.name}`}
